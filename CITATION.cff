@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use dscorr, please cite the Letter and this software."
+title: "dscorr: massive de Sitter correlators as finite Mellin-Barnes integrals"
+version: "1.0"
+date-released: 2026-10-05
+license: MIT
+repository-code: "https://github.com/amara-mccune/dscorr"
+authors:
+  - family-names: McCune
+    given-names: Amara
+    email: amaramccune@gmail.com
+preferred-citation:
+  type: article
+  title: "Massive de Sitter correlators as finite Mellin-Barnes integrals"
+  authors:
+    - family-names: McCune
+      given-names: Amara
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:XXXX.XXXXX"
+      description: "arXiv identifier (to be filled in)"

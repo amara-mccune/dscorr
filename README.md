@@ -2,7 +2,7 @@
 
 **Massive de Sitter correlators as finite Mellin–Barnes integrals.** dscorr is the code that accompanies the Letter
 
-> A. McCune, *Massive de Sitter correlators as finite Mellin–Barnes integrals*, arXiv:XXXX.XXXXX (2026).
+> A. McCune, *Massive de Sitter correlators as finite Mellin–Barnes integrals*, arXiv:2610.10921 (2026).
 
 It computes the inflationary bispectrum ⟨πππ⟩′ mediated by heavy scalars on the principal series (m² = μ² + 9/4) at tree level:
 

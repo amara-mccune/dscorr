@@ -392,5 +392,150 @@
   "value": 66,
   "rtol": 0.008,
   "where": "Sec. 9.3"
+ },
+ "parity_box/hard moments closed vs quadrature": {
+  "max": 1e-11,
+  "where": "Sec. 8.4 (agrees to 1e-11/1e-12)"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=1": {
+  "value": 229,
+  "rtol": 0.005,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-1/c_+1| mu=1 kappa=1": {
+  "value": 13,
+  "rtol": 0.04,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_3|/|c_0| mu=1 kappa=1": {
+  "max": 1e-15,
+  "where": "notes (n = 3 zero to 1e-19)"
+ },
+ "parity_box/sin^2 law deviation": {
+  "max": 1e-15,
+  "where": "Sec. 8.4"
+ },
+ "parity_box/kappa=0 odd part": {
+  "max": 1e-15,
+  "where": "Sec. 8.4 (1e-16)"
+ },
+ "parity_box/kappa reflection": {
+  "max": 1e-15,
+  "where": "Sec. 8.4"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=0.1": {
+  "value": 3.0,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=0.25": {
+  "value": 16,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=0.5": {
+  "value": 164,
+  "rtol": 0.005,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=0.75": {
+  "value": 222,
+  "rtol": 0.005,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=1.5": {
+  "value": 274,
+  "rtol": 0.005,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=1 kappa=2": {
+  "value": 278,
+  "rtol": 0.005,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=2 kappa=0.25": {
+  "value": 20,
+  "rtol": 0.02,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=2 kappa=0.5": {
+  "value": 444,
+  "rtol": 0.02,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=2 kappa=1": {
+  "value": 2600.0,
+  "rtol": 0.02,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=2 kappa=2": {
+  "value": 3400.0,
+  "rtol": 0.02,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/|c_-2/c_+2| mu=2 kappa=2.5": {
+  "value": 3500.0,
+  "rtol": 0.02,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=1 kappa=0.25": {
+  "value": 0.11,
+  "rtol": 0.04,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=1 kappa=0.5": {
+  "value": 0.33,
+  "rtol": 0.04,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=1 kappa=1": {
+  "value": 1.18,
+  "rtol": 0.04,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=1 kappa=1.5": {
+  "value": 0.023,
+  "rtol": 0.04,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=1 kappa=2": {
+  "value": 0.0013,
+  "rtol": 0.04,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=0.25": {
+  "value": 0.077,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=0.5": {
+  "value": 0.28,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=1": {
+  "value": 0.64,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=1.5": {
+  "value": 1.06,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=2": {
+  "value": 3.2,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=2.5": {
+  "value": 0.69,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "parity_box/odd fraction mu=2 kappa=3": {
+  "value": 0.033,
+  "rtol": 0.03,
+  "where": "Sec. 8.4 and notes (Oct 28)"
  }
 }

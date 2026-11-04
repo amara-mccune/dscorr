@@ -19,10 +19,14 @@ __all__ = ["C2", "C2hat", "two_moment", "two_moment_late", "H_moment",
 
 
 def C2(d1, d2):
-    """int d^3 l  y1^(-2 d1) y2^(-2 d2) = k^(3 - 2 S) C2(d1, d2), with S = d1 + d2 [eq:C2]."""
+    """int d^3 l  y1^(-2 d1) y2^(-2 d2) = k^(3 - 2 S) C2(d1, d2), with S = d1 + d2 [eq:C2].
+
+    1/Gamma is used for the denominators, so the block vanishes where a line power is an even
+    non-negative integer (the integral is then analytic in k and drops out of the nonlocal part).
+    """
     S = d1 + d2
     return (mp.pi ** 1.5 * mp.gamma(1.5 - d1) * mp.gamma(1.5 - d2) * mp.gamma(S - 1.5)
-            / (mp.gamma(d1) * mp.gamma(d2) * mp.gamma(3 - S)))
+            * mp.rgamma(d1) * mp.rgamma(d2) * mp.rgamma(3 - S))
 
 
 def C2hat(p1, p2):

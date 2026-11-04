@@ -134,5 +134,128 @@
  "charged/difference line (40;4,8)": {
   "max": 1e-09,
   "where": "Sec. 8.5 ('below 1e-9 at large lam'; it is the mass, not lam)"
+ },
+ "dirac_pair/S(0) m=k=1": {
+  "value": [
+   -0.01369636,
+   0.001278341
+  ],
+  "rtol": 1e-06,
+  "where": "App. D",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/S(1) m=k=1": {
+  "value": [
+   0.00477931,
+   0.0081143
+  ],
+  "rtol": 2e-06,
+  "where": "App. D",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/S(0) nu->-nu m=k=1": {
+  "value": [
+   7.598238e-08,
+   1.767407e-07
+  ],
+  "rtol": 2e-06,
+  "where": "App. D",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/M_D(0) m=k=1": {
+  "value": [
+   0.024514,
+   0.015912
+  ],
+  "rtol": 5e-05,
+  "where": "Sec. 9.2",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/M_D(1) m=k=1": {
+  "value": [
+   0.066956,
+   -0.071585
+  ],
+  "rtol": 2e-05,
+  "where": "Sec. 9.2",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/M_full(0) m=k=1 gamma=1": {
+  "value": [
+   0.08037,
+   0.01932
+  ],
+  "rtol": 0.0001,
+  "where": "Eq. [eq:diracfull]",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/M_full(1) m=k=1 gamma=1": {
+  "value": [
+   0.13353,
+   -0.23826
+  ],
+  "rtol": 5e-05,
+  "where": "Eq. [eq:diracfull]",
+  "note": "Oct 15 check: fit of the directly integrated doubly cut term (loops_dirac_check.md)"
+ },
+ "dirac_pair/|exact/late pair| (0.5,0.25)": {
+  "value": 140.0,
+  "rtol": 0.04,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/|exact/late pair| (0.5,0.5)": {
+  "value": 600.0,
+  "rtol": 0.09,
+  "where": "notes (Oct 28)"
+ },
+ "dirac_pair/|exact/late pair| (1,0.5)": {
+  "value": 1500.0,
+  "rtol": 0.04,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/|exact/late pair| (1,1)": {
+  "value": 17000.0,
+  "rtol": 0.03,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/|exact/late pair| (1,1.5)": {
+  "value": 290000.0,
+  "rtol": 0.02,
+  "where": "notes (Oct 28)"
+ },
+ "dirac_pair/|exact/late pair| (2,1)": {
+  "value": 120000.0,
+  "rtol": 0.05,
+  "where": "notes (Oct 28)"
+ },
+ "dirac_pair/|exact/late pair| (2,2)": {
+  "value": 17000000.0,
+  "rtol": 0.03,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/|exact/late pair| (1.5,1.5)": {
+  "value": 530000.0,
+  "rtol": 0.01,
+  "where": "notes (Oct 28)"
+ },
+ "dirac_pair/all-branch min |ratio|": {
+  "value": 0.44,
+  "rtol": 0.012,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/all-branch max |ratio|": {
+  "value": 3.1,
+  "rtol": 0.017,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/all-branch min phase": {
+  "value": 0.4,
+  "rtol": 0.13,
+  "where": "Sec. 9.2"
+ },
+ "dirac_pair/all-branch max phase": {
+  "value": 1.4,
+  "rtol": 0.04,
+  "where": "Sec. 9.2"
  }
 }

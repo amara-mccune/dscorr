@@ -1,9 +1,138 @@
 {
-  "universal/|U| heavy mu=0.5": {"value": 10.1, "rtol": 5e-3, "where": "Sec. 7.2", "note": "|U(3+2i mu, 2)|"},
-  "universal/|U| heavy mu=1": {"value": 11.6, "rtol": 5e-3, "where": "Sec. 7.2"},
-  "universal/|U| heavy mu=2": {"value": 14.8, "rtol": 5e-3, "where": "Sec. 7.2"},
-  "universal/|U| heavy mu=4": {"value": 20.3, "rtol": 5e-3, "where": "Sec. 7.2"},
-  "universal/U light nu=0.3": {"value": 1.65, "rtol": 5e-3, "where": "Sec. 7.2", "note": "U(3-2 nu, 2)"},
-  "universal/U light nu=0.6": {"value": -3.27, "rtol": 5e-3, "where": "Sec. 7.2 (notes)"},
-  "universal/U light nu=1.45": {"value": 1.03, "rtol": 5e-3, "where": "Sec. 7.2"}
+ "universal/|U| heavy mu=0.5": {
+  "value": 10.1,
+  "rtol": 0.005,
+  "where": "Sec. 7.2",
+  "note": "|U(3+2i mu, 2)|"
+ },
+ "universal/|U| heavy mu=1": {
+  "value": 11.6,
+  "rtol": 0.005,
+  "where": "Sec. 7.2"
+ },
+ "universal/|U| heavy mu=2": {
+  "value": 14.8,
+  "rtol": 0.005,
+  "where": "Sec. 7.2"
+ },
+ "universal/|U| heavy mu=4": {
+  "value": 20.3,
+  "rtol": 0.005,
+  "where": "Sec. 7.2"
+ },
+ "universal/U light nu=0.3": {
+  "value": 1.65,
+  "rtol": 0.005,
+  "where": "Sec. 7.2",
+  "note": "U(3-2 nu, 2)"
+ },
+ "universal/U light nu=0.6": {
+  "value": -3.27,
+  "rtol": 0.005,
+  "where": "Sec. 7.2 (notes)"
+ },
+ "universal/U light nu=1.45": {
+  "value": 1.03,
+  "rtol": 0.005,
+  "where": "Sec. 7.2"
+ },
+ "charged/|ratio| (40,8) - 1": {
+  "max": 0.0005,
+  "where": "Sec. 8.5",
+  "note": "paper text says 1e-4; computed 3.0e-4"
+ },
+ "charged/|ratio| (50,10) - 1": {
+  "max": 0.0005,
+  "where": "Sec. 8.5",
+  "note": "paper text says 1e-4; computed 2.4e-4"
+ },
+ "charged/|ratio| (40,4)": {
+  "value": 0.98,
+  "rtol": 0.006,
+  "where": "Sec. 8.5"
+ },
+ "charged/|ratio| (20,2)": {
+  "value": 0.93,
+  "rtol": 0.006,
+  "where": "Sec. 8.5"
+ },
+ "charged/|ratio| (10,1)": {
+  "value": 0.83,
+  "rtol": 0.006,
+  "where": "Sec. 8.5"
+ },
+ "charged/phase offset (40,4)": {
+  "value": 0.2,
+  "rtol": 0.03,
+  "where": "notes (Oct 28)"
+ },
+ "charged/phase offset (10,1)": {
+  "value": 0.65,
+  "rtol": 0.01,
+  "where": "Sec. 8.5"
+ },
+ "charged/|ratio| (10,5.1)": {
+  "value": 0.46,
+  "rtol": 0.011,
+  "where": "Sec. 8.5"
+ },
+ "charged/|f exact| (10,6)": {
+  "value": 0.00017,
+  "rtol": 0.03,
+  "where": "Sec. 8.5"
+ },
+ "charged/|f BBSX| (10,6)": {
+  "value": 0.074,
+  "rtol": 0.007,
+  "where": "Sec. 8.5"
+ },
+ "charged/|R| mu=1": {
+  "value": 0.045,
+  "rtol": 0.012,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|R| mu=2": {
+  "value": 0.073,
+  "rtol": 0.007,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|R| mu=4": {
+  "value": 0.11,
+  "rtol": 0.015,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|R| mu=8": {
+  "value": 0.16,
+  "rtol": 0.03,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|f| off resonance mu=1": {
+  "value": 0.17,
+  "rtol": 0.015,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|f| off resonance mu=2": {
+  "value": 0.2,
+  "rtol": 0.015,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|f| off resonance mu=4": {
+  "value": 0.25,
+  "rtol": 0.015,
+  "where": "notes (Oct 28)"
+ },
+ "charged/|f| off resonance mu=8": {
+  "value": 0.33,
+  "rtol": 0.02,
+  "where": "notes (Oct 28)"
+ },
+ "charged/difference line (10;1,3)": {
+  "value": 0.005,
+  "rtol": 0.05,
+  "where": "Sec. 8.5"
+ },
+ "charged/difference line (40;4,8)": {
+  "max": 1e-09,
+  "where": "Sec. 8.5 ('below 1e-9 at large lam'; it is the mass, not lam)"
+ }
 }

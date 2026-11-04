@@ -2,7 +2,10 @@
 
 The table lives in values_of_record.json next to this package. Each entry is
     "script/quantity": {"value": x or [re, im], "rtol": r, "where": "Sec. ...", "note": "..."}
-`compare(key, computed)` prints one line and returns True if |computed - value| <= rtol |value|.
+or, for statements of the form "agrees to 1e-4" or "below 1e-9",
+    "script/quantity": {"max": x, "where": ...}
+`compare(key, computed)` prints one line and returns True if |computed - value| <= rtol |value|
+(or |computed| <= max).
 """
 import json
 import os
@@ -28,8 +31,15 @@ def compare(key, computed, table=None, quiet=False):
     """Compare a computed value with the value of record `key`. Returns (ok, relative error)."""
     table = table or load()
     ent = table[key]
-    ref = _as_number(ent["value"])
     comp = mp.mpmathify(computed)
+    if "max" in ent:
+        bound = mp.mpf(ent["max"])
+        ok = abs(comp) <= bound
+        if not quiet:
+            flag = "ok " if ok else "FAIL"
+            print(f"  [{flag}] {key:<46s} computed {mp.nstr(comp, 10):>28s}   record < {mp.nstr(bound, 3):>26s}")
+        return ok, abs(comp)
+    ref = _as_number(ent["value"])
     err = abs(comp - ref) / abs(ref) if ref != 0 else abs(comp)
     ok = err <= ent["rtol"]
     if not quiet:

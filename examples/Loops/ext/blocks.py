@@ -4,13 +4,15 @@ All functions take mpmath numbers (or anything mpmath accepts) and return mpmath
 numbers at the current working precision. Equation numbers refer to the paper
 ("Massive de Sitter correlators at one loop"):
 
-    C2, C2hat     loop block, Eq. (2.3) [eq:C2]
-    two_moment    soft moment of two scalar lines, Eq. (3.x) [eq:twomoment]
-    H_moment      scalar hard-line moment, Eq. [eq:Hmoment]
-    hel_moment    helical hard-line moment, Eq. [eq:helmoment]
-    e_series      branch series of M_{K,nu}, Eq. [eq:en]
-    G_K           Mellin transform of W_{K,nu}, Eq. [eq:GK]
-    laplace_W     Laplace transform of z^{p-1} W_{K,nu}(z), Eq. [eq:WLaplace]
+    C2, C2hat     loop block, Eq. (2.4)
+    two_moment    soft moment of two scalar lines, Eq. (3.17)
+    H_moment      scalar hard-line moment, Eq. (B.4)
+    hel_moment    helical hard-line moment, Eq. (8.14)
+    e_series      branch series of M_{K,nu}, Eq. (D.6)
+    G_K           Mellin transform of W_{K,nu}, Eq. (D.8)
+    laplace_W     Laplace transform of z^{p-1} W_{K,nu}(z), Eq. (9.8)
+
+(Equation numbers of the Oct. 29 draft, loops_v3; the LaTeX labels are given in brackets elsewhere.)
 """
 import mpmath as mp
 

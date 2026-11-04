@@ -257,5 +257,140 @@
   "value": 1.4,
   "rtol": 0.04,
   "where": "Sec. 9.2"
+ },
+ "fermion_triangle/C exact kappa=1.3,m=1": {
+  "value": [
+   -0.000610433607,
+   0.000151140514
+  ],
+  "rtol": 1e-06,
+  "where": "Sec. 9.3",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C nl kappa=1.3,m=1": {
+  "value": [
+   6.6e-05,
+   0.0002555
+  ],
+  "rtol": 0.003,
+  "where": "notes",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C nl h=+ kappa=1.3,m=1": {
+  "value": [
+   6.65e-05,
+   0.0002551
+  ],
+  "rtol": 0.003,
+  "where": "notes",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C all0 kappa=1.3,m=1": {
+  "value": [
+   -0.0015,
+   0.000495
+  ],
+  "rtol": 0.004,
+  "where": "notes",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C exact kappa=5,m=1": {
+  "value": [
+   -1.06375845,
+   0.10831662
+  ],
+  "rtol": 1e-06,
+  "where": "Sec. 9.3",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C nl kappa=5,m=1": {
+  "value": [
+   -0.02037,
+   -0.02075
+  ],
+  "rtol": 0.0004,
+  "where": "notes",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C exact kappa=10,m=1": {
+  "value": [
+   -17.577052,
+   0.492571
+  ],
+  "rtol": 2e-05,
+  "where": "Sec. 9.3",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C nl kappa=10,m=1": {
+  "value": [
+   -0.130741,
+   -0.083974
+  ],
+  "rtol": 0.0002,
+  "where": "notes",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C exact kappa=20,m=2": {
+  "value": [
+   -230.85,
+   -6.5
+  ],
+  "rtol": 0.0005,
+  "where": "Sec. 9.3",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/C nl kappa=20,m=2": {
+  "value": [
+   -1.63102,
+   3.04086
+  ],
+  "rtol": 0.0005,
+  "where": "notes",
+  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+ },
+ "fermion_triangle/|S|/Pz kappa=1.3,m=1": {
+  "value": 0.025,
+  "rtol": 0.02,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|S|/Pz kappa=5,m=1": {
+  "value": 42,
+  "rtol": 0.012,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|S|/Pz kappa=10,m=1": {
+  "value": 694,
+  "rtol": 0.001,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|S|/Pz kappa=20,m=2": {
+  "value": 9100.0,
+  "rtol": 0.006,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|exact/nl| kappa=1.3,m=1": {
+  "value": 2.4,
+  "rtol": 0.021,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|exact/nl| kappa=5,m=1": {
+  "value": 37,
+  "rtol": 0.014,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|exact/nl| kappa=10,m=1": {
+  "value": 113,
+  "rtol": 0.005,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|exact/nl| kappa=20,m=2": {
+  "value": 67,
+  "rtol": 0.008,
+  "where": "Sec. 9.3"
+ },
+ "fermion_triangle/|all0/exact| kappa=10,m=1": {
+  "value": 66,
+  "rtol": 0.008,
+  "where": "Sec. 9.3"
  }
 }

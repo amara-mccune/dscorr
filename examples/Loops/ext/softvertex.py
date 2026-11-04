@@ -84,10 +84,12 @@ class Leg:
     Values on a Grid are cached, so the same leg can enter many monomials at the cost of one table.
     """
 
-    def __init__(self, A, K, nu, nterms=60):
+    def __init__(self, A, K, nu, nterms=None):
         self.A, self.K, self.nu = mp.mpmathify(A), mp.mpmathify(K), mp.mpmathify(nu)
         self.p = self.A + 2
-        self.nterms = nterms
+        # the coefficients e_n of the branch series grow like (|K|/n)^n before they fall, so the 1/w series
+        # at w0 = 6 needs more terms at large first index (160 are needed at |K| = 20)
+        self.nterms = nterms or int(60 + 7 * max(abs(self.K), abs(self.nu)))
         self._tail = None
         self._vals = {}
 
@@ -141,7 +143,7 @@ def soft_J(legA, legB, q, grid=None, nterms=None, parts=False):
     va, vb = legA.values(grid), legB.values(grid)
     near = mp.fsum(wt * a * b * _ang(Q, w) for w, wt, a, b in zip(grid.nodes, grid.weights, va, vb))
     ta, tb, tq = legA.tail(), legB.tail(), _ang_tail(Q, N)
-    far = 0
+    far, big, last = 0, mp.mpf(0), mp.mpf(0)
     for s1 in (1, -1):
         a1, c1 = ta[s1]
         for s2 in (1, -1):
@@ -149,7 +151,15 @@ def soft_J(legA, legB, q, grid=None, nterms=None, parts=False):
             c = _conv(_conv(c1, c2, N), tq, N)
             for n in range(N + 1):
                 beta = a1 + a2 + Q + n
-                far += c[n] * mp.power(grid.w0, 1 - beta) / (beta - 1)
+                term = c[n] * mp.power(grid.w0, 1 - beta) / (beta - 1)
+                far += term
+                big = max(big, abs(term))
+                if n >= N - 4:
+                    last = max(last, abs(term))
+    if last > big * mp.mpf(10) ** (-mp.mp.dps + 8):
+        import warnings
+        warnings.warn(f"soft_J: 1/w tail series not converged (last terms {mp.nstr(last / big, 3)} of the largest); "
+                      f"increase Leg(nterms=...) or w0")
     pref = mp.mpf(2) ** (-legA.A - legB.A - 4) * mp.gamma(Q) / (2 * mp.pi ** 3)
     if parts:
         return pref * (near + far), (near, far)

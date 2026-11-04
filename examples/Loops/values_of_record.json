@@ -562,9 +562,14 @@
   "max": 1e-15,
   "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
  },
- "gauge_loop/pair ratio min": {
+ "gauge_loop/pair ratio min (1 <= mu <= 3)": {
   "value": 1.4,
   "rtol": 0.03,
-  "where": "Sec. 7.2"
+  "where": "Sec. 7.2 ('between 1.4 and 2e4')"
+ },
+ "gauge_loop/pair ratio max (1 <= mu <= 3)": {
+  "value": 18000.0,
+  "rtol": 0.03,
+  "where": "notes (1.8e4); Sec. 7.2 rounds to 2e4"
  }
 }

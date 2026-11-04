@@ -153,6 +153,17 @@ Comparison points from other groups' codes are not part of this repository: Cosm
 
 They are scripts, not library calls, and depend only on numpy, scipy and mpmath. Their commands are listed in [`examples/Letter/batch/README.md`](examples/Letter/batch/README.md). Their results are the tables in [`examples/Letter/data/`](examples/Letter/data/README.md), which the figure script reads. `dscorr.data.load(name)` reads the same tables from a source checkout.
 
+## Scripts of the loops paper
+
+`examples/Loops/` contains the scripts behind the squeezed and collapsed limits of the companion paper, *Massive de Sitter correlators at one loop*:
+
+- the universal exact/late-time factor and the W/Z loop (Sec. 7.2);
+- the parity-odd collapsed box (Sec. 8.4);
+- charged scalars with a vertex chemical potential (Sec. 8.5);
+- the Dirac pair and the fermion triangle with an axial chemical potential (Secs. 9.2 and 9.3).
+
+Each script checks itself against the numbers quoted in the paper (`examples/Loops/values_of_record.json`). See [`examples/Loops/README.md`](examples/Loops/README.md) for details. Their checkpoints are in `tests/test_loops.py`.
+
 ## Tests
 
     pytest              # fast tier, about 3 minutes on one core

@@ -129,7 +129,7 @@ class GaugeLoop:
 def main():
     res = []
     print("Exact over late-time soft moment of the W/Z pair (r2 = 2), summed over the nine helicity pairs")
-    allpr = []
+    allpr, mid = [], []
     print("    mu      ratio (sum)                       U(3 + 2 nu, 2)                 |ratio/U - 1|   pair ratios (min, max)")
     for mu in ('0.5', '1', '1.5', '2', '3', '4'):
         G = GaugeLoop(mu)
@@ -142,10 +142,12 @@ def main():
         print(f"   {mu:>4s}  {mp.nstr(r, 10):>30s}  {mp.nstr(u, 10):>30s}   {mp.nstr(dev, 3):>9s}     {mp.nstr(min(pr), 3)}, {mp.nstr(max(pr), 3)}")
         res.append(compare(f"gauge_loop/|ratio/U - 1| mu={mu}", dev, quiet=True))
         allpr += pr
-    lo, hi = min(allpr), max(allpr)
-    print(f"   individual helicity pairs, all mu: |exact/late| from {mp.nstr(lo, 3)} to {mp.nstr(hi, 3)}")
-    res.append(compare("gauge_loop/pair ratio min", lo))
-    # (the paper quotes "between 1.4 and 2e4"; the largest ratio is for equal transverse helicities and grows with mu)
+        if 1 <= float(mu) <= 3:
+            mid += pr
+    print(f"   individual helicity pairs: |exact/late| from {mp.nstr(min(allpr), 3)} to {mp.nstr(max(allpr), 3)} for "
+          f"1/2 <= mu <= 4, and from {mp.nstr(min(mid), 3)} to {mp.nstr(max(mid), 3)} for 1 <= mu <= 3")
+    res.append(compare("gauge_loop/pair ratio min (1 <= mu <= 3)", min(mid)))
+    res.append(compare("gauge_loop/pair ratio max (1 <= mu <= 3)", max(mid)))
     return report(res)
 
 

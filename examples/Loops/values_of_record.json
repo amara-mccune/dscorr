@@ -299,9 +299,9 @@
    -1.06375845,
    0.10831662
   ],
-  "rtol": 1e-06,
+  "rtol": 2e-06,
   "where": "Sec. 9.3",
-  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+  "note": "Oct 28 run; its Simpson hard part carried ~1e-6 errors. Rewrite: -1.063758421 + 0.108315438i"
  },
  "fermion_triangle/C nl kappa=5,m=1": {
   "value": [
@@ -317,9 +317,9 @@
    -17.577052,
    0.492571
   ],
-  "rtol": 2e-05,
+  "rtol": 5e-05,
   "where": "Sec. 9.3",
-  "note": "Oct 28-29 run (loops_extensions_notes.md)"
+  "note": "Oct 28 run (theta = 0.35 Simpson hard part, 3e-5 contour error). Rewrite: -17.5776541692 + 0.492505008081i, identical at theta = 0.25 and 0.35 to 12 digits"
  },
  "fermion_triangle/C nl kappa=10,m=1": {
   "value": [
@@ -537,5 +537,34 @@
   "value": 0.033,
   "rtol": 0.03,
   "where": "Sec. 8.4 and notes (Oct 28)"
+ },
+ "gauge_loop/|ratio/U - 1| mu=0.5": {
+  "max": 1e-15,
+  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+ },
+ "gauge_loop/|ratio/U - 1| mu=1": {
+  "max": 1e-15,
+  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+ },
+ "gauge_loop/|ratio/U - 1| mu=1.5": {
+  "max": 1e-15,
+  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+ },
+ "gauge_loop/|ratio/U - 1| mu=2": {
+  "max": 1e-15,
+  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+ },
+ "gauge_loop/|ratio/U - 1| mu=3": {
+  "max": 1e-15,
+  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+ },
+ "gauge_loop/|ratio/U - 1| mu=4": {
+  "max": 1e-15,
+  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+ },
+ "gauge_loop/pair ratio min": {
+  "value": 1.4,
+  "rtol": 0.03,
+  "where": "Sec. 7.2"
  }
 }

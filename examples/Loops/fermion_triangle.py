@@ -1,4 +1,4 @@
-"""The fermion triangle with an axial chemical potential: leading squeezed coefficient (Sec. 9.3).
+"""The fermion triangle with an axial chemical potential: leading squeezed coefficient (Sec. 9.2).
 
 Model of Aoki and Strumia (arXiv:2604.05548): delta tau couples to the fermion currents through
 Gamma^mu = gamma^mu (mu_V + mu_A gamma^5)/taudot_0 (we set mu_V = 0, kappa = mu_A, and strip the 1/taudot_0).
@@ -29,7 +29,7 @@ soft vertex (the approximation of Aoki and Strumia), 'all0' keeps both branches 
 Usage:
     python fermion_triangle.py               kappa = 1.3 and 5 (m = 1), about 10 min
     python fermion_triangle.py --point 10 1  one point (kappa, m); --theta and --dps-soft override SETTINGS
-    python fermion_triangle.py --all         all four points of Sec. 9.3 (about 30 min on one core)
+    python fermion_triangle.py --all         all four points of Sec. 9.2 (about 30 min on one core)
 The hard part is cached in cache/ (delete it to recompute).
 """
 import argparse

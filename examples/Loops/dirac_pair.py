@@ -1,5 +1,5 @@
 """Dirac-pair bubble with an axial chemical potential: the squeezed coefficient, exact and late-time
-(Sec. 9.2, App. E; Eqs. [eq:diracMD], [eq:diracfull]).
+(Sec. 9.2; the formulas are given here in full).
 
     M_D(n) = Gamma(r1 + 2 nu + n) S(n),
     S(n)   = sum_{h1 h2} e^(pi (h1 + h2) kappa) sum_{n1 + n2 = n} pbar^h_{n1 n2} sum_{Y = alpha, beta} eps_Y c_Y^(h1) c_Y^(h2) J^Y_{h1 h2}(n1, n2),
@@ -13,7 +13,7 @@ position space (ext/softvertex.py). The script
   * checks the Dirac line: normalization, the per-line amplitude of Eq. [eq:diracocc], and the vanishing of
     the leading pair coefficient at kappa = 0;
   * reproduces S(0), S(1) and the nu -> -nu family at m = kappa = 1 against the values obtained earlier from
-    a fit of the directly integrated doubly cut term (Oct. 15 check), and M_full of Eq. [eq:diracfull];
+    a fit of the directly integrated doubly cut term (Oct. 15 check), and the gradient-vertex factor M_full(n) = M_D(n) [1 + gamma (3 + nu + n/2)/(1 + nu + n/2)];
   * compares the exact soft moment with the late-time pair term (both soft lines on their pair branch at the
     soft vertex) and with the late-time estimate that keeps all branch assignments at leading order.
 

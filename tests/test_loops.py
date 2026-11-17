@@ -92,7 +92,17 @@ def test_dirac_pair_S0():
         assert ok("dirac_pair/|exact/late pair| (1,1)", abs(P.S(0) / P.S(0, mode='late')))
 
 
-# ------------------------------------------------------------------------------------- Sec. 9.3
+def test_han_fig8_point():
+    """Han, Lei, Qin and Yin (2611.20919), Fig. 8 at M = 5, lam = 1 (about 40 s)."""
+    import json
+    import han_check as HC
+    fig = json.load(open(os.path.join(LOOPS, "han_fig8.json")))
+    with mp.workdps(30):
+        amp, ph = HC.HanBubble(5, 1).amplitude_phase()
+    assert abs(float(mp.log10(amp)) - fig["right"]["5"]["1"]) < 2e-3
+
+
+# ------------------------------------------------------------------------------------- Sec. 9.2 (triangle)
 @pytest.mark.slow
 def test_fermion_triangle_kappa13():
     """kappa = 1.3, m = 1 on a coarse grid (about 3 min)."""

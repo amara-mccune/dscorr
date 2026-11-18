@@ -39,12 +39,12 @@
  "charged/|ratio| (40,8) - 1": {
   "max": 0.0005,
   "where": "Sec. 8.5",
-  "note": "paper text says 1e-4; computed 3.0e-4"
+  "note": "computed 3.0e-4; Sec. 8.5 says 3e-4"
  },
  "charged/|ratio| (50,10) - 1": {
   "max": 0.0005,
   "where": "Sec. 8.5",
-  "note": "paper text says 1e-4; computed 2.4e-4"
+  "note": "computed 2.4e-4; Sec. 8.5 says 3e-4"
  },
  "charged/|ratio| (40,4)": {
   "value": 0.98,
@@ -133,7 +133,7 @@
  },
  "charged/difference line (40;4,8)": {
   "max": 1e-09,
-  "where": "Sec. 8.5 ('below 1e-9 at large lam'; it is the mass, not lam)"
+  "where": "Sec. 8.5 (1e-10 at lambda = 40, masses (4, 8); set by the smaller mass)"
  },
  "dirac_pair/S(0) m=k=1": {
   "value": [
@@ -540,36 +540,36 @@
  },
  "gauge_loop/|ratio/U - 1| mu=0.5": {
   "max": 1e-15,
-  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+  "where": "Sec. 7.3 (1e-23 at mu=1, 3e-22 at mu=4; the test tolerance is looser)"
  },
  "gauge_loop/|ratio/U - 1| mu=1": {
   "max": 1e-15,
-  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+  "where": "Sec. 7.3 (1e-23 at mu=1, 3e-22 at mu=4; the test tolerance is looser)"
  },
  "gauge_loop/|ratio/U - 1| mu=1.5": {
   "max": 1e-15,
-  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+  "where": "Sec. 7.3 (1e-23 at mu=1, 3e-22 at mu=4; the test tolerance is looser)"
  },
  "gauge_loop/|ratio/U - 1| mu=2": {
   "max": 1e-15,
-  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+  "where": "Sec. 7.3 (1e-23 at mu=1, 3e-22 at mu=4; the test tolerance is looser)"
  },
  "gauge_loop/|ratio/U - 1| mu=3": {
   "max": 1e-15,
-  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+  "where": "Sec. 7.3 (1e-23 at mu=1, 3e-22 at mu=4; the test tolerance is looser)"
  },
  "gauge_loop/|ratio/U - 1| mu=4": {
   "max": 1e-15,
-  "where": "Sec. 7.2 (paper: 1e-10 at mu=1, 1e-5 at mu=4, limited by the old quadrature)"
+  "where": "Sec. 7.3 (1e-23 at mu=1, 3e-22 at mu=4; the test tolerance is looser)"
  },
  "gauge_loop/pair ratio min (1 <= mu <= 3)": {
   "value": 1.4,
   "rtol": 0.03,
-  "where": "Sec. 7.2 ('between 1.4 and 2e4')"
+  "where": "Sec. 7.3 ('between 1.4 and 2e4')"
  },
  "gauge_loop/pair ratio max (1 <= mu <= 3)": {
   "value": 18000.0,
   "rtol": 0.03,
-  "where": "notes (1.8e4); Sec. 7.2 rounds to 2e4"
+  "where": "notes (1.8e4); Sec. 7.3 rounds to 2e4"
  }
 }

@@ -20,7 +20,7 @@ Run the scripts from this folder:
 | Script | Paper | What it computes | Time (one core) |
 |---|---|---|---|
 | `universal.py` | Sec. 7.2, Eq. (7.1) | U(Δ, r₂). It checks U against the ratio of the exact and late-time moments of Eq. (3.17) (to 1e-31) and against direct quadrature of the position-space (EAdS) soft vertex (to 1e-16). It also gives the values quoted for heavy and light lines. | 10 s |
-| `gauge_loop.py` | Sec. 7.2 | The W/Z loop (f_A(X)F², Proca with all three polarizations). It compares the exact soft moment, with E and B kept at the soft vertex, against its late-time version. Summed over the nine helicity pairs, the ratio equals U(3+2ν, 2) (to 1e-23); the individual pairs do not. | 10 min |
+| `gauge_loop.py` | Sec. 7.3 | The W/Z loop (f_A(X)F², Proca with all three polarizations). It compares the exact soft moment, with E and B kept at the soft vertex, against its late-time version. Summed over the nine helicity pairs, the ratio equals U(3+2ν, 2) (to 1e-23); the individual pairs do not. | 10 min |
 | `charged_scalars.py` | Sec. 8.5 | Squeezed families of the charged-scalar bubble in the normalization of Bodas, Broadberry, Sundrum and Xu (2507.22978). The script compares them with their Eq. (3.35), near and below threshold. It also computes the resonance residue and the difference line. | 1 min |
 | `parity_box.py` | Sec. 8.4, Eqs. (8.15)–(8.16) | Hard-line moments in closed form, checked against quadrature to 1e-20. Box harmonics c_n in the dihedral angle. Chirality ratios \|c₋₂/c₊₂\|. Parity-odd fraction of the full collapsed trispectrum. | 5 min |
 | `dirac_pair.py` | Sec. 9.2 | The squeezed coefficient M_D(n) of the Dirac-pair bubble, with the soft moment in position space. The script compares it with the late-time pair term and with the all-branch late-time estimate. `--quick` runs only m = κ = 1. | 4 min |
@@ -28,7 +28,7 @@ Run the scripts from this folder:
 | `song_check.py` | Sec. 9.2 | The closed form of Song, You, Cheng, He and Chen (2611.23220) for the leading squeezed coefficient of the fermion triangle (doubled for a Dirac fermion), compared with the values of record of `fermion_triangle.py`. `--all` adds κ = 20 at 80 digits. | 5 min (`--all`: 30 min) |
 | `fermion_triangle.py` | Sec. 9.2 | The leading squeezed coefficient C of the Aoki–Strumia fermion triangle (2604.05548), together with its late-time versions (`nl`, `all0`). `--point κ m` runs one point, and `--all` runs the four points of the paper. | κ = 1.3: 3 min; 5: 5 min; 10: 7 min; 20: 15 min |
 
-Two statements of Sec. 7.2 have no script of their own:
+Two statements of Sec. 7.3 have no script of their own:
 
 - The vanishing of the leading pair coefficient of ψ̄ψ at κ = 0 (the top-quark loop) is checked in `dirac_pair.py`, where p̄₀₀ = 0 for every helicity pair.
 - The comparison with C_H of Chen, Wang and Xianyu (1612.08122) is not included here, because it needs their Eq. (4.4).

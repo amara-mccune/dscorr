@@ -6,7 +6,7 @@ These scripts reproduce the results of the squeezed and collapsed limits of the 
 - the charged-scalar bubble with a chemical potential on the vertex;
 - the parity-odd collapsed trispectrum of a helical vector loop;
 - the Dirac-pair bubble with an axial chemical potential, and its comparison with Han, Lei, Qin and Yin (2611.20919);
-- the fermion triangle with an axial chemical potential.
+- the fermion triangle with an axial chemical potential, and its comparison with the closed form of Song, You, Cheng, He and Chen (2611.23220).
 
 Like `examples/Letter/batch/`, they are scripts rather than library calls, and they do not import `dscorr`. They need only Python ≥ 3.10 and mpmath ≥ 1.3; the Letter's tests also use numpy, scipy and pytest. Every script compares its output with the numbers quoted in the paper, which are kept in [`values_of_record.json`](values_of_record.json). It prints one line per value and exits with a nonzero status if any value is not reproduced.
 
@@ -25,6 +25,7 @@ Run the scripts from this folder:
 | `parity_box.py` | Sec. 8.4, Eqs. (8.15)–(8.16) | Hard-line moments in closed form, checked against quadrature to 1e-20. Box harmonics c_n in the dihedral angle. Chirality ratios \|c₋₂/c₊₂\|. Parity-odd fraction of the full collapsed trispectrum. | 5 min |
 | `dirac_pair.py` | Sec. 9.2 | The squeezed coefficient M_D(n) of the Dirac-pair bubble, with the soft moment in position space. The script compares it with the late-time pair term and with the all-branch late-time estimate. `--quick` runs only m = κ = 1. | 4 min |
 | `han_check.py` | Sec. 9.2 | The squeezed bispectrum of the fermion bubble of Han, Lei, Qin and Yin (2611.20919), in their conventions, with our position-space soft vertex. It compares the amplitude and phase with their Fig. 8 (digitized in [`han_fig8.json`](han_fig8.json)), and checks that S(0) of `dirac_pair.py` is their single-sector coefficient. `--all` runs all 21 points of the paper. | 5 min (`--all`: 1.5 h) |
+| `song_check.py` | Sec. 9.2 | The closed form of Song, You, Cheng, He and Chen (2611.23220) for the leading squeezed coefficient of the fermion triangle (doubled for a Dirac fermion), compared with the values of record of `fermion_triangle.py`. `--all` adds κ = 20 at 80 digits. | 5 min (`--all`: 30 min) |
 | `fermion_triangle.py` | Sec. 9.2 | The leading squeezed coefficient C of the Aoki–Strumia fermion triangle (2604.05548), together with its late-time versions (`nl`, `all0`). `--point κ m` runs one point, and `--all` runs the four points of the paper. | κ = 1.3: 3 min; 5: 5 min; 10: 7 min; 20: 15 min |
 
 Two statements of Sec. 7.2 have no script of their own:

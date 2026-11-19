@@ -20,6 +20,7 @@ and W'(z) = W_{0,nu}(z)/2 - W_{1,nu}(z)/z. Polarization overlaps, c = (1 - y1^2 
 TT (1 - h1 h2 c)^2/4, TL (1 - c^2)/2, LL c^2. The exact soft moments use ext/softvertex.py.
 
 Usage:  python gauge_loop.py           (about 10 min)
+        python gauge_loop.py --orders  (the universal factor beyond the leading order, about 25 min)
 """
 import sys
 from itertools import product
@@ -93,24 +94,27 @@ class GaugeLoop:
             return [(2 * I * m, W0, DW, (0, 1, -1))]
         return [(-m ** 2, W0, W0, (0, 0, -2))]
 
-    def J(self, l1, l2, mode, delta=0):
+    def J(self, l1, l2, mode, delta=0, hard=(0, 0), dq=0, weight=True):
         """Soft moment of the pair (l1, l2), up to a common factor of all pairs.
 
         Single monomials of the polarization overlaps are infrared divergent (log) where the full pair is not;
         delta shifts the hard-end power y^nu -> y^(nu + delta) and J_sym averages delta and -delta.
+
+        hard = (a, b) multiplies the hard ends by y1^a y2^b (higher orders of the hard vertex), dq shifts the
+        power of the soft vertex (r2 = 2 + dq), and weight=False drops the late-time weights of the E fields.
         """
         nu = self.nu
-        w = self.hard_weight(l1) * self.hard_weight(l2)
+        w = self.hard_weight(l1) * self.hard_weight(l2) if weight else 1
         tot = 0
         for (a, b), oc in overlap(l1, l2).items():
-            base1, base2 = nu + delta - 0.5 + a, nu + delta - 0.5 + b   # hard end y^nu, soft normalization y^(-1/2)
+            base1, base2 = nu + delta - 0.5 + a + hard[0], nu + delta - 0.5 + b + hard[1]   # hard end y^nu, soft normalization y^(-1/2)
             if mode == 'exact':
                 for coef, f1, f2, (dy1, dy2, dt) in self.soft_terms(l1, l2):
                     for c1, s1, K1, t1 in f1:
                         for c2, s2, K2, t2 in f2:
                             A = base1 + dy1 + s1
                             B = base2 + dy2 + s2
-                            q = 3 + dt + t1 + t2                    # a^-1 dphi' ~ tau^2: t^2 -> q = 3
+                            q = 3 + dq + dt + t1 + t2               # a^-1 dphi' ~ tau^2: t^2 -> q = 3
                             pre = coef * c1 * c2
                             tot += w * oc * pre * soft_J(self.leg(A, K1), self.leg(B, K2), q, self.grid)
             else:
@@ -119,11 +123,77 @@ class GaugeLoop:
                 pre = -e(l1) * e(l2) * self.Bp ** 2 * mp.mpf(2) ** (-1 + 2 * nu)
                 p1, p2 = base1 + 1 + (-0.5 + nu), base2 + 1 + (-0.5 + nu)
                 loop = C2hat(p1 + 1, p2 + 1) / (2 * mp.pi) ** 2
-                tot += w * oc * pre * loop * mp.gamma(2 + 2 * nu)  # int t^2 t^(-1 + 2 nu) e^-t
+                tot += w * oc * pre * loop * mp.gamma(2 + dq + 2 * nu)  # int t^(2 + dq) t^(-1 + 2 nu) e^-t
         return tot
 
-    def J_sym(self, l1, l2, mode, delta=mp.mpf(10) ** -12):
-        return (self.J(l1, l2, mode, delta) + self.J(l1, l2, mode, -delta)) / 2
+    def J_sym(self, l1, l2, mode, delta=mp.mpf(10) ** -12, **kw):
+        return (self.J(l1, l2, mode, delta, **kw) + self.J(l1, l2, mode, -delta, **kw)) / 2
+
+    def order(self, N, dq=0):
+        """Exact soft moment of the nine pairs with the hard vertex at order N in (k3/k12)^2 (N = 0 or 1).
+
+        On the branch tau^(1/2 + nu) the hard ends are, to relative order (y tau)^2,
+            E_T = w_T [1 - e_T (y tau)^2],  B_T = i h y tau,  E_L = w_L [1 - e_L (y tau)^2],  B_L = 0,
+            e_T = (5/2 + nu)/[4 (1 + nu)(1/2 + nu)],   e_L = 1/[4 (1 + nu)],
+        so the coefficient of tau^2 in the hard bilinear, in the sign convention of J, is
+            -w1 w2 (e1 y1^2 + e2 y2^2) + h1 h2 y1 y2   (the last term for two transverse lines).
+        The common Gamma function of the hard time integral is not included.
+        """
+        nu = self.nu
+        eT, eL = (mp.mpf(5) / 2 + nu) / (4 * (1 + nu) * (mp.mpf(1) / 2 + nu)), 1 / (4 * (1 + nu))
+        tot = 0
+        for l1, l2 in product(POLS, POLS):
+            if N == 0:
+                tot += self.J_sym(l1, l2, 'exact', dq=dq)
+                continue
+            e1, e2 = (eT if l1 else eL), (eT if l2 else eL)
+            tot += -e1 * self.J_sym(l1, l2, 'exact', hard=(2, 0), dq=dq) - e2 * self.J_sym(l1, l2, 'exact', hard=(0, 2), dq=dq)
+            if l1 and l2:
+                tot += l1 * l2 * self.J_sym(l1, l2, 'exact', hard=(1, 1), dq=dq, weight=False)
+        return tot
+
+
+def soft_tree(nu, t, dq):
+    """Soft factor of the boundary operator of dimension Delta_t = 3 + 2 nu + 2 t at the soft power r2 = 2 + dq:
+    Khat_(nu'_t)(r2 - 3/2) = sqrt(pi) 2^(-rho) Gamma(rho + nu') Gamma(rho - nu')/Gamma(rho + 1/2) at k = x = 1."""
+    rho, nup = mp.mpf(1) / 2 + dq, 2 * nu + mp.mpf(3) / 2 + 2 * t
+    return mp.sqrt(mp.pi) * 2 ** (-rho) * mp.gamma(rho + nup) * mp.gamma(rho - nup) / mp.gamma(rho + mp.mpf(1) / 2)
+
+
+def main_orders(mus=('1', '2')):
+    """The universal factor beyond the leading order, for the W/Z loop (Sec. 6.2, last sentence of its proof).
+
+    The pair operator F^2 is a de Sitter scalar, so each boundary operator of its late-time expansion, of
+    dimension Delta_t = 3 + 2 nu + 2 t, reaches the soft vertex through the function K_(Delta_t - 3/2). At order
+    N of the hard vertex the exact soft moment is then a combination of the N + 1 soft factors of t <= N,
+    and each is U(Delta_t, r2) times its late-time version. We test this through the dependence on the soft
+    power r2 = 2 + dq: order 0 at three powers (one coefficient), order 1 at four powers (two coefficients).
+    """
+    res = []
+    print("W/Z loop beyond the leading order: soft moments of the nine pairs against the soft factors of the trees")
+    for mu in mus:
+        G = GaugeLoop(mu)
+        nu = G.nu
+        E0 = {dq: G.order(0, dq) for dq in (0, 1, 2)}
+        c = [E0[dq] / soft_tree(nu, 0, dq) for dq in (0, 1, 2)]
+        dev0 = max(abs(ci / c[0] - 1) for ci in c)
+        print(f"   mu = {mu}: order 0, E_0(r2)/Khat_0(r2) at r2 = 2, 3, 4 constant to {mp.nstr(dev0, 3)}", flush=True)
+        res.append(compare(f"gauge_orders/order 0 mu={mu}", dev0, quiet=True))
+        E1 = {dq: G.order(1, dq) for dq in (0, 1, 2, 3)}
+        # two coefficients from dq = 0, 1; predictions at dq = 2, 3
+        A = mp.matrix([[soft_tree(nu, 0, 0), soft_tree(nu, 1, 0)], [soft_tree(nu, 0, 1), soft_tree(nu, 1, 1)]])
+        c0, c1 = mp.lu_solve(A, mp.matrix([E1[0], E1[1]]))
+        dev1 = max(abs((c0 * soft_tree(nu, 0, dq) + c1 * soft_tree(nu, 1, dq)) / E1[dq] - 1) for dq in (2, 3))
+        share = c1 * soft_tree(nu, 1, 0) / E1[0]
+        U0, U1 = U(3 + 2 * nu, 2), U(5 + 2 * nu, 2)
+        late = c0 * soft_tree(nu, 0, 0) / U0 + c1 * soft_tree(nu, 1, 0) / U1
+        print(f"            order 1, two soft factors fitted at r2 = 2, 3 predict r2 = 4, 5 to {mp.nstr(dev1, 3)}")
+        print(f"            share of the operator of dimension Delta_0 + 2 at r2 = 2: {mp.nstr(share, 6)};"
+              f"  |E_1/L_1| = {mp.nstr(abs(E1[0] / late), 6)}  (|U_0| = {mp.nstr(abs(U0), 6)}, |U_1| = {mp.nstr(abs(U1), 6)})", flush=True)
+        res.append(compare(f"gauge_orders/order 1 mu={mu}", dev1, quiet=True))
+        res.append(compare(f"gauge_orders/|E_1/L_1| mu={mu}", abs(E1[0] / late)))
+    return report(res)
+
 
 
 def main():
@@ -152,4 +222,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main_orders() if '--orders' in sys.argv else main())

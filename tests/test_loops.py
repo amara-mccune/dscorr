@@ -111,3 +111,92 @@ def test_fermion_triangle_kappa13():
                        segments=((-32, 1.5, 0.5), (1.5, 5.0, 0.15)), n=24, verbose=False)
     assert ok("fermion_triangle/C exact kappa=1.3,m=1", out["exact"])
     assert ok("fermion_triangle/C nl kappa=1.3,m=1", out["nl"])
+
+
+# ------------------------------------------------------------------- two-vertex loops at every shape
+def test_bubble_single_sums():
+    """ext/bubble.py: the tree, the closed form of the cut, and the lattice values of S_0."""
+    from ext.bubble import PATTERNS, Ihat, Khat, Trees, tree_remainder
+    with mp.workdps(30):
+        # ordered remainder of one tree against the double series of Eq. (3.9), at complex vertex powers
+        nu, rho1, rho2 = mp.mpc(0, '0.8'), mp.mpc('1.5', '-2'), mp.mpc('0.5', '2')
+        k, x1, x2 = mp.mpf(1), mp.mpf('2.7'), mp.mpf('1.4')
+        R, dbl = rho1 + rho2, 0
+        for l in range(90):
+            prod = 1
+            for N in range(60):
+                prod *= nu ** 2 - (rho2 + l + 2 * N) ** 2
+                dbl += (-1) ** (N + l) * mp.gamma(R + l + 2 * N) / mp.factorial(l) * k ** (2 * N) * x1 ** (-(R + l + 2 * N)) * x2 ** l / prod
+        assert abs(tree_remainder(nu, rho1, rho2, k, x1, x2) / dbl - 1) < mp.mpf(10) ** -18
+        # cut combination of the tree sums: closed form (also at a double pole)
+        tr = Trees(mp.mpc(0, '1.3'), mp.mpc(0, '0.7'))
+        p0, p0p = mp.mpc(-1.5, -3), mp.mpc(-1.5, 3)
+        for z in (mp.mpc(0.5, 3), mp.mpc(1.5, 3), mp.mpc(7.5, 3)):
+            num = sum(e[0] * e[1] * tr.tsum(e, z, (p0, p0p)) for e in PATTERNS)
+            assert abs(num / complex(tr.cut_sum(z, (p0, p0p))) - 1) < 1e-12
+        # S_0 at equal masses on the lattice
+        import higgs_portal as HP
+        lat = HP.S0_lattice_equal(mp.mpc(0, 2), 8)
+        tr2 = Trees(mp.mpc(0, 2), mp.mpc(0, 2))
+        for m in (0, 1, 2, 5, 8):
+            assert abs(tr2.S0((1, 1), 0.5 + m) / complex(lat[m]) - 1) < 1e-10
+
+
+def test_charged_scalars_shape():
+    import charged_scalars as CS
+    half = mp.mpf(1) / 2
+    S, B = CS.ChargedShape('1', '3', '10'), CS.ChargedBubble('1', '3', '10')
+    with mp.workdps(S.dps):
+        for e in CS.PATTERNS:
+            assert abs(S.family_leading(e) / B.family(1, e[0], e[1]) - 1) < mp.mpf(10) ** -30
+    S = CS.ChargedShape('0.7', '1.1', '2')
+    with mp.workdps(S.dps):
+        Xt, Xs = S.X(half, half, '0.3'), CS.spectral_X(S, half, half, '0.3')
+        assert abs(Xt - Xs) / abs(Xt) < 1e-10
+    S = CS.ChargedShape('1', '1', '10')
+    assert ok("charged_shape/F channel (10,1) u=0.3", S.channel(half, half, '0.3')['F'])
+    assert ok("charged_shape/|sum line/template| (10,1) u=0.3",
+              abs(CS.sumline_ratio(S, '0.3') * mp.conj(S.family_leading((1, 1))) / CS.f_bbsx(1, 1, 10) / (1 + 4 * mp.mpf('0.3') ** 3)))
+
+
+def test_higgs_portal():
+    import higgs_portal as HP
+    from universal import U
+    with mp.workdps(20):
+        H = HP.HiggsPortal(I * 1)
+        a, b = HP.block_trees(H, 1, 2, mp.mpf(2)), HP.zform_block(I * 1, 2, mp.mpf(2))
+        assert abs(a / b - 1) < 1e-12
+    with mp.workdps(30):
+        for nu in (I * 2, mp.mpf('1.4')):
+            H = HP.HiggsPortal(nu, mmax=4)
+            for eps in (1, -1):
+                ours = H.leading(eps, 1, 1, mp.mpf(10) ** -6) / U(3 + 2 * eps * H.nu, 2) / (2 * mp.mpf(10) ** -18)
+                cwx = -1 / (8 * mp.pi ** 4) * HP.C_H(-eps * H.nu) * (mp.mpf(10) ** -6 / 2) ** (2 * eps * H.nu)
+                assert abs(ours / cwx - 1) < mp.mpf(10) ** -20
+        H = HP.HiggsPortal(I * 1, mmax=4)
+        rows = H.order_table(1, Nmax=1)
+        assert abs(rows[0][2] / rows[0][1] - 1) < mp.mpf(10) ** -20
+        assert ok("higgs/|E_1/L_1| mu=1", abs(rows[1][2]))
+        H = HP.HiggsPortal(I * 1)
+        half = mp.mpf(1) / 2
+        assert ok("higgs/I mu=1 u=0.5", H.calI(half, half, half))
+
+
+def test_dirac_top_quark():
+    """kappa = 0: the leading pair operator and the even orders are absent; the series starts at n = 1."""
+    import dirac_pair as DP
+    with mp.workdps(30):
+        P = DP.DiracPair(1, 0)
+        S = [P.S(n) for n in range(3)]
+        assert abs(S[0]) < mp.mpf(10) ** -25 and abs(S[2]) < mp.mpf(10) ** -25
+        assert ok("dirac_orders/|S(1)| kappa=0 m=1", abs(S[1]))
+
+
+@pytest.mark.slow
+def test_gauge_loop_soft_factor():
+    """W/Z loop: the nine-pair soft moment depends on the soft power as the soft factor of dimension 3 + 2 nu."""
+    import gauge_loop as GL
+    with mp.workdps(45):
+        G = GL.GaugeLoop('1')
+        c = [G.order(0, dq) / GL.soft_tree(G.nu, 0, dq) for dq in (0, 1)]
+        assert abs(c[1] / c[0] - 1) < mp.mpf(10) ** -15

@@ -18,6 +18,7 @@ position space (ext/softvertex.py). The script
     soft vertex) and with the late-time estimate that keeps all branch assignments at leading order.
 
 Usage:  python dirac_pair.py           (about 4 min; --quick: the m = kappa = 1 checks only, about 1 min)
+        python dirac_pair.py --orders  (the series beyond its leading term, and the top quark at kappa = 0; about 25 min)
 """
 import sys
 
@@ -117,6 +118,106 @@ def line_checks():
     return worst_norm, worst_amp, zero
 
 
+
+def soft_tree(nup, r2):
+    """Soft factor of a boundary operator of dimension nup + 3/2 at the soft power r2 (k = x2 = 1):
+    Khat_nup(r2 - 3/2) = sqrt(pi) 2^(-rho) Gamma(rho + nup) Gamma(rho - nup)/Gamma(rho + 1/2), rho = r2 - 3/2."""
+    rho = mp.mpf(r2) - mp.mpf(3) / 2
+    return mp.sqrt(mp.pi) * 2 ** (-rho) * mp.gamma(rho + nup) * mp.gamma(rho - nup) / mp.gamma(rho + mp.mpf(1) / 2)
+
+
+def series_ratio(Ms, u, start=0):
+    """|sum_n M(n) u^n| / |M(start) u^start| and the relative size of the last term kept."""
+    tot = mp.fsum(M * mp.mpf(u) ** n for n, M in enumerate(Ms))
+    lead = Ms[start] * mp.mpf(u) ** start
+    return abs(tot / lead), abs(Ms[-1] * mp.mpf(u) ** (len(Ms) - 1) / tot)
+
+
+def main_orders(json_path=None, nmax=8):
+    """The squeezed series beyond its leading term (pair signal only): S(n) for n <= nmax.
+
+    The bispectrum of the doubly cut term is sum_n M_D(n) (k3/k12)^(r1 + 2 nu + n) at x2 = k3, so M_D(n)/M_D(0)
+    times (k3/k12)^n is the full pair signal over its leading term (hard vertex with time derivatives, r1 = 4).
+    """
+    import json
+    res, data = [], {}
+    us = ('0.05', '0.1', '0.2', '0.3', '0.4', '0.5')
+
+    print("T. Top quark (kappa = 0): the series, its soft factors, and the Yukawa coupling")
+    data['top'] = {}
+    for m in (1, 2):
+        P = DiracPair(m, 0)
+        nu = P.nu
+        S = [P.S(n) for n in range(nmax)]
+        late = [P.S(n, mode='late', late_branches=(1,)) for n in range(4)]
+        scale = max(abs(x) for x in S)
+        print(f"   m = {m}:  |S(n)|, n = 0..{nmax - 1}:  " + "  ".join(mp.nstr(abs(x), 3) for x in S), flush=True)
+        even = max(abs(S[n]) for n in range(0, nmax, 2)) / scale
+        print(f"            even orders vanish (max relative {mp.nstr(even, 2)}); late-time pair term, n <= 3: max {mp.nstr(max(abs(x) for x in late) / scale, 2)}")
+        res.append((even < mp.mpf(10) ** -20, even))
+        res.append(compare(f"dirac_orders/|S(1)| kappa=0 m={m}", abs(S[1])))
+        res.append(compare(f"dirac_orders/|S(3)/S(1)| kappa=0 m={m}", abs(S[3] / S[1])))
+        # soft factors: n = 1 is one boundary operator of dimension Delta_0 + 1 = 4 + 2 nu; n = 3 adds Delta_0 + 3
+        vals1, vals3 = {2: S[1]}, {2: S[3]}
+        for r2 in (3, 4, 5):
+            P.r2 = mp.mpf(r2)
+            vals1[r2] = P.S(1)
+            vals3[r2] = P.S(3)
+        P.r2 = mp.mpf(2)
+        n1, n3 = 2 * nu + mp.mpf(5) / 2, 2 * nu + mp.mpf(9) / 2
+        c = [vals1[r] / soft_tree(n1, r) for r in (2, 3, 4, 5)]
+        dev1 = max(abs(x / c[0] - 1) for x in c)
+        A = mp.matrix([[soft_tree(n1, 2), soft_tree(n3, 2)], [soft_tree(n1, 3), soft_tree(n3, 3)]])
+        a, b = mp.lu_solve(A, mp.matrix([vals3[2], vals3[3]]))
+        dev3 = max(abs((a * soft_tree(n1, r) + b * soft_tree(n3, r)) / vals3[r] - 1) for r in (4, 5))
+        print(f"            S(1; r2)/Khat(Delta = 4 + 2 nu) at r2 = 2..5 constant to {mp.nstr(dev1, 3)};"
+              f"  S(3; r2) = two soft factors (4 + 2 nu, 6 + 2 nu) to {mp.nstr(dev3, 3)}", flush=True)
+        res.append(compare(f"dirac_orders/soft factor n=1 kappa=0 m={m}", dev1, quiet=True))
+        res.append(compare(f"dirac_orders/soft factors n=3 kappa=0 m={m}", dev3, quiet=True))
+        # Yukawa coupling of the massless leg: soft powers r2 = 0 and 1 (weights 1 and k3); both vanish as 1/Gamma(r2 - 1)
+        d = mp.mpf(10) ** -6
+        yk = []
+        for r2 in (0, 1):
+            P.r2 = r2 + d
+            sp = P.S(1)
+            P.r2 = r2 - d
+            sm = P.S(1)
+            yk.append(abs(sp + sm) / 2 / abs(S[1]))
+        P.r2 = mp.mpf(2)
+        print(f"            Yukawa vertex: |S(1; r2)|/|S(1; 2)| at r2 = 0 and 1 (mean of r2 +- 1e-6): {mp.nstr(yk[0], 2)}, {mp.nstr(yk[1], 2)}")
+        res.append(compare(f"dirac_orders/Yukawa signal kappa=0 m={m}", max(yk), quiet=True))
+        Ms = [mp.gamma(4 + 2 * nu + n) * S[n] for n in range(nmax)]
+        rows = [(float(u),) + tuple(float(x) for x in series_ratio(Ms, u, start=1)) for u in us]
+        print("            |full/leading| (last term): " + ", ".join(f"u={r[0]}: {r[1]:.4f} ({r[2]:.0e})" for r in rows), flush=True)
+        data['top'][f"m={m}"] = dict(S=[[float(mp.re(x)), float(mp.im(x))] for x in S], ratio=rows)
+        res.append(compare(f"dirac_orders/|full/leading| kappa=0 m={m} u=0.3", rows[3][1]))
+
+    print("D. Dirac bubble with an axial chemical potential: S(n), exact against the late-time pair term")
+    data['dirac'] = {}
+    for m, ka in ((0.5, 0.25), (1, 0.5), (1, 1), (2, 2)):
+        P = DiracPair(m, ka)
+        nu = P.nu
+        S = [P.S(n) for n in range(nmax + 1)]
+        L = [P.S(n, mode='late', late_branches=(1,)) for n in range(nmax + 1)]
+        print(f"   (m, kappa) = ({m}, {ka}):   n      |S(n)|      |S(n)/S(0)|   |exact/late pair|", flush=True)
+        for n in range(nmax + 1):
+            print(f"                         {n}   {mp.nstr(abs(S[n]), 5):>11s}   {mp.nstr(abs(S[n] / S[0]), 5):>11s}   {mp.nstr(abs(S[n] / L[n]), 5):>11s}")
+        Ms = [mp.gamma(4 + 2 * nu + n) * S[n] for n in range(nmax + 1)]
+        rows = [(float(u),) + tuple(float(x) for x in series_ratio(Ms, u)) for u in us]
+        print("            |full/leading| (last term): " + ", ".join(f"u={r[0]}: {r[1]:.4f} ({r[2]:.0e})" for r in rows), flush=True)
+        data['dirac'][f"m={m},kappa={ka}"] = dict(S=[[float(mp.re(x)), float(mp.im(x))] for x in S],
+                                                  late=[[float(mp.re(x)), float(mp.im(x))] for x in L], ratio=rows)
+        key = f"({m},{ka})"
+        res.append(compare(f"dirac_orders/|S(1)/S(0)| {key}", abs(S[1] / S[0])))
+        res.append(compare(f"dirac_orders/|exact/late| n=1 {key}", abs(S[1] / L[1])))
+        res.append(compare(f"dirac_orders/|exact/late| n=2 {key}", abs(S[2] / L[2])))
+        res.append(compare(f"dirac_orders/|full/leading| {key} u=0.3", rows[3][1]))
+    if json_path:
+        with open(json_path, 'w') as f:
+            json.dump(data, f, indent=1)
+    return report(res)
+
+
 def main(quick=False):
     res = []
     print("1. Dirac line")
@@ -170,4 +271,7 @@ def main(quick=False):
 
 
 if __name__ == "__main__":
+    if "--orders" in sys.argv:
+        jp = sys.argv[sys.argv.index('--json') + 1] if '--json' in sys.argv else None
+        sys.exit(main_orders(json_path=jp))
     sys.exit(main(quick="--quick" in sys.argv))

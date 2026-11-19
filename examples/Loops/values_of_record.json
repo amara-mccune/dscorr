@@ -571,5 +571,428 @@
   "value": 18000.0,
   "rtol": 0.03,
   "where": "notes (1.8e4); Sec. 6.3 rounds to 2e4"
+ },
+ "charged_shape/squeezed families": {
+  "max": 1e-30,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "every family of charged_scalars.py from the complete bispectrum; computed 1.6e-43"
+ },
+ "charged_shape/direct check (trees vs spectral)": {
+  "max": 1e-10,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "five shapes, k3/k12 = 0.05 to 0.9, and two more; computed 1.5e-13 (insert: 1.5e-13)"
+ },
+ "charged_shape/resonance pole of sum line / (-2 Im R) - 1": {
+  "max": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "eps = 1e-4; computed 1.8e-7"
+ },
+ "charged_shape/resonance pole cancellation": {
+  "max": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "pole of the sum line against the background; computed 4.3e-7"
+ },
+ "charged_shape/F on resonance mu=2 u=0.03": {
+  "value": 2.32754016e-05,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/late-time pole coefficient (0.7,1.1;2)": {
+  "value": 0.0836844439,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/late-time pole shape independence": {
+  "max": 1e-09,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "residue of the non-derivative form over (k1^3 + k2^3 - k3^3); computed 2e-12"
+ },
+ "charged_shape/u10 complex (40,4)": {
+  "value": 0.0547073,
+  "rtol": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 0.055"
+ },
+ "charged_shape/u10 modulus (40,4)": {
+  "value": 0.569877,
+  "rtol": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 0.57"
+ },
+ "charged_shape/|sum line/template| (40,4) u=0.3": {
+  "value": 0.810713223,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/background/BBSX (40,4) u=0.1": {
+  "value": 0.999352447,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/background/BBSX (40,4) u=0.5": {
+  "value": 0.997475704,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 0.3% below one"
+ },
+ "charged_shape/F channel (40,4) u=0.5": {
+  "value": 0.340418784,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/F total (40,4) u=0.5": {
+  "value": 1.02125635,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/u10 complex (20,2)": {
+  "value": 0.077106,
+  "rtol": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 0.077"
+ },
+ "charged_shape/u10 modulus (20,2)": {
+  "value": 0.168393,
+  "rtol": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/|sum line/template| (20,2) u=0.3": {
+  "value": 0.70118379,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/background/BBSX (20,2) u=0.1": {
+  "value": 0.998007934,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/background/BBSX (20,2) u=0.5": {
+  "value": 0.993830105,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 0.6% below one"
+ },
+ "charged_shape/F channel (20,2) u=0.5": {
+  "value": 0.156702555,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/F total (20,2) u=0.5": {
+  "value": 0.470107664,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/u10 complex (10,1)": {
+  "value": 0.120391,
+  "rtol": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 0.12"
+ },
+ "charged_shape/u10 modulus (10,1)": {
+  "value": 0.160111,
+  "rtol": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/|sum line/template| (10,1) u=0.3": {
+  "value": 0.580866354,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/background/BBSX (10,1) u=0.1": {
+  "value": 0.993016123,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/background/BBSX (10,1) u=0.5": {
+  "value": 0.982535857,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "quoted as 1.7% below one"
+ },
+ "charged_shape/F channel (10,1) u=0.5": {
+  "value": 0.0977942076,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "charged_shape/F total (10,1) u=0.5": {
+  "value": 0.293382623,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5"
+ },
+ "higgs/direct check (trees vs Z form)": {
+  "max": 1e-09,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "five shapes; computed 6e-14 for heavy lines, 4e-11 at nu = 0.9 and k3/k12 = 0.9"
+ },
+ "higgs/late-time leading term vs C_H": {
+  "max": 1e-25,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "CWX Eq. (4.15); computed 1e-29"
+ },
+ "higgs/|E_1/L_1| mu=1": {
+  "value": 14.4426764,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "quoted as 14.4"
+ },
+ "higgs/|E_1/L0_1| mu=1": {
+  "value": 14.9128116,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|E_1/L_1| mu=4": {
+  "value": 20.2618491,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|E_1/L0_1| mu=4": {
+  "value": 20.3007637,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|E_1/L_1| nu=1.4": {
+  "value": 0.0232070924,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "quoted as 0.023"
+ },
+ "higgs/|E_1/L0_1| nu=1.4": {
+  "value": 0.0188656295,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|signal/leading| mu=1 u=0.2": {
+  "value": 1.03626642,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|signal/leading| mu=1 u=0.5": {
+  "value": 1.30286062,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "quoted as 1.30"
+ },
+ "higgs/I mu=1 u=0.5": {
+  "value": -0.00054086132,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|signal/leading| mu=4 u=0.2": {
+  "value": 1.03996544,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|signal/leading| mu=4 u=0.5": {
+  "value": 1.32072216,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/I mu=4 u=0.5": {
+  "value": 0.000421000427,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|signal/leading| nu=1.4 u=0.2": {
+  "value": 1.00049482,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/|signal/leading| nu=1.4 u=0.5": {
+  "value": 0.984467385,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "higgs/I nu=1.4 u=0.5": {
+  "value": -0.0859652973,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "charged_shape/F channel (10,1) u=0.3": {
+  "value": 0.046944852701,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "--quick run"
+ },
+ "charged_shape/resonance logarithm / (2 Re R) - 1": {
+  "max": 0.002,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "from k3/k12 = 0.01 and 0.03; computed 4e-4 (corrections of order (k3/k12)^2)"
+ },
+ "gauge_orders/order 0 mu=1": {
+  "max": 1e-15,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 9.9e-24; the test tolerance is looser"
+ },
+ "gauge_orders/order 1 mu=1": {
+  "max": 1e-15,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 1.1e-23; the test tolerance is looser"
+ },
+ "gauge_orders/|E_1/L_1| mu=1": {
+  "value": 47.1446901,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops, CHECKS.md C2 (not quoted in the insert)",
+  "note": "order-1 terms of the hard ends alone, both operators on their leading soft term"
+ },
+ "gauge_orders/order 0 mu=2": {
+  "max": 1e-15,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 7.9e-24; the test tolerance is looser"
+ },
+ "gauge_orders/order 1 mu=2": {
+  "max": 1e-15,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 7.6e-24; the test tolerance is looser"
+ },
+ "gauge_orders/|E_1/L_1| mu=2": {
+  "value": 13.3336397,
+  "rtol": 1e-06,
+  "where": "Two-Vertex Loops, CHECKS.md C2 (not quoted in the insert)",
+  "note": "order-1 terms of the hard ends alone, both operators on their leading soft term"
+ },
+ "dirac_orders/|S(1)| kappa=0 m=1": {
+  "value": 5.3575083e-06,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "dirac_orders/|S(3)/S(1)| kappa=0 m=1": {
+  "value": 0.098395618,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "dirac_orders/soft factor n=1 kappa=0 m=1": {
+  "max": 1e-20,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 6.9e-31"
+ },
+ "dirac_orders/soft factors n=3 kappa=0 m=1": {
+  "max": 1e-20,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 5.1e-31"
+ },
+ "dirac_orders/Yukawa signal kappa=0 m=1": {
+  "max": 1e-09,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "mean of r2 +- 1e-6, relative to r2 = 2; computed 5.4e-13"
+ },
+ "dirac_orders/|full/leading| kappa=0 m=1 u=0.3": {
+  "value": 1.3688733,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "dirac_orders/|S(1)| kappa=0 m=2": {
+  "value": 2.0504032e-10,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "dirac_orders/|S(3)/S(1)| kappa=0 m=2": {
+  "value": 0.06166043,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "dirac_orders/soft factor n=1 kappa=0 m=2": {
+  "max": 1e-20,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 3.1e-30"
+ },
+ "dirac_orders/soft factors n=3 kappa=0 m=2": {
+  "max": 1e-20,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "computed 4.7e-29"
+ },
+ "dirac_orders/Yukawa signal kappa=0 m=2": {
+  "max": 1e-09,
+  "where": "Two-Vertex Loops insert for Sec. 6.3",
+  "note": "mean of r2 +- 1e-6, relative to r2 = 2; computed 2.9e-13"
+ },
+ "dirac_orders/|full/leading| kappa=0 m=2 u=0.3": {
+  "value": 1.3074818,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 6.3"
+ },
+ "dirac_orders/|S(1)/S(0)| (0.5,0.25)": {
+  "value": 1.2807552,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=1 (0.5,0.25)": {
+  "value": 355.93577,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=2 (0.5,0.25)": {
+  "value": 316.637,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|full/leading| (0.5,0.25) u=0.3": {
+  "value": 3.8096745,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|S(1)/S(0)| (1,0.5)": {
+  "value": 0.68881186,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=1 (1,0.5)": {
+  "value": 1467.3283,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=2 (1,0.5)": {
+  "value": 834.50128,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|full/leading| (1,0.5) u=0.3": {
+  "value": 1.9748088,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|S(1)/S(0)| (1,1)": {
+  "value": 0.68459426,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=1 (1,1)": {
+  "value": 16629.436,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=2 (1,1)": {
+  "value": 8004.3242,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|full/leading| (1,1) u=0.3": {
+  "value": 1.8184046,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|S(1)/S(0)| (2,2)": {
+  "value": 0.6245088,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=1 (2,2)": {
+  "value": 15019983.0,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|exact/late| n=2 (2,2)": {
+  "value": 9171525.1,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "dirac_orders/|full/leading| (2,2) u=0.3": {
+  "value": 1.2625827,
+  "rtol": 1e-05,
+  "where": "Two-Vertex Loops insert for Sec. 8.2"
+ },
+ "charged_shape/late-time pole cancels in the sum of diagrams": {
+  "max": 1e-09,
+  "where": "Two-Vertex Loops insert for Sec. 7.5",
+  "note": "three channels against the diagram with three legs on one vertex; computed 1e-12"
  }
 }

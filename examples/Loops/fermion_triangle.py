@@ -404,7 +404,8 @@ def main():
     ap.add_argument("--point", nargs=2, type=float, metavar=("KAPPA", "M"))
     ap.add_argument("--theta", type=float, default=None)
     ap.add_argument("--dps-soft", type=int, default=None)
-    ap.add_argument("--grid-pts", type=int, default=24)
+    ap.add_argument("--grid-pts", type=int, default=None,
+                    help="Gauss points per panel of the soft vertex (default 24; 32 at kappa = 20, where 24 leave 3e-7)")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--hard", choices=("closed", "contour"), default="closed")
     args = ap.parse_args()
@@ -423,7 +424,8 @@ def main():
         if args.dps_soft:
             st["dps_soft"] = args.dps_soft
         print(f"kappa = {kappa}, m = {m}: {st}")
-        out = run_point(kappa, m, grid_pts=args.grid_pts, hard=args.hard, **st)
+        gp = args.grid_pts or (32 if kappa >= 20 else 24)
+        out = run_point(kappa, m, grid_pts=gp, hard=args.hard, **st)
         for k, v in out.items():
             print(f"   C[{k:6s}] = {mp.nstr(v, 12)}   |S|/P_zeta = {mp.nstr(4 * mp.pi ** 2 * abs(v), 5)}")
         ex = out['exact']

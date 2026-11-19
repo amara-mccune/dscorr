@@ -6,7 +6,7 @@ delta X = phidot_0 a^-1 dphi'); its time weight a^-1 tau e^(i k tau) ~ t^2 makes
 moment of the pair, weighted by the late-time hard ends (E fields on the branch tau^(-1/2 + nu)), with its
 late-time version, in which the soft vertex keeps only E on the same branch (B is subleading at late times).
 The claim of Sec. 6.3 is that the sum over the nine helicity pairs has the exact/late ratio
-U(3 + 2 nu, 2) of Eq. (6.1), whereas the individual pairs do not.
+U(3 + 2 nu, 2) of Eq. (6.2), whereas the individual pairs do not.
 
 Modes (conformal time, y = |p|, nu = i mu, m^2 = mu^2 + 1/4): g = W_{0,nu}(2 i y tau)/sqrt(2y) for both
 the transverse line and the neutral function of the longitudinal line [Eq. (D.4)]. Then

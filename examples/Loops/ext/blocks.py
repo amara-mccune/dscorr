@@ -6,7 +6,7 @@ numbers at the current working precision. Equation numbers refer to the paper
 
     C2, C2hat     loop block, Eq. (2.4)
     two_moment    soft moment of two scalar lines, Eq. (3.17)
-    H_moment      scalar hard-line moment, Eq. (B.4)
+    H_moment      scalar hard-line moment, Eq. (B.3)
     hel_moment    helical hard-line moment, Eq. (7.14)
     e_series      branch series of M_{K,nu}, Eq. (D.6)
     G_K           Mellin transform of W_{K,nu}, Eq. (D.8)

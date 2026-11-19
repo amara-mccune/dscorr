@@ -1,0 +1,177 @@
+{
+ "scalar_shape/c0": {
+  "value": [
+   -0.00273190082136808,
+   0.00735963525252637
+  ],
+  "rtol": 1e-13,
+  "where": "Eq. (5.6), Sec. 5.2",
+  "note": "Mellin-space sums of Oct. 27, 2026 (15 digits)"
+ },
+ "scalar_shape/c1": {
+  "value": [
+   -0.00235372005278918,
+   0.00332922464010201
+  ],
+  "rtol": 1e-13,
+  "where": "Eq. (5.6), Sec. 5.2",
+  "note": "Mellin-space sums of Oct. 27, 2026 (15 digits)"
+ },
+ "scalar_shape/c2": {
+  "value": [
+   -0.00107963498775028,
+   0.00109974833329204
+  ],
+  "rtol": 1e-13,
+  "where": "Eq. (5.6), Sec. 5.2",
+  "note": "Mellin-space sums of Oct. 27, 2026 (15 digits)"
+ },
+ "scalar_shape/recurrence": {
+  "max": 1e-25,
+  "where": "insert for Sec. 5.2",
+  "note": "one seed and the recurrence against Eq. (B.4) for every moment, N <= 4"
+ },
+ "scalar_shape/exchange in (R, delta)": {
+  "max": 1e-23,
+  "where": "insert for Sec. 5.2",
+  "note": "N <= 12, 30 digits"
+ },
+ "scalar_shape/exchange identity in (r, c)": {
+  "max": 1e-24,
+  "where": "insert for Sec. 5.2",
+  "note": "N <= 12, 30 digits"
+ },
+ "scalar_shape/(r, c) series re-expanded": {
+  "max": 1e-19,
+  "where": "notes",
+  "note": "N <= 12, 30 digits"
+ },
+ "scalar_shape/M_tri": {
+  "value": [
+   1.40838397079905e-06,
+   -3.73743554031911e-06
+  ],
+  "rtol": 1e-13,
+  "where": "Sec. 5.2 and Ref. [26]",
+  "note": "corr_series_mix.txt of Oct. 27, 2026"
+ },
+ "scalar_shape/D_tri": {
+  "value": [
+   -2.50821241227458e-06,
+   -1.82469163359261e-06
+  ],
+  "rtol": 1e-13,
+  "where": "Sec. 5.2 and Ref. [26]",
+  "note": "corr_series_mix.txt of Oct. 27, 2026"
+ },
+ "scalar_shape/|series/leading| psi R=0.3 delta=0": {
+  "value": 1.046743247953369,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator R=0.3 delta=0": {
+  "value": 1.0467422232135393,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| psi R=0.5 delta=0": {
+  "value": 1.1382957486305345,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator R=0.5 delta=0": {
+  "value": 1.1382924328638269,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| psi equilateral": {
+  "value": 1.7802367157682366,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator equilateral": {
+  "value": 1.7802077282443585,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| psi folded k1=2k2=2k3": {
+  "value": 1.2454272051172985,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator folded k1=2k2=2k3": {
+  "value": 1.2455328207583245,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| psi folded k2=2k1=2k3": {
+  "value": 1.311914051052366,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator folded k2=2k1=2k3": {
+  "value": 1.3116191157494146,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| psi R=0.5 delta=0.5": {
+  "value": 1.1288309574737099,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator R=0.5 delta=0.5": {
+  "value": 1.1288811963385332,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| psi R=0.5 delta=1": {
+  "value": 1.1218620086580977,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/|series/leading| correlator R=0.5 delta=1": {
+  "value": 1.1219485405533904,
+  "rtol": 1e-07,
+  "where": "insert for Sec. 5.2"
+ },
+ "scalar_shape/direct residual delta=0.5": {
+  "max": 2e-13,
+  "where": "insert for Sec. 5.2",
+  "note": "rms residual of the polynomial fit with the full series subtracted"
+ },
+ "scalar_shape/direct D0 delta=0.5": {
+  "max": 1e-06,
+  "where": "insert for Sec. 5.2",
+  "note": "free fit of one coefficient, |fitted/closed - 1|"
+ },
+ "scalar_shape/direct D1 delta=0.5": {
+  "max": 0.001,
+  "where": "insert for Sec. 5.2",
+  "note": "free fit of one coefficient, |fitted/closed - 1|"
+ },
+ "scalar_shape/direct D2 delta=0.5": {
+  "max": 0.001,
+  "where": "insert for Sec. 5.2",
+  "note": "free fit of one coefficient, |fitted/closed - 1|"
+ },
+ "scalar_shape/direct residual delta=1.0": {
+  "max": 2e-13,
+  "where": "insert for Sec. 5.2",
+  "note": "rms residual of the polynomial fit with the full series subtracted"
+ },
+ "scalar_shape/direct D0 delta=1.0": {
+  "max": 1e-06,
+  "where": "insert for Sec. 5.2",
+  "note": "free fit of one coefficient, |fitted/closed - 1|"
+ },
+ "scalar_shape/direct D1 delta=1.0": {
+  "max": 0.001,
+  "where": "insert for Sec. 5.2",
+  "note": "free fit of one coefficient, |fitted/closed - 1|"
+ },
+ "scalar_shape/direct D2 delta=1.0": {
+  "max": 0.001,
+  "where": "insert for Sec. 5.2",
+  "note": "free fit of one coefficient, |fitted/closed - 1|"
+ }
+}

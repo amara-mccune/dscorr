@@ -1,0 +1,602 @@
+{
+ "leading/exact over late mu=1 kappa=1": {
+  "value": 6.068045712,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=1 kappa=1": {
+  "value": 0.79163004345639,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=1 kappa=1": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=1 kappa=1": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=2 kappa=2": {
+  "value": 16.69581347,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=2 kappa=2": {
+  "value": 2.0976540092656,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=2 kappa=2": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=2 kappa=2": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=3 kappa=3": {
+  "value": 29.99363735,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=3 kappa=3": {
+  "value": 3.8811297982312,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=3 kappa=3": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=3 kappa=3": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=2 kappa=3": {
+  "value": 8.881278239,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=2 kappa=3": {
+  "value": 0.10711265287973,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=2 kappa=3": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=2 kappa=3": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=3 kappa=3.75": {
+  "value": 24.32309992,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=3 kappa=3.75": {
+  "value": 0.39214923673679,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=3 kappa=3.75": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=3 kappa=3.75": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=2 kappa=3.25": {
+  "value": 6.680859909,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=2 kappa=3.25": {
+  "value": 0.061394777621742,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=2 kappa=3.25": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=2 kappa=3.25": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=3 kappa=4": {
+  "value": 19.46294507,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=3 kappa=4": {
+  "value": 0.21603881528007,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=3 kappa=4": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=3 kappa=4": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=2 kappa=2.5": {
+  "value": 16.21875782,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=2 kappa=2.5": {
+  "value": 0.37501045802496,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=2 kappa=2.5": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=2 kappa=2.5": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=1 kappa=0": {
+  "value": 11.5550257,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=1 kappa=0": {
+  "value": 0.89740431926254,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=1 kappa=0": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=1 kappa=0": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=2 kappa=0": {
+  "value": 14.80602875,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=2 kappa=0": {
+  "value": 1.1685490041362,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=2 kappa=0": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=2 kappa=0": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=3 kappa=0": {
+  "value": 17.71854948,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=3 kappa=0": {
+  "value": 1.253417106322,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=3 kappa=0": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=3 kappa=0": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/exact over late mu=2 kappa=2.75": {
+  "value": 12.02653485,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=2 kappa=2.75": {
+  "value": 0.19512178716507,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=2 kappa=2.75": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=2 kappa=2.75": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "leading/|R_hard,0| heavy mu_h=10": {
+  "value": 2.022161228,
+  "rtol": 1e-07,
+  "where": "Sec. 7.3 of the loops paper (2.02)"
+ },
+ "series/odd orders at kappa=0": {
+  "max": 1e-20,
+  "where": "Proca limit"
+ },
+ "series/heavy hard line mu_h=20: max |R_0,n - 2|": {
+  "max": 0.13,
+  "where": "heavy hard line: twice the contracted bubble, corrections of order mu_h^-2"
+ },
+ "series/M_0 mu=1 kappa=1": {
+  "value": [
+   0.0001672714050708,
+   -0.001634775324508
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_1 mu=1 kappa=1": {
+  "value": [
+   -0.00197141197428,
+   -0.0008113044308956
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_2 mu=1 kappa=1": {
+  "value": [
+   -0.0008488853905619,
+   0.0007867834798072
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_3 mu=1 kappa=1": {
+  "value": [
+   -0.0002026590318243,
+   0.000112808751235
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_4 mu=1 kappa=1": {
+  "value": [
+   -0.0002641804541453,
+   0.0001954587019015
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_5 mu=1 kappa=1": {
+  "value": [
+   -4.842588759715e-05,
+   0.0001024458585211
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_6 mu=1 kappa=1": {
+  "value": [
+   -6.054692035009e-05,
+   7.252945561934e-05
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_7 mu=1 kappa=1": {
+  "value": [
+   -1.097840175363e-05,
+   4.521980935271e-05
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_8 mu=1 kappa=1": {
+  "value": [
+   -1.286887232459e-05,
+   2.956519360347e-05
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/bubble M_1 over M_A mu=1 kappa=1": {
+  "value": [
+   1.0511251533,
+   -1.7093550864
+  ],
+  "rtol": 1e-08,
+  "where": "Sec. 4"
+ },
+ "series/bubble M_2 over M_A mu=1 kappa=1": {
+  "value": [
+   -0.51481505569,
+   -1.3219351821
+  ],
+  "rtol": 1e-08,
+  "where": "Sec. 4"
+ },
+ "series/M_0 mu=2 kappa=2.5": {
+  "value": [
+   1.6693837296,
+   -0.01323637279365
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_1 mu=2 kappa=2.5": {
+  "value": [
+   2.698957047085,
+   -3.186944495898
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_2 mu=2 kappa=2.5": {
+  "value": [
+   -1.337190515536,
+   -3.980871669744
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_3 mu=2 kappa=2.5": {
+  "value": [
+   -2.463636803283,
+   0.1614905162965
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_4 mu=2 kappa=2.5": {
+  "value": [
+   -0.1343422446006,
+   1.145780566436
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_5 mu=2 kappa=2.5": {
+  "value": [
+   0.1318958243265,
+   0.1767353801261
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_6 mu=2 kappa=2.5": {
+  "value": [
+   -0.1033257182854,
+   0.1411638370125
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_7 mu=2 kappa=2.5": {
+  "value": [
+   -0.003638684531874,
+   0.09559041353869
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_8 mu=2 kappa=2.5": {
+  "value": [
+   -0.008009422765864,
+   0.02244379299111
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/bubble M_1 over M_A mu=2 kappa=2.5": {
+  "value": [
+   1.1230549245,
+   -3.6351063457
+  ],
+  "rtol": 1e-08,
+  "where": "Sec. 4"
+ },
+ "series/bubble M_2 over M_A mu=2 kappa=2.5": {
+  "value": [
+   -5.2588722768,
+   -3.6483234782
+  ],
+  "rtol": 1e-08,
+  "where": "Sec. 4"
+ },
+ "series/M_0 mu=3 kappa=3.75": {
+  "value": [
+   89.23588776513,
+   24.16431535872
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_1 mu=3 kappa=3.75": {
+  "value": [
+   259.3374326512,
+   -204.8369326357
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_2 mu=3 kappa=3.75": {
+  "value": [
+   -89.70722128373,
+   -522.5393949015
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_3 mu=3 kappa=3.75": {
+  "value": [
+   -530.2440301598,
+   -74.83015072914
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_4 mu=3 kappa=3.75": {
+  "value": [
+   -134.5579206854,
+   398.0258402901
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_5 mu=3 kappa=3.75": {
+  "value": [
+   204.4642206116,
+   121.3506422452
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_6 mu=3 kappa=3.75": {
+  "value": [
+   30.25819655088,
+   -59.43570348048
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_7 mu=3 kappa=3.75": {
+  "value": [
+   -25.87025432602,
+   22.91199118868
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_8 mu=3 kappa=3.75": {
+  "value": [
+   13.05352126115,
+   12.33143418163
+  ],
+  "rtol": 1e-09,
+  "where": "Table 1"
+ },
+ "series/M_9 mu=3 kappa=3.75": {
+  "value": [
+   -1.766658714747,
+   -4.406116900033
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Nov 19, 2026 (computed in pieces over the soft helicity pairs)"
+ },
+ "series/M_10 mu=3 kappa=3.75": {
+  "value": [
+   -2.091439869808,
+   2.525316103737
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Nov 19, 2026 (computed in pieces over the soft helicity pairs)"
+ },
+ "series/M_11 mu=3 kappa=3.75": {
+  "value": [
+   0.6101797060909,
+   -0.3681342887096
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Nov 19, 2026 (computed in pieces over the soft helicity pairs)"
+ },
+ "series/M_12 mu=3 kappa=3.75": {
+  "value": [
+   -0.6612881914605,
+   -0.2481280302003
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Nov 19, 2026 (computed in pieces over the soft helicity pairs)"
+ },
+ "series/equilateral value over leading term mu=3 kappa=3.75": {
+  "value": 3.695900247,
+  "rtol": 1e-08,
+  "where": "notes, Nov 19, 2026: 3.70 at k1 = k2 = k3"
+ },
+ "series/equilateral change of the last two orders mu=3 kappa=3.75": {
+  "max": 0.02,
+  "where": "notes, Nov 19, 2026 (0.2%)"
+ },
+ "series/bubble M_1 over M_A mu=3 kappa=3.75": {
+  "value": [
+   1.0868453161,
+   -4.7172063687
+  ],
+  "rtol": 1e-08,
+  "where": "Sec. 4"
+ },
+ "series/bubble M_2 over M_A mu=3 kappa=3.75": {
+  "value": [
+   -10.037482573,
+   -4.5136504601
+  ],
+  "rtol": 1e-08,
+  "where": "Sec. 4"
+ },
+ "general/exchange symmetry mu=1 kappa=1": {
+  "max": 1e-20,
+  "where": "notes, general shape"
+ },
+ "general/isosceles limit mu=1 kappa=1": {
+  "max": 1e-20,
+  "where": "notes, general shape"
+ },
+ "general/|D_0(delta=1)/D_0(0)| mu=1 kappa=1": {
+  "value": 1.1248915373643098,
+  "rtol": 1e-09,
+  "where": "table, general shape"
+ },
+ "leading/exact over late mu=3 kappa=4.25": {
+  "value": 15.7972051,
+  "rtol": 1e-07,
+  "where": "Sec. 7.2 of the loops paper"
+ },
+ "leading/|R_hard| mu=3 kappa=4.25": {
+  "value": 0.12485321222858,
+  "rtol": 1e-09,
+  "where": "Sec. 7.3 of the loops paper"
+ },
+ "leading/pair spread mu=3 kappa=4.25": {
+  "max": 1e-15,
+  "where": "Sec. 7.3: the monopole is the same for all nine soft pairs"
+ },
+ "leading/dipole mu=3 kappa=4.25": {
+  "max": 1e-11,
+  "where": "Sec. 7.3: no dipole"
+ },
+ "figure/|R_hard| mu=2 kappa=2.5": {
+  "value": 0.3750245568665482,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ },
+ "figure/|R_hard| mu=2 kappa=2.75": {
+  "value": 0.1951456427007303,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ },
+ "figure/|R_hard| mu=2 kappa=3": {
+  "value": 0.10712931124915315,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ },
+ "figure/|R_hard| mu=2 kappa=3.25": {
+  "value": 0.06139989293311073,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ },
+ "figure/|R_hard| mu=3 kappa=3.75": {
+  "value": 0.39216978204766767,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ },
+ "figure/|R_hard| mu=3 kappa=4": {
+  "value": 0.216067404597235,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ },
+ "figure/|R_hard| mu=3 kappa=4.25": {
+  "value": 0.12486756045378739,
+  "rtol": 0.0003,
+  "where": "Fig. 10(a) of the loops paper (plotted value, from the earlier direct calculation)"
+ }
+}

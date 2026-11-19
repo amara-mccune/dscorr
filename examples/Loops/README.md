@@ -1,8 +1,9 @@
 # Code for "Massive de Sitter correlators at one loop"
 
-These scripts reproduce the results of the squeezed and collapsed limits of the companion paper (Sections 6.2, 6.3, 7.4, 7.5, 8.2, and 8.3):
+These scripts reproduce the results of the squeezed and collapsed limits of the companion paper (Sections 6.2, 6.3, 7.2 to 7.5, 8.2, and 8.3):
 
 - the universal factor between the exact and the late-time soft vertex, and the W/Z loop;
+- the helical-vector bubble and the hard gauge-boson line of the triangle (also beyond the leading squeezed term and at general shape);
 - the charged-scalar bubble with a chemical potential on the vertex;
 - the parity-odd collapsed trispectrum of a helical vector loop, at leading order and as a series in the soft momentum;
 - the Dirac-pair bubble with an axial chemical potential, and its comparison with Han, Lei, Qin and Yin (2611.20919);
@@ -23,6 +24,7 @@ Run the scripts from this folder:
 |---|---|---|---|
 | `universal.py` | Sec. 6.2, Eq. (6.2) | U(Δ, r₂). It checks U against the ratio of the exact and late-time moments of Eq. (3.17) (to 1e-31) and against direct quadrature of the position-space (EAdS) soft vertex (to 1e-16). It also gives the values quoted for heavy and light lines. | 10 s |
 | `gauge_loop.py` | Sec. 6.3 | The W/Z loop (f_A(X)F², Proca with all three polarizations). It compares the exact soft moment, with E and B kept at the soft vertex, against its late-time version. Summed over the nine helicity pairs, the ratio equals U(3+2ν, 2) (to 1e-23); the individual pairs do not. | 10 min |
+| `helical_triangle.py` | Secs. 7.2, 7.3, Fig. 10 | The ratio of the squeezed coefficient M_A of the helical-vector bubble to its late-time estimate, and the coefficient with the hard gauge-boson line kept (R_hard, its multipoles, the heavy hard line). `--leading` runs every point quoted in the paper. The default run also gives the series of the triangle beyond the leading term and at general shape, see [`README_helical_triangle.md`](README_helical_triangle.md). | 10 min (`--leading`: 30 min) |
 | `charged_scalars.py` | Sec. 7.5 | Squeezed families of the charged-scalar bubble in the normalization of Bodas, Broadberry, Sundrum and Xu (2507.22978). The script compares them with their Eq. (3.35), near and below threshold. It also computes the resonance residue and the difference line. | 1 min |
 | `charged_scalars.py --shape` | Sec. 7.5 | The complete bispectrum of the charged-scalar loop at every shape (`ChargedShape`): families, background, and the three channels, in the derivative form of the vertices. It is checked against the squeezed families (to 1e-43), against a numerical spectral integral over tree exchanges at five shapes (to 1.5e-13), and at the resonance. It tabulates the full signal against its leading term and against the template and background of BBSX. `--quick` runs one benchmark. | 8 min (`--quick`: 2 min) |
 | `higgs_portal.py` | Secs. 6.2, 6.3 | The Higgs-portal loop f_H(X)H†H at every shape in MSbar, in closed form (families as one sum over trees, background on the half-integer ladder with digamma coefficients). Checks: invariant-distance form at five shapes; the late-time leading term against C_H of Chen, Wang and Xianyu (1612.08122), to 1e-29. It also tests the universal factor order by order in k₃/k₁₂. | 5 min (`--quick`: 30 s) |
@@ -52,6 +54,7 @@ Shared code is in `ext/`:
 | `dirac.py`, `fermion.py` | Dirac line with an axial chemical potential, in the conventions of `dirac_pair.py` and of Aoki–Strumia, respectively |
 | `helical.py` | Helical vector line: soft late-time ends; Schwinger–Keldysh hard moments in closed form, transverse and longitudinal |
 | `boxseries.py` | Collapsed limit of the helical loop at every order: late-time series of the soft lines at both ends, the hard pair as a double series around the folded point [Eq. (B.6)], and the contractions and azimuthal average in exact rational arithmetic (cached in `cache/`) |
+| `vectri.py`, `shapevars.py` | The helical-vector triangle order by order in the soft ratio, and the symmetric shape variables R and δ (used by `helical_triangle.py`) |
 | `record.py` | Comparison with `values_of_record.json` |
 
 ## Methods and conventions worth knowing

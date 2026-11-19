@@ -1,4 +1,4 @@
-"""The soft vertex in position space (Sec. 9.2 and App. D; Eqs. [eq:WLaplace], [eq:Jpos], [eq:vecJpos]).
+"""The soft vertex in position space (Sec. 8.2 and App. D; Eqs. [eq:WLaplace], [eq:Jpos], [eq:vecJpos]).
 
 We need loop integrals of the form
 

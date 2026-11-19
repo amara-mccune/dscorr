@@ -1,12 +1,12 @@
-"""The gauge-boson loop of the Standard Model background: exact against late-time soft vertex (Sec. 7.3).
+"""The gauge-boson loop of the Standard Model background: exact against late-time soft vertex (Sec. 6.3).
 
 Vertex f_A(X) F_mn F^mn with a massive (Proca) vector, all three polarizations, no chemical potential.
 In the squeezed bispectrum the soft vertex is f_A' phidot_0 a^-1 dphi' (B1.B2 - E1.E2) (from
 delta X = phidot_0 a^-1 dphi'); its time weight a^-1 tau e^(i k tau) ~ t^2 makes the power r2 = 2. We compare the soft
 moment of the pair, weighted by the late-time hard ends (E fields on the branch tau^(-1/2 + nu)), with its
 late-time version, in which the soft vertex keeps only E on the same branch (B is subleading at late times).
-The claim of Sec. 7.3 is that the sum over the nine helicity pairs has the exact/late ratio
-U(3 + 2 nu, 2) of Eq. (7.1), whereas the individual pairs do not.
+The claim of Sec. 6.3 is that the sum over the nine helicity pairs has the exact/late ratio
+U(3 + 2 nu, 2) of Eq. (6.1), whereas the individual pairs do not.
 
 Modes (conformal time, y = |p|, nu = i mu, m^2 = mu^2 + 1/4): g = W_{0,nu}(2 i y tau)/sqrt(2y) for both
 the transverse line and the neutral function of the longitudinal line [Eq. (D.4)]. Then

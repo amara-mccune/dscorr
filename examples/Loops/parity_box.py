@@ -1,6 +1,6 @@
-"""The collapsed parity-odd trispectrum of a helical vector loop (Sec. 8.4; Eqs. [eq:Pitensor], [eq:Mbox]).
+"""The collapsed parity-odd trispectrum of a helical vector loop (Sec. 7.4; Eqs. [eq:Pitensor], [eq:Mbox]).
 
-Model of Wang and Xianyu (the gauge-boson bubble of Sec. 8.2 with its hard line restored, Sec. 8.3). In the
+Model of Wang and Xianyu (the gauge-boson bubble of Sec. 7.2 with its hard line restored, Sec. 7.3). In the
 collapsed limit s = |k1 + k2| -> 0 both ends of each soft line are hard, so the soft lines enter only through
 their late-time ends g(a, b) (ext/helical.py). On each side the two soft lines meet either at the quartic
 contact vertex (no direction) or at two cubic vertices joined by a hard line, which contributes the tensor
@@ -20,7 +20,7 @@ With shat = z, khat1 = (sin a1, 0, cos a1), khat3 = (sin a3 cos b, sin a3 sin b,
 trigonometric polynomial in the dihedral angle b with harmonics c_n e^(i n b), |n| <= 2.
 
 For the full collapsed trispectrum each side is c_c delta_jk [a = a'] + c_p Pi_jk(a, a'), with the weights of
-the bispectrum (Sec. 8.3): c_c = 2^(-8-2nu) Gamma(4 + 2 nu), c_p = -m_h^2 e^(-2 pi Omega)/8, Omega = max(kappa - mu, 0).
+the bispectrum (Sec. 7.3): c_c = 2^(-8-2nu) Gamma(4 + 2 nu), c_p = -m_h^2 e^(-2 pi Omega)/8, Omega = max(kappa - mu, 0).
 (CAVEAT, as in the paper: this product form may miscount the symmetry factors of bubble against box.)
 
 Checks: the closed-form hard moments against direct quadrature; kappa = 0 has no parity-odd part;
@@ -198,7 +198,7 @@ class CollapsedBox:
 
 
 def odd_fraction(c):
-    """Parity-odd part over the monopole, as quoted in Sec. 8.4: max_n |c_n - c_-n| / (2 |c_0|), n = 1, 2.
+    """Parity-odd part over the monopole, as quoted in Sec. 7.4: max_n |c_n - c_-n| / (2 |c_0|), n = 1, 2.
     (The sin(n beta) term of M(beta) has amplitude |c_n - c_-n|, twice this.)"""
     return max(abs(c[n] - c[-n]) for n in (1, 2)) / (2 * abs(c[0]))
 
@@ -232,7 +232,7 @@ def main():
     res.append(compare("parity_box/kappa=0 odd part", odd0))
     res.append(compare("parity_box/kappa reflection", sw))
     print("4. Chirality of the dihedral quadrupole |c_-2/c_+2|, and the parity-odd fraction of the full")
-    print("   collapsed trispectrum (contact + pair vertices on each side, weights of Sec. 8.3)")
+    print("   collapsed trispectrum (contact + pair vertices on each side, weights of Sec. 7.3)")
     print("     mu  kappa   |c_-2/c_+2|   box |c_-2|/|c_0|   full: odd/monopole")
     scan = [(1, k) for k in ('0.1', '0.25', '0.5', '0.75', '1', '1.5', '2')] + \
            [(2, k) for k in ('0.25', '0.5', '1', '1.5', '2', '2.5', '3')]

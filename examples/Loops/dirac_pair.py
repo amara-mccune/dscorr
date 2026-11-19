@@ -1,5 +1,5 @@
 """Dirac-pair bubble with an axial chemical potential: the squeezed coefficient, exact and late-time
-(Sec. 9.2; the formulas are given here in full).
+(Sec. 8.2; the formulas are given here in full).
 
     M_D(n) = Gamma(r1 + 2 nu + n) S(n),
     S(n)   = sum_{h1 h2} e^(pi (h1 + h2) kappa) sum_{n1 + n2 = n} pbar^h_{n1 n2} sum_{Y = alpha, beta} eps_Y c_Y^(h1) c_Y^(h2) J^Y_{h1 h2}(n1, n2),

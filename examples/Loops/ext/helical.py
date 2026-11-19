@@ -1,4 +1,4 @@
-"""Massive vector with an F Ftilde chemical potential: line data for the collapsed box (Sec. 8; App. D).
+"""Massive vector with an F Ftilde chemical potential: line data for the collapsed box (Sec. 7; App. D).
 
 Rotated contour, + branch tau = i t, momentum y = 1 unless stated. Transverse helicity h:
     u(tau) = N W_{K,nu}(2 i y tau),  N = e^(pi h kappa/2)/sqrt(2y),  K = -i h kappa,  nu = i mu,

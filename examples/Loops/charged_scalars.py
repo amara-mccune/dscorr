@@ -1,4 +1,4 @@
-"""Charged scalars with a chemical potential on the vertex (Sec. 8.5).
+"""Charged scalars with a chemical potential on the vertex (Sec. 7.5).
 
 Model (Bodas, Broadberry, Sundrum, Xu, arXiv:2507.22978, Eq. (3.7)): after the field redefinition
 chi_I -> chi_I e^(i phi/2 Lambda),
@@ -19,7 +19,7 @@ powers r2 = i lam and 1 + i lam. We quote it in the normalization of BBSX:
 at |alpha|^2/Lambda^2 = 1. The signal of BBSX is the family s1 = s2 = +1, with amplitude f_oscil
 (their Eq. (3.35), stationary phase plus threshold expansion of the spectral density).
 
-Checks (Sec. 8.5):
+Checks (Sec. 7.5):
   * late-time coefficients of the modes against mpmath's hankel1;
   * the rotated soft vertex (prefactor times K functions) against the conformal-time integral on a
     partially rotated ray, at fixed loop momentum;

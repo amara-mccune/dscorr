@@ -1,4 +1,4 @@
-"""The fermion triangle with an axial chemical potential: leading squeezed coefficient (Sec. 9.2).
+"""The fermion triangle with an axial chemical potential: leading squeezed coefficient (Sec. 8.2).
 
 Model of Aoki and Strumia (arXiv:2604.05548): delta tau couples to the fermion currents through
 Gamma^mu = gamma^mu (mu_V + mu_A gamma^5)/taudot_0 (we set mu_V = 0, kappa = mu_A, and strip the 1/taudot_0).
@@ -10,7 +10,7 @@ The bispectrum is their Eq. (45),
 and we write the leading squeezed term as <dtau^3>' > C k1^-6 (k3/k1)^(2 i lam), so that S = -4 pi^2 P_zeta C
 (N_c = 1). Collinear kinematics, k3 parallel to k1 (z axis), as in their Eq. (49).
 
-Method of regions (Sec. 7.1): the soft lines (momenta q and q - k3) end on the soft vertex at eta3 ~ 1/k3 and
+Method of regions (Sec. 6.1): the soft lines (momenta q and q - k3) end on the soft vertex at eta3 ~ 1/k3 and
 on the hard vertices at late times. Then
   * the hard part has the hard vertices, the hard line (both helicities, all orderings) and the soft lines at
     their late-time ends on the branch (-eta)^(i lam). It is a nested double time integral for the ordered
@@ -29,7 +29,7 @@ soft vertex (the approximation of Aoki and Strumia), 'all0' keeps both branches 
 Usage:
     python fermion_triangle.py               kappa = 1.3 and 5 (m = 1), about 10 min
     python fermion_triangle.py --point 10 1  one point (kappa, m); --theta and --dps-soft override SETTINGS
-    python fermion_triangle.py --all         all four points of Sec. 9.2 (about 30 min on one core)
+    python fermion_triangle.py --all         all four points of Sec. 8.2 (about 30 min on one core)
 The hard part is cached in cache/ (delete it to recompute).
 """
 import argparse

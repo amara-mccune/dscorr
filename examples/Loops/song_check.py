@@ -1,4 +1,4 @@
-"""The fermion triangle against the closed form of Song, You, Cheng, He and Chen (arXiv:2611.23220) (Sec. 9.2).
+"""The fermion triangle against the closed form of Song, You, Cheng, He and Chen (arXiv:2611.23220) (Sec. 8.2).
 
 Their model is a Weyl fermion N with Majorana mass M, coupling -(d_mu phi/Lambda) N^dag sigmabar^mu N and chemical
 potential lam = phidot/Lambda, with <dphi^3>'_osc = (H^6/k1^6)[C+ rho^(2 i nu) + c.c.] and C+ = Chard Csoft from their

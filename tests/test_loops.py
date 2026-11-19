@@ -26,7 +26,7 @@ def ok(key, value):
     return compare(key, value, TABLE, quiet=True)[0]
 
 
-# ------------------------------------------------------------------------------------- Sec. 7.2
+# ------------------------------------------------------------------------------------- Sec. 6.2
 def test_universal_factor():
     import universal as U
     with mp.workdps(30):
@@ -50,7 +50,7 @@ def test_position_space_soft_vertex_K0():
             assert abs(J / ref - 1) < 1e-20
 
 
-# ------------------------------------------------------------------------------------- Sec. 8.5
+# ------------------------------------------------------------------------------------- Sec. 7.5
 def test_charged_scalars():
     import charged_scalars as CS
     with mp.workdps(50):
@@ -63,7 +63,7 @@ def test_charged_scalars():
         assert ok("charged/|R| mu=2", abs(CS.ChargedBubble(2, 2, 4).residue()))
 
 
-# ------------------------------------------------------------------------------------- Sec. 8.4
+# ------------------------------------------------------------------------------------- Sec. 7.4
 def test_parity_box_chirality():
     import parity_box as PB
     with mp.workdps(25):
@@ -81,7 +81,7 @@ def test_parity_box_hard_moments():
     assert PB.check_hard_moments(points=((1, 0.75),), dps=18) < 1e-11
 
 
-# ------------------------------------------------------------------------------------- Sec. 9.2
+# ------------------------------------------------------------------------------------- Sec. 8.2
 def test_dirac_pair_S0():
     import dirac_pair as DP
     with mp.workdps(30):
@@ -102,7 +102,7 @@ def test_han_fig8_point():
     assert abs(float(mp.log10(amp)) - fig["right"]["5"]["1"]) < 2e-3
 
 
-# ------------------------------------------------------------------------------------- Sec. 9.2 (triangle)
+# ------------------------------------------------------------------------------------- Sec. 8.2 (triangle)
 @pytest.mark.slow
 def test_fermion_triangle_kappa13():
     """kappa = 1.3, m = 1 on a coarse grid (about 3 min)."""

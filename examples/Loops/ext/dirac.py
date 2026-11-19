@@ -1,4 +1,4 @@
-"""Dirac line with an axial chemical potential (Sec. 9.1, Eqs. [eq:diracmodes], [eq:diracocc]).
+"""Dirac line with an axial chemical potential (Sec. 8.1, Eqs. [eq:diracmodes], [eq:diracocc]).
 
 Helicity-h chiral amplitudes of momentum y:
     alpha_h = N c_alpha (-tau)^(-1/2) W_{K_alpha, nu}(2 i y tau),   beta_h = N c_beta (-tau)^(-1/2) W_{K_beta, nu}(2 i y tau),

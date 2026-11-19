@@ -157,10 +157,10 @@ They are scripts, not library calls, and depend only on numpy, scipy and mpmath.
 
 `examples/Loops/` contains the scripts behind the squeezed and collapsed limits of the companion paper, *Massive de Sitter correlators at one loop*:
 
-- the universal exact/late-time factor (Sec. 7.2) and the W/Z loop of the Standard Model background (Sec. 7.3);
-- the parity-odd collapsed box (Sec. 8.4);
-- charged scalars with a vertex chemical potential (Sec. 8.5);
-- the Dirac pair and the fermion triangle with an axial chemical potential (Sec. 9.2).
+- the universal exact/late-time factor (Sec. 6.2) and the W/Z loop of the Standard Model background (Sec. 6.3);
+- the parity-odd collapsed box (Sec. 7.4);
+- charged scalars with a vertex chemical potential (Sec. 7.5);
+- the Dirac pair and the fermion triangle with an axial chemical potential (Sec. 8.2).
 
 Each script checks itself against the numbers quoted in the paper (`examples/Loops/values_of_record.json`). See [`examples/Loops/README.md`](examples/Loops/README.md) for details. Their checkpoints are in `tests/test_loops.py`.
 

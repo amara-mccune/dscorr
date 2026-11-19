@@ -1,4 +1,4 @@
-"""The universal factor between the exact and the late-time soft vertex (Sec. 7.2, Eq. [eq:Univ]).
+"""The universal factor between the exact and the late-time soft vertex (Sec. 6.2, Eq. [eq:Univ]).
 
     U(Delta, r2) = sqrt(pi) 2^(1 + Delta - r2) Gamma(r2 - Delta) / [Gamma(r2 - 1) Gamma(3/2 - Delta)]
 
@@ -11,7 +11,7 @@ r2 the power of the soft vertex. This script checks three things:
    bulk-to-boundary propagator of dimension Delta, whose Fourier transform is t^(3/2) K_(Delta-3/2)(k t).
    The ratio of the soft-vertex integral of that function to the integral of its non-analytic
    leading power is evaluated here by direct quadrature (where it converges, r2 > 3) and equals U.
-3. The values quoted in Sec. 7.2.
+3. The values quoted in Sec. 6.2.
 
 Usage:  python universal.py            (about 5 s)
 """
@@ -81,14 +81,14 @@ def main():
     print(f"   Delta = 3+i, 3+2i, 3+4i, 2.4, 1.8: max |quadrature/U - 1| = {mp.nstr(worst, 3)}")
     res.append((worst < 1e-12, worst))
 
-    print("3. Values quoted in Sec. 7.2 (r2 = 2)")
+    print("3. Values quoted in Sec. 6.2 (r2 = 2)")
     for mu in ("0.5", "1", "2", "4"):
         res.append(compare(f"universal/|U| heavy mu={mu}", abs(U_heavy(mu))))
     for nu in ("0.3", "0.6", "1.45"):
         res.append(compare(f"universal/U light nu={nu}", U_light(nu)))
     # growth as mu^(1/2) at large mu
     slope = mp.log(abs(U_heavy(64)) / abs(U_heavy(32))) / mp.log(2)
-    print(f"   d ln|U| / d ln mu at mu = 32..64: {mp.nstr(slope, 4)} (Sec. 7.2: grows as mu^(1/2))")
+    print(f"   d ln|U| / d ln mu at mu = 32..64: {mp.nstr(slope, 4)} (Sec. 6.2: grows as mu^(1/2))")
     res.append((abs(slope - 0.5) < 0.01, slope))
     return report(res)
 

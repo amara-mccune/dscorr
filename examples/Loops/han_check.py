@@ -1,4 +1,4 @@
-"""The fermion bubble with a chemical potential against Han, Lei, Qin and Yin (arXiv:2611.20919) (Sec. 9.2).
+"""The fermion bubble with a chemical potential against Han, Lei, Qin and Yin (arXiv:2611.20919) (Sec. 8.2).
 
 They compute the bubble of the scalar bilinear (psi psi + h.c.) for a Weyl fermion with a Majorana mass M and a
 chemical potential lam, and in their Sec. 5.3 its squeezed bispectrum for the vertices with q1 = -1 and q2 = -3

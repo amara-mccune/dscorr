@@ -7,10 +7,10 @@ numbers at the current working precision. Equation numbers refer to the paper
     C2, C2hat     loop block, Eq. (2.4)
     two_moment    soft moment of two scalar lines, Eq. (3.17)
     H_moment      scalar hard-line moment, Eq. (B.4)
-    hel_moment    helical hard-line moment, Eq. (8.14)
+    hel_moment    helical hard-line moment, Eq. (7.14)
     e_series      branch series of M_{K,nu}, Eq. (D.6)
     G_K           Mellin transform of W_{K,nu}, Eq. (D.8)
-    laplace_W     Laplace transform of z^{p-1} W_{K,nu}(z), Eq. (9.8)
+    laplace_W     Laplace transform of z^{p-1} W_{K,nu}(z), Eq. (8.4)
 
 (Equation numbers of the Oct. 29 draft, loops_v3; the LaTeX labels are given in brackets elsewhere.)
 """

@@ -994,5 +994,1267 @@
   "max": 1e-09,
   "where": "Two-Vertex Loops insert for Sec. 7.5",
   "note": "three channels against the diagram with three legs on one vertex; computed 1e-12"
+ },
+ "parity_box_series/leading order vs parity_box": {
+  "max": 1e-15,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (1.7e-23)"
+ },
+ "parity_box_series/exchange of sides": {
+  "max": 1e-15,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (1e-25)"
+ },
+ "parity_box_series/exchange of legs": {
+  "max": 1e-15,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (1e-24, through the fourth order)"
+ },
+ "parity_box_series/kappa reflection": {
+  "max": 1e-15,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/kappa=0 odd part": {
+  "max": 1e-15,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/kappa=0 single-frequency families": {
+  "max": 1e-15,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (1e-25)"
+ },
+ "parity_box_series/heavy hard line CP mu_h=40": {
+  "max": 0.01,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (corrections of order mu_h^-2)"
+ },
+ "parity_box_series/heavy hard line PP mu_h=40": {
+  "max": 0.02,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (corrections of order mu_h^-2)"
+ },
+ "parity_box_series/heavy hard line ratio 20/40": {
+  "value": 4.0,
+  "rtol": 0.1,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (mu_h^-2)"
+ },
+ "parity_box_series/precision 25 vs 35": {
+  "max": 1e-18,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (3e-25)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+0 N=0": {
+  "value": [
+   0.0010069752054245686,
+   -0.006677587251302638
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+0 N=1": {
+  "value": [
+   -0.015435337475054389,
+   0.005189206880771405
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+0 N=2": {
+  "value": [
+   0.016557976388347825,
+   0.012105333394199875
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+0 N=3": {
+  "value": [
+   -0.0026797006645112643,
+   -0.018684013420116278
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+0 N=4": {
+  "value": [
+   -0.007765541576789763,
+   0.012382363727130762
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+2 N=0": {
+  "value": [
+   0.00010598692154203769,
+   8.17234677224668e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+2 N=1": {
+  "value": [
+   -0.00015978007197360572,
+   -0.00035392270873258575
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+2 N=2": {
+  "value": [
+   -1.9830733599648535e-05,
+   0.0005501117449901411
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+2 N=3": {
+  "value": [
+   0.00032548251870353795,
+   -0.0005181335262343622
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+2 N=4": {
+  "value": [
+   -0.0004931021033891727,
+   0.00023673555261779448
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_-2 N=0": {
+  "value": [
+   0.018829528176239688,
+   -0.024227934530179122
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_-2 N=1": {
+  "value": [
+   -0.10554515364142453,
+   -0.040955837537839664
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_-2 N=2": {
+  "value": [
+   0.006926224605972048,
+   0.18102611037905136
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_-2 N=3": {
+  "value": [
+   0.12521789609777564,
+   -0.11584153828626426
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_-2 N=4": {
+  "value": [
+   -0.14573314180318328,
+   0.04015205712177904
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_+4 N=4": {
+  "value": [
+   2.3804061849053454e-05,
+   -7.848705370364123e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 pair c_-4 N=4": {
+  "value": [
+   -0.0008340149042262426,
+   -0.0003060060499270036
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+0 N=0": {
+  "value": [
+   0.0748777688831858,
+   -0.04357163431772835
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+0 N=1": {
+  "value": [
+   -0.08603669620372056,
+   -0.135872960334325
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+0 N=2": {
+  "value": [
+   -0.08863168712338818,
+   0.08874892184191606
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+0 N=3": {
+  "value": [
+   0.05174766765307228,
+   -0.010689146397599552
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+0 N=4": {
+  "value": [
+   -0.05285299415534342,
+   -0.010299936565649327
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+2 N=0": {
+  "value": [
+   0.0013769698246956267,
+   -0.0013707230408226527
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+2 N=1": {
+  "value": [
+   -0.008510091255875925,
+   0.0011182677799674787
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+2 N=2": {
+  "value": [
+   0.010100223392964451,
+   0.005372561386659734
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+2 N=3": {
+  "value": [
+   -0.006581096991472575,
+   -0.007387219087426368
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+2 N=4": {
+  "value": [
+   0.0023394582149758427,
+   0.008225539396612217
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_+4 N=4": {
+  "value": [
+   0.0003829353644804625,
+   -0.0005398434900934315
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_-4 N=4": {
+  "value": [
+   -0.0033580219144555635,
+   0.002063715687554296
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_-2 N=0": {
+  "value": [
+   -0.023458414998220576,
+   -0.026324088133336587
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_-2 N=1": {
+  "value": [
+   -0.08107521545841413,
+   0.06480934448080947
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_-2 N=2": {
+  "value": [
+   0.04909628596706503,
+   0.10275770832535276
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_-2 N=3": {
+  "value": [
+   0.03970887624590866,
+   0.009544406859018608
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 single c_-2 N=4": {
+  "value": [
+   0.020691749397571544,
+   0.03189815899211359
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=0 N=0": {
+  "value": 0.849245704242335,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=0 N=1": {
+  "value": 0.7608061830552918,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=0 N=2": {
+  "value": -0.6293344081262255,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=0 N=3": {
+  "value": -0.07292098864693271,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=0 N=4": {
+  "value": 0.048955308537465055,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=2 N=0": {
+  "value": -0.11268251538097049,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=2 N=1": {
+  "value": -0.1636756263117192,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=2 N=2": {
+  "value": 0.24972448932465877,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=2 N=3": {
+  "value": -0.028201780849700674,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=2 N=4": {
+  "value": 0.23895607231706245,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc cos n=4 N=4": {
+  "value": -0.00817704350379274,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc sin n=2 N=0": {
+  "value": 0.0924201275703532,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc sin n=2 N=1": {
+  "value": -0.13001162600700494,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc sin n=2 N=2": {
+  "value": 0.36686396698843543,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc sin n=2 N=3": {
+  "value": -0.8764088222887348,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc sin n=2 N=4": {
+  "value": -0.13255282557749762,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 nonosc sin n=4 N=4": {
+  "value": 0.019811886035800332,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction r=0.02 N<=4": {
+  "value": 2.27508771541383,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction (wx) r=0.02 N<=4": {
+  "value": 1.17962406284217,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction r=0.05 N<=4": {
+  "value": 2.28290304551752,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction (wx) r=0.05 N<=4": {
+  "value": 1.18266276686689,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction r=0.1 N<=4": {
+  "value": 2.30417595204286,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction (wx) r=0.1 N<=4": {
+  "value": 1.19142100686255,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction r=0.2 N<=4": {
+  "value": 2.38121994727486,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction (wx) r=0.2 N<=4": {
+  "value": 1.22393510181143,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction r=0.3 N<=4": {
+  "value": 2.5233703886411,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=1 odd fraction (wx) r=0.3 N<=4": {
+  "value": 1.28308058754864,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+0 N=0": {
+  "value": [
+   -0.0003468129637758436,
+   3.1730953426604264e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+0 N=1": {
+  "value": [
+   0.0002939689465335336,
+   0.00022383768163651224
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+0 N=2": {
+  "value": [
+   -0.000256498428529953,
+   -0.0003182321849042042
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+0 N=3": {
+  "value": [
+   5.394156632918964e-05,
+   0.000310040892717082
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+0 N=4": {
+  "value": [
+   1.1501281803856386e-05,
+   -0.00021587055653867192
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+2 N=0": {
+  "value": [
+   1.1355815364960044e-06,
+   2.361126800651751e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+2 N=1": {
+  "value": [
+   -4.866061241909355e-06,
+   -2.4335526543702253e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+2 N=2": {
+  "value": [
+   4.040625599068867e-06,
+   4.267295315994689e-07
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+2 N=3": {
+  "value": [
+   -5.915583241413834e-06,
+   -1.930317529185597e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+2 N=4": {
+  "value": [
+   5.08833566510448e-06,
+   4.658987556034523e-07
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_-2 N=0": {
+  "value": [
+   -0.00041665816700109094,
+   -0.00011015519830963495
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_-2 N=1": {
+  "value": [
+   0.00011480040457876974,
+   0.0008376676587334057
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_-2 N=2": {
+  "value": [
+   0.0002975212101776895,
+   -0.0005645804590247455
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_-2 N=3": {
+  "value": [
+   -0.0004003047490976249,
+   0.0005968118792000598
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_-2 N=4": {
+  "value": [
+   0.0005434183062609919,
+   -0.0002394627297289152
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_+4 N=4": {
+  "value": [
+   1.8983860220947656e-07,
+   -1.3734398895205063e-07
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 pair c_-4 N=4": {
+  "value": [
+   3.593920991898927e-07,
+   6.465950626209111e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+0 N=0": {
+  "value": [
+   -1.4657620131851327e-05,
+   -9.850510946660372e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+0 N=1": {
+  "value": [
+   -0.00015704300536156936,
+   4.1550608413000204e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+0 N=2": {
+  "value": [
+   4.078846480580562e-05,
+   3.436141733033234e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+0 N=3": {
+  "value": [
+   -7.228503693632076e-05,
+   -2.059707934742838e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+0 N=4": {
+  "value": [
+   -9.120388266160619e-07,
+   3.811474914319375e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+2 N=0": {
+  "value": [
+   1.3761806744899097e-06,
+   -3.5582223457502353e-07
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+2 N=1": {
+  "value": [
+   -3.7014289033147246e-06,
+   4.158142305120629e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+2 N=2": {
+  "value": [
+   5.029129282238115e-06,
+   -2.456568846983346e-08
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+2 N=3": {
+  "value": [
+   -4.136994038331713e-06,
+   3.0742857461892357e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+2 N=4": {
+  "value": [
+   4.680651187663442e-06,
+   3.692954551885465e-07
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_+4 N=4": {
+  "value": [
+   1.2369433318110103e-07,
+   -2.618674086929385e-07
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_-4 N=4": {
+  "value": [
+   -9.890747952718664e-08,
+   1.6320743223480124e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_-2 N=0": {
+  "value": [
+   -2.4206711491536374e-05,
+   3.060282738239787e-06
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_-2 N=1": {
+  "value": [
+   2.0887731779472866e-05,
+   4.5581341950162084e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_-2 N=2": {
+  "value": [
+   1.7593536231306336e-05,
+   -1.2291051902205147e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_-2 N=3": {
+  "value": [
+   1.3387315430082296e-05,
+   1.3521001214721869e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 single c_-2 N=4": {
+  "value": [
+   6.925781275439065e-06,
+   -1.0256670677954448e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=0 N=0": {
+  "value": 0.0010128944729215683,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=0 N=1": {
+  "value": 0.000613754419858682,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=0 N=2": {
+  "value": -0.0002642820171695094,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=0 N=3": {
+  "value": 9.455062657631028e-05,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=0 N=4": {
+  "value": -0.0001083795229314193,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=2 N=0": {
+  "value": -9.429803553914846e-05,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=2 N=1": {
+  "value": -2.9720266951875654e-05,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=2 N=2": {
+  "value": 4.266174498505494e-05,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=2 N=3": {
+  "value": 6.169040923952886e-07,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=2 N=4": {
+  "value": 9.319815284141738e-05,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc cos n=4 N=4": {
+  "value": 1.6831577830961532e-06,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc sin n=2 N=0": {
+  "value": 9.000016662034434e-05,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc sin n=2 N=1": {
+  "value": -0.0001077070723351665,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc sin n=2 N=2": {
+  "value": 0.00016982059404036808,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc sin n=2 N=3": {
+  "value": -0.0003602235379636934,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc sin n=2 N=4": {
+  "value": 5.194511419358159e-06,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 nonosc sin n=4 N=4": {
+  "value": 7.942954962852627e-06,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction r=0.02 N<=4": {
+  "value": 0.621426533890798,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction (wx) r=0.02 N<=4": {
+  "value": 0.332267628970455,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction r=0.05 N<=4": {
+  "value": 0.622155316747389,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction (wx) r=0.05 N<=4": {
+  "value": 0.332982019837447,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction r=0.1 N<=4": {
+  "value": 0.624426548983009,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction (wx) r=0.1 N<=4": {
+  "value": 0.334740262082637,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction r=0.2 N<=4": {
+  "value": 0.633079722086181,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction (wx) r=0.2 N<=4": {
+  "value": 0.34048164497606,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction r=0.3 N<=4": {
+  "value": 0.647333706168486,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=1 kappa=0.5 odd fraction (wx) r=0.3 N<=4": {
+  "value": 0.349312920211499,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+0 N=0": {
+  "value": [
+   -0.022713196673304563,
+   -0.03240632712579154
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+0 N=1": {
+  "value": [
+   -0.10723387223163464,
+   0.09664738589776559
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+0 N=2": {
+  "value": [
+   0.22627161538068616,
+   0.1362082146992581
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+0 N=3": {
+  "value": [
+   0.02932130043053509,
+   -0.33819858096388644
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+0 N=4": {
+  "value": [
+   -0.3085033997499255,
+   0.16618596552397188
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+2 N=0": {
+  "value": [
+   -7.797734268361471e-05,
+   -2.09772347797377e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+2 N=1": {
+  "value": [
+   0.0004686038233911357,
+   0.0004430510956792992
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+2 N=2": {
+  "value": [
+   -5.589328686663884e-05,
+   -0.0022859926468297652
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+2 N=3": {
+  "value": [
+   -0.004449541939422416,
+   0.0033804195288814234
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+2 N=4": {
+  "value": [
+   0.009154538757016955,
+   0.0034652296260940046
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_-2 N=0": {
+  "value": [
+   -0.2402779395889049,
+   0.1380932153453117
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_-2 N=1": {
+  "value": [
+   0.8826817478983516,
+   1.178689651136989
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_-2 N=2": {
+  "value": [
+   2.4923946312342586,
+   -2.8063344131111037
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_-2 N=3": {
+  "value": [
+   -5.547932040967531,
+   -2.4478189091661604
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_-2 N=4": {
+  "value": [
+   0.3776905978715034,
+   7.098533666844327
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_+4 N=4": {
+  "value": [
+   -2.958646607119743e-06,
+   2.5256251493010923e-05
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 pair c_-4 N=4": {
+  "value": [
+   0.00805309548210627,
+   0.0016275760867300014
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+0 N=0": {
+  "value": [
+   1.3773040243730255,
+   -0.31292371832351273
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+0 N=1": {
+  "value": [
+   -0.5124526633456521,
+   -3.4158804849318667
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+0 N=2": {
+  "value": [
+   -3.988350830936705,
+   1.3969376911817353
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+0 N=3": {
+  "value": [
+   2.6940093939844934,
+   2.8207397715204086
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+0 N=4": {
+  "value": [
+   0.7897496263931544,
+   -2.9403513642467516
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+2 N=0": {
+  "value": [
+   -0.00479158977738164,
+   -0.005261864915654177
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+2 N=1": {
+  "value": [
+   -0.0018019311332290045,
+   0.054880733633698796
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+2 N=2": {
+  "value": [
+   0.1181072631749949,
+   -0.08716026465398001
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+2 N=3": {
+  "value": [
+   -0.2043127631242885,
+   -0.10526464452609709
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+2 N=4": {
+  "value": [
+   -0.008463188145832513,
+   0.23918785756805272
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_+4 N=4": {
+  "value": [
+   -0.004326564334212822,
+   -0.00048795965100339593
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_-4 N=4": {
+  "value": [
+   0.025986245804380206,
+   0.07661532588242213
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_-2 N=0": {
+  "value": [
+   -0.6195222195188705,
+   -0.09439456488259321
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_-2 N=1": {
+  "value": [
+   -0.8740158866786495,
+   2.7264743867582593
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_-2 N=2": {
+  "value": [
+   5.2820520805694295,
+   2.7561320406337684
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_-2 N=3": {
+  "value": [
+   4.126708644831766,
+   -5.476885080153119
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 single c_-2 N=4": {
+  "value": [
+   -3.009642307435147,
+   -2.7333391138378413
+  ],
+  "rtol": 1e-08,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=0 N=0": {
+  "value": 249.7955484243977,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=0 N=1": {
+  "value": 369.76577402532257,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=0 N=2": {
+  "value": -787.8717216476671,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=0 N=3": {
+  "value": -554.1336211159352,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=0 N=4": {
+  "value": 858.8101965141263,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=2 N=0": {
+  "value": -5.767853574118396,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=2 N=1": {
+  "value": -22.467963362566714,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=2 N=2": {
+  "value": 30.431690621394022,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=2 N=3": {
+  "value": -100.33016193441665,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=2 N=4": {
+  "value": 464.06096610241383,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc cos n=4 N=4": {
+  "value": -8.835346575244664,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc sin n=2 N=0": {
+  "value": -1.2028277713455033,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc sin n=2 N=1": {
+  "value": 69.81633723464583,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc sin n=2 N=2": {
+  "value": 228.6284831146258,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc sin n=2 N=3": {
+  "value": -796.0725626799957,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc sin n=2 N=4": {
+  "value": -652.0993426985532,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 nonosc sin n=4 N=4": {
+  "value": 1.1706675553560566,
+  "rtol": 1e-05,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026) (coefficient of ln r)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction r=0.02 N<=4": {
+  "value": 3.48780124778418,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction (wx) r=0.02 N<=4": {
+  "value": 3.23080560277925,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction r=0.05 N<=4": {
+  "value": 3.47102631517923,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction (wx) r=0.05 N<=4": {
+  "value": 3.24322083052865,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction r=0.1 N<=4": {
+  "value": 3.45063948149817,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction (wx) r=0.1 N<=4": {
+  "value": 3.27086562451405,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction r=0.2 N<=4": {
+  "value": 3.44631557720602,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction (wx) r=0.2 N<=4": {
+  "value": 3.35963154565118,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction r=0.3 N<=4": {
+  "value": 3.47816893036282,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "parity_box_series/mu=2 kappa=2 odd fraction (wx) r=0.3 N<=4": {
+  "value": 3.46714232875238,
+  "rtol": 1e-06,
+  "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
  }
 }

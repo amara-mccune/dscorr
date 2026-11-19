@@ -4,10 +4,10 @@ These scripts reproduce the results of the squeezed and collapsed limits of the 
 
 - the universal factor between the exact and the late-time soft vertex, and the W/Z loop;
 - the charged-scalar bubble with a chemical potential on the vertex;
-- the parity-odd collapsed trispectrum of a helical vector loop;
+- the parity-odd collapsed trispectrum of a helical vector loop, at leading order and as a series in the soft momentum;
 - the Dirac-pair bubble with an axial chemical potential, and its comparison with Han, Lei, Qin and Yin (2611.20919);
 - the fermion triangle with an axial chemical potential, and its comparison with the closed form of Song, You, Cheng, He and Chen (2611.23220);
-- the fermion triangle away from the squeezed limit (all orders in k₃/k₁, at every shape), with a direct time-domain integration of the full triangle.
+- the fermion triangle away from the squeezed limit (all orders in k₃/k₁, at every shape), with a direct time-domain integration of the full triangle;
 - the complete bispectrum of two-vertex loops at every shape: the charged-scalar bubble and the Higgs-portal loop as single sums, and the series of the W/Z, top-quark, and Dirac loops beyond their leading squeezed term.
 
 Like `examples/Letter/batch/`, they are scripts rather than library calls, and they do not import `dscorr`. They need only Python ≥ 3.10 and mpmath ≥ 1.3 (the full-shape scripts also use numpy, for the tree sums of `ext/bubble.py`); the Letter's tests also use numpy, scipy and pytest. Every script compares its output with the numbers quoted in the paper, which are kept in [`values_of_record.json`](values_of_record.json). It prints one line per value and exits with a nonzero status if any value is not reproduced.
@@ -29,6 +29,7 @@ Run the scripts from this folder:
 | `gauge_loop.py --orders` | Sec. 6.2 | The W/Z loop beyond the leading order: the nine-pair soft moment at orders 0 and 1 of the hard vertex is a combination of the soft factors of the boundary operators of dimension 3+2ν and 5+2ν (tested through the dependence on the soft power, to 1e-23). | 25 min |
 | `dirac_pair.py --orders` | Secs. 6.3, 8.2 | The series S(n) of the Dirac-pair bubble through n = 8, exact against the late-time pair term, and the top-quark loop (κ = 0): only odd orders, soft factors of dimension 4+2ν and 6+2ν, vanishing Yukawa signal. Pair signal only. | 25 min |
 | `parity_box.py` | Sec. 7.4, Eqs. (7.15)–(7.16) | Hard-line moments in closed form, checked against quadrature to 1e-20. Box harmonics c_n in the dihedral angle. Chirality ratios \|c₋₂/c₊₂\|. Parity-odd fraction of the full collapsed trispectrum. | 5 min |
+| `parity_box_series.py` | Sec. 7.4, App. B | The same collapsed trispectrum beyond leading order in s/k: series in the soft momentum for the bubble, the contact–pair diagrams, and the box (planar and crossed), with the hard lines expanded around the folded point. Three kinds of family: the pair family s^(3 + 4iμ), single-frequency families s^(3 + 2iμ) (absent at κ = 0), and non-oscillating ones with logarithms (`--nonosc`). The order-zero term is `parity_box.py`. `--all` runs (1, 1), (1, 0.5), and (2, 2). | N ≤ 4: 2.5 min for the geometry (once), 3 min per point, 25 min with all checks |
 | `dirac_pair.py` | Sec. 8.2 | The squeezed coefficient M_D(n) of the Dirac-pair bubble, with the soft moment in position space. The script compares it with the late-time pair term and with the all-branch late-time estimate. `--quick` runs only m = κ = 1. | 4 min |
 | `han_check.py` | Sec. 8.2 | The squeezed bispectrum of the fermion bubble of Han, Lei, Qin and Yin (2611.20919), in their conventions, with our position-space soft vertex. It compares the amplitude and phase with their Fig. 8 (digitized in [`han_fig8.json`](han_fig8.json)), and checks that S(0) of `dirac_pair.py` is their single-sector coefficient. `--all` runs all 21 points of the paper. | 5 min (`--all`: 1.5 h) |
 | `song_check.py` | Sec. 8.2 | The closed form of Song, You, Cheng, He and Chen (2611.23220) for the leading squeezed coefficient of the fermion triangle (doubled for a Dirac fermion), compared with the values of record of `fermion_triangle.py`. `--all` adds κ = 20 at 80 digits. | 5 min (`--all`: 30 min) |
@@ -50,6 +51,7 @@ Shared code is in `ext/`:
 | `cheb.py` | Chebyshev panels in ln t with a spectral cumulative-integration operator (the nested time integrals of the hard parts) |
 | `dirac.py`, `fermion.py` | Dirac line with an axial chemical potential, in the conventions of `dirac_pair.py` and of Aoki–Strumia, respectively |
 | `helical.py` | Helical vector line: soft late-time ends; Schwinger–Keldysh hard moments in closed form, transverse and longitudinal |
+| `boxseries.py` | Collapsed limit of the helical loop at every order: late-time series of the soft lines at both ends, the hard pair as a double series around the folded point [Eq. (B.6)], and the contractions and azimuthal average in exact rational arithmetic (cached in `cache/`) |
 | `record.py` | Comparison with `values_of_record.json` |
 
 ## Methods and conventions worth knowing
@@ -58,6 +60,8 @@ Shared code is in `ext/`:
 - **Hard part of the triangle.** By default it is in closed form: Gamma functions for the cut sectors and the ₄F₃(−1) moments of Eq. (B.8) for the ordered ones. The earlier evaluation (`--hard contour`) uses the rays η = −t e^{∓iθ}, with small θ at large κ (0.25 at κ = 10, 0.15 at κ = 20), since on the fully rotated contour terms of size e^{πλ} cancel. It is cached in `cache/`.
 - **Overall sign of the triangle.** The in-in sign is ⟨δτ³⟩′ = +Σ a₁a₂a₃ F F F Tr[…]. Each vertex contributes i a L_int with L_int = +∂δτ Ψ̄ΓΨ, the closed loop gives −Tr, and S = ⟨TΨΨ̄⟩ = iD. This is the opposite of the leading minus printed in Aoki–Strumia's Eq. (45). Moduli do not depend on it.
 - **Late-time estimates.** In the all-branch estimates (`all0`, and the all-branch Dirac estimate), the branch pairs whose ν's cancel give integer line powers. Their loop integral is ultraviolet-divergent or scaleless, so these terms are dropped.
+- **Families of the collapsed helical loop.** A soft helical line on opposite late-time branches at its two ends is not analytic in its momentum when κ ≠ 0: the part symmetric in the two times has the weight 1 + 2n_h, and its helicity-odd part multiplies ε_ijk l̂_k. Besides the pair family there are therefore single-frequency families (one such line) and non-oscillating ones (two such lines, or the two lines on opposite pair branches). The non-oscillating families have integer powers of the loop momenta, and where s^(3+N) multiplies a structure analytic in **s** the block has a pole, which is a logarithm of s (`parity_box_series.nonoscillating`). All three kinds agree with direct integration of the bubble between two quartic vertices (notes of Nov 19, 2026).
+- **Weights of the classes.** `parity_box_series.py` uses λ₂²/λ₁ = −2m_h² (the quartic vertex with two Higgs lines of Wang and Xianyu, scheme `model`) and also prints the parity-odd fraction with the weights of `parity_box.py` (scheme `wx`), whose quartic coupling is the contracted hard line. It adds the crossed box, which `parity_box.py` counts as equal to the planar one.
 - **Parity-odd fraction.** It is quoted as max_n \|c_n − c₋ₙ\| / (2\|c₀\|). The sin(nβ) term itself has twice this amplitude.
 
 ## Tests
@@ -66,3 +70,4 @@ Shared code is in `ext/`:
 
     pytest tests/test_loops.py            # fast tier, about 2 min
     pytest -m slow tests/test_loops.py    # also the triangle at κ = 1.3, the hard-moment quadrature, and the W/Z soft factor
+    pytest tests/test_parity_box_series.py   # the collapsed series, under a minute (-m slow: N = 2 and N = 4, 8 min)

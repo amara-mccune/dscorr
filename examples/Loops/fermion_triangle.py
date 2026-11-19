@@ -14,9 +14,12 @@ Method of regions (Sec. 6.1): the soft lines (momenta q and q - k3) end on the s
 on the hard vertices at late times. Then
   * the hard part has the hard vertices, the hard line (both helicities, all orderings) and the soft lines at
     their late-time ends on the branch (-eta)^(i lam). It is a nested double time integral for the ordered
-    Schwinger-Keldysh sectors and a product of single integrals for the cut ones. We evaluate it on partially
-    rotated rays eta = -t e^(-+ i theta) with Chebyshev panels in ln t (ext/cheb.py). On the fully rotated ray
-    terms of size e^(pi lam) cancel, so theta is kept small at large kappa.
+    Schwinger-Keldysh sectors and a product of single integrals for the cut ones. Both are known in closed
+    form (HardPartClosed): on the fully rotated ray every vertex integrand is a power of t times e^(-t) times
+    one Whittaker function, so the cut sectors are Gamma functions and the ordered ones are 4F3(-1) series
+    (ordered_moment of ext/fermitri.py). The earlier evaluation on partially rotated rays
+    eta = -t e^(-+ i theta) with Chebyshev panels in ln t (HardPart, ext/cheb.py) is kept as --hard contour.
+    The two agree to 2e-15 (kappa = 5) and 6e-16 (kappa = 10).
   * the soft vertex has the two soft lines in full. With the helicity projectors traced, it is a sum of
     monomials y1^a y2^b times two Whittaker functions, done in position space (ext/softvertex.py).
 In the spin basis along z every hard factor is diagonal, so the trace over the soft helicities is
@@ -30,7 +33,8 @@ Usage:
     python fermion_triangle.py               kappa = 1.3 and 5 (m = 1), about 10 min
     python fermion_triangle.py --point 10 1  one point (kappa, m); --theta and --dps-soft override SETTINGS
     python fermion_triangle.py --all         all four points of Sec. 8.2 (about 30 min on one core)
-The hard part is cached in cache/ (delete it to recompute).
+    python fermion_triangle.py --hard contour   the hard part on partially rotated rays, as before
+The contour hard part is cached in cache/ (delete it to recompute).
 """
 import argparse
 import hashlib
@@ -44,6 +48,7 @@ import mpmath as mp
 from ext.blocks import C2hat
 from ext.cheb import Panels
 from ext.fermion import ASFermion
+from ext.fermitri import ordered_moment, single_moment
 from ext.record import compare, load, report
 from ext.softvertex import Grid, Leg, soft_J
 
@@ -197,6 +202,90 @@ class HardPart:
         return N
 
 
+class HardPartClosed:
+    """On the fully rotated contour eta = i a t every vertex integrand is a sum of terms
+
+        coefficient x t^x e^(-t) x [ W_{K,nu}(2t)  or  M_{K,+-nu}(2t) ],
+
+    since F_0 = i a t e^(-t)/2 and G_a = (1 + t) e^(-t)/2 there. A spinor component of the hard line
+    (energy 1) is (2t)^(-1/2) e^(i a pi/4) e^(pi h kappa/2) c times W_{K,nu}(2t) if it decays on this branch
+    (s_W = -a), and times sum_s B_s(K) e^(-i pi a (1/2 + s nu)) M_{-K, s nu}(2t) if it grows (s_W = a).
+    """
+
+    def __init__(self, F, sg=1):
+        self.F, self.sg = F, sg
+
+    def _terms(self, which, a, a3, hh, s, w):
+        """[(coef, x, fn)] with fn = ('W', K) or ('M', K, mu), for the integrand of f or g with respect to dt."""
+        F, sg, nu = self.F, self.sg, self.F.nu
+        ph = mp.exp(-I * a * mp.pi / 2)
+        pre = ph * ph ** (sg * nu) * mp.mpf(2) ** -0.5 * ph ** -0.5 * mp.exp(mp.pi * s * F.kappa / 2) / 2
+        kind = 'u' if w == 'U' else 'v'
+        if which == 'f':                       # r1 . Gamma_1 . X(eta), k1 = +z
+            d, conj = 1, False
+            late = F.late_row(KINDS[a3][1], hh, sg)
+            # dot(r1, G1 X) = r1[0] muR (F0 - i d s G) X_R + r1[1] muL (F0 + i d s G) X_L
+            parts = [(late[0] * F.muR, -1, 'R'), (late[1] * F.muL, +1, 'L')]
+        else:                                  # Xbar(eta) . Gamma_2 . c2, k2 = -z
+            d, conj = -1, True
+            late = F.late_column(KINDS[a3][0], hh, sg)
+            # dot(Xbar G2, c2) = c2[0] conj(X_L) muL (F0 + i d s G) + c2[1] conj(X_R) muR (F0 - i d s G)
+            parts = [(late[0] * F.muL, +1, 'L'), (late[1] * F.muR, -1, 'R')]
+        out = []
+        for cf, sign, X in parts:
+            c, K = F.comps(kind, s)[X]
+            sW = F.sW(kind)
+            if conj:
+                c, K, sW = mp.conj(c), mp.conj(K), -sW
+            # e^(-t)/2 [i a t + sign i d s (1 + t)] = e^(-t)/2 [sign i d s + (i a + sign i d s) t]
+            poly = [(sign * I * d * s, 0), (I * a + sign * I * d * s, 1)]
+            if sW == -a:
+                fns = [(mp.mpf(1), ('W', K))]
+            else:
+                fns = [(F.B(sig, K) * mp.exp(-I * mp.pi * a * (0.5 + sig * nu)), ('M', -K, sig * nu)) for sig in (1, -1)]
+            for pc, pw in poly:
+                if pc == 0:
+                    continue
+                for fc, fn in fns:
+                    out.append((pre * cf * c * pc * fc, sg * nu - 0.5 + pw, fn))
+        return out
+
+    def _single(self, T):
+        tot = 0
+        for cf, x, fn in T:
+            assert fn[0] == 'W'
+            tot += cf * single_moment(x, fn[1], self.F.nu)
+        return tot
+
+    def _nested(self, inner, outer):
+        """int dt_out outer(t_out) int_0^t_out dt_in inner(t_in): inner terms are M's, outer terms are W's."""
+        tot = 0
+        for ci, xi, fi in inner:
+            assert fi[0] == 'M'
+            for co, xo, fo in outer:
+                assert fo[0] == 'W'
+                tot += ci * co * ordered_moment(xi, xo, fi[1], fi[2], fo[1], self.F.nu)
+        return tot
+
+    def compute(self, verbose=False):
+        n = {}
+        for a3 in (1, -1):
+            for h1 in HEL:
+                for h2 in HEL:
+                    for s in HEL:
+                        t = lambda which, a, w: self._terms(which, a, a3, h1 if which == 'f' else h2, s, w)
+                        npm = I * self._single(t('f', 1, 'V')) * self._single(t('g', -1, 'V'))
+                        nmp = -I * self._single(t('f', -1, 'U')) * self._single(t('g', 1, 'U'))
+                        npp = -I * self._nested(t('f', 1, 'U'), t('g', 1, 'U')) + I * self._nested(t('g', 1, 'V'), t('f', 1, 'V'))
+                        nmm = I * self._nested(t('f', -1, 'V'), t('g', -1, 'V')) - I * self._nested(t('g', -1, 'U'), t('f', -1, 'U'))
+                        n[(a3, h1, h2, s)] = {(1, -1): npm, (-1, 1): nmp, (1, 1): npp, (-1, -1): nmm}
+        N = {}
+        for (a3, h1, h2, s), d in n.items():
+            N[(a3, h1, h2, s)] = sum(a1 * a2 * (v + n[(a3, h1, h2, -s)][(a1, a2)]) for (a1, a2), v in d.items())
+        self.n = n
+        return N
+
+
 # ------------------------------------------------------------------------------------------------ soft part
 class SoftPart:
     """m_s[P](a3, h1, h2): the soft vertex with the polynomial weight P, exact or late-time."""
@@ -276,13 +365,20 @@ def coefficient(N, soft, mode='exact', hel_soft=None):
     return C
 
 
-def run_point(kappa, m, theta, dps_hard, dps_soft, segments, n=32, grid_pts=24, verbose=True):
-    """C for one (kappa, m): hard part at dps_hard (cached), soft vertex and assembly at dps_soft."""
-    with mp.workdps(dps_hard):
-        F = ASFermion(m, kappa)
-        N = HardPart(F, theta, segments=segments, n=n).compute(verbose)
+def run_point(kappa, m, theta, dps_hard, dps_soft, segments, n=32, grid_pts=24, verbose=True, hard='closed'):
+    """C for one (kappa, m): hard part in closed form (or on the contour at dps_hard, cached), soft vertex and
+    assembly at dps_soft."""
+    if hard == 'contour':
+        with mp.workdps(dps_hard):
+            F = ASFermion(m, kappa)
+            N = HardPart(F, theta, segments=segments, n=n).compute(verbose)
     with mp.workdps(dps_soft):
         F = ASFermion(m, kappa)
+        if hard == 'closed':
+            t0 = time.time()
+            N = HardPartClosed(F).compute()
+            if verbose:
+                print(f"   hard part in closed form in {time.time() - t0:.0f} s")
         N = {k: mp.mpmathify(v) for k, v in N.items()}
         S = SoftPart(F, grid=Grid(npts=grid_pts))
         t0 = time.time()
@@ -310,6 +406,7 @@ def main():
     ap.add_argument("--dps-soft", type=int, default=None)
     ap.add_argument("--grid-pts", type=int, default=24)
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--hard", choices=("closed", "contour"), default="closed")
     args = ap.parse_args()
     if args.point:
         k, m = args.point
@@ -326,7 +423,7 @@ def main():
         if args.dps_soft:
             st["dps_soft"] = args.dps_soft
         print(f"kappa = {kappa}, m = {m}: {st}")
-        out = run_point(kappa, m, grid_pts=args.grid_pts, **st)
+        out = run_point(kappa, m, grid_pts=args.grid_pts, hard=args.hard, **st)
         for k, v in out.items():
             print(f"   C[{k:6s}] = {mp.nstr(v, 12)}   |S|/P_zeta = {mp.nstr(4 * mp.pi ** 2 * abs(v), 5)}")
         ex = out['exact']

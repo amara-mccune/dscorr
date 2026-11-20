@@ -16,7 +16,7 @@ Follow-up to Sec. 5.2 of "Massive de Sitter correlators at one loop". New files 
 
 Needs Python >= 3.10 and mpmath >= 1.3.
 
-Equation numbers are those of v5.12 to v5.14 of the paper. In v5.16 the hard moment is Eq. (B.3), the scaling relation Eq. (B.5), and the two-line block with a numerator Eq. (B.6).
+Equation numbers are those of v5.12 to v5.14 of the paper. In v5.16 the hard moment is Eq. (B.3), the scaling relation Eq. (B.5), and the two-line block with a numerator Eq. (B.6). From v5.19 on, the coefficients c_N on k1 = k2 (Eq. (5.6) of the earlier drafts) and the expansion of C_3 are cited from the Letter, the series is Sec. 5.1, Eqs. (5.1)–(5.5), and the appendix equations are (A.3), (A.5), (A.6), and (A.11).
 
 What is computed. For r3 = 2 the soft loop momentum of the pair family sits on the segment from 0 to k3 (the term of Eq. (B.7) with j powers of J^2 carries 1/Gamma(r3 - 1 - j)), so the family is one parameter integral over three-site chains,
 

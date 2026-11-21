@@ -2256,5 +2256,619 @@
   "value": 3.46714232875238,
   "rtol": 1e-06,
   "where": "insert for Sec. 7.4 and notes (Nov 19, 2026)"
+ },
+ "gauge_ref/order 0 mu=1 r2=2": {
+  "value": [
+   "-0.001260034203500618747962270700565591333288",
+   "-0.0001284555661601800670786761416771080830031"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(0, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 0 mu=1 r2=3": {
+  "value": [
+   "-0.001645400901981158949198326767353091562274",
+   "0.003651647044341676176808136586490298382364"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(0, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 0 mu=1 r2=4": {
+  "value": [
+   "0.003832069664531355316013883553813471819269",
+   "0.006119748397313414600605652595339323253645"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(0, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=1 r2=2": {
+  "value": [
+   "-0.0003623347615237404949308184206500848111705",
+   "-0.0002559414136046979127831828573395595500883"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=1 r2=3": {
+  "value": [
+   "0.0002877662526123859642221056322464746695112",
+   "0.003624336768165065149187807913605877296137"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=1 r2=4": {
+  "value": [
+   "0.01266487953515443881312382169814480376243",
+   "-0.007356598797476367642761071074392510011426"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=1 r2=5": {
+  "value": [
+   "-0.02202570198325156332348609061510677394437",
+   "-0.02811914404908713711646968133835577626739"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "sm/wz nine-pair moments mu=1": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "closed tree coefficients against gauge_ref/..., orders 0 and 1; computed 1e-23"
+ },
+ "gauge_ref/order 0 mu=2 r2=2": {
+  "value": [
+   "-0.0000120422573761611317181864758794625364006",
+   "0.000004268919897306128111431444167238622583082"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(0, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 0 mu=2 r2=3": {
+  "value": [
+   "-0.00005868228224929115335871723901220960107136",
+   "0.0001021359835381096870891386275518760923328"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(0, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 0 mu=2 r2=4": {
+  "value": [
+   "0.00007167882161716444783254565892274039349218",
+   "0.0005845907809003122084327065724943214322584"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(0, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=2 r2=2": {
+  "value": [
+   "-0.0000004849934050805836412915822497358690658548",
+   "0.000000006382115505932622248053070464296014387175"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=2 r2=3": {
+  "value": [
+   "0.00000514049149500245528798284859730678271509",
+   "0.000004668211953486972166862556137394057382201"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=2 r2=4": {
+  "value": [
+   "0.00005505879147923527643969185477200383112694",
+   "-0.00005451511841931415053787062902730939590561"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "gauge_ref/order 1 mu=2 r2=5": {
+  "value": [
+   "-0.0001745857037609346497493331981510050322628",
+   "-0.000445231354418673575687131985891434223039"
+  ],
+  "rtol": 1e-20,
+  "where": "gauge_loop.py, GaugeLoop.order(1, dq) at 45 digits (code of 117c023)"
+ },
+ "sm/wz nine-pair moments mu=2": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "closed tree coefficients against gauge_ref/..., orders 0 and 1; computed 1e-23"
+ },
+ "dirac_ref/S(1) kappa=0 m=1": {
+  "value": [
+   "-0.00000424774429127045040810484563436",
+   "0.00000326489867055973820594382271515"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(3) kappa=0 m=1": {
+  "value": [
+   "-0.000000027322267665340152328145833477",
+   "0.000000526446808950441358811147942504"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(5) kappa=0 m=1": {
+  "value": [
+   "0.0000000111225818441102152957887391056",
+   "0.000000016663580445050251996391593534"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(7) kappa=0 m=1": {
+  "value": [
+   "3.58427611703948787690377844722e-10",
+   "1.86906817009311304089404702576e-10"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(1) kappa=0 m=1 r2=3": {
+  "value": [
+   "0.0000205722376440691414378239592101",
+   "0.0000179738227857925138345804054566"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "dirac_ref/S(3) kappa=0 m=1 r2=3": {
+  "value": [
+   "0.00000283272727624146824387307533317",
+   "-0.00000233322472733560039656395968116"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "dirac_ref/S(1) kappa=0 m=1 r2=4": {
+  "value": [
+   "0.0000449345569644812845864510136416",
+   "-0.0000514305941101728535945598980253"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "dirac_ref/S(3) kappa=0 m=1 r2=4": {
+  "value": [
+   "-0.0000152709973288380552786375924288",
+   "-0.000000087530500963877250809878751038"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "sm/top series m=1": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "closed tree coefficients against dirac_ref/...; computed 1e-29"
+ },
+ "dirac_ref/S(1) kappa=0 m=2": {
+  "value": [
+   "3.53929121796389851554812470971e-11",
+   "-2.01962558834574410214443191191e-10"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(3) kappa=0 m=2": {
+  "value": [
+   "-1.062647876104616297330762345e-11",
+   "-6.84983365114934930091572263677e-12"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(5) kappa=0 m=2": {
+  "value": [
+   "-3.19068142426011651319872620524e-13",
+   "1.31811139297789184478557622769e-13"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(7) kappa=0 m=2": {
+  "value": [
+   "-1.99324192853930590054301810835e-15",
+   "5.10614402053388523156488713053e-15"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at 30 digits (code of 117c023)"
+ },
+ "dirac_ref/S(1) kappa=0 m=2 r2=3": {
+  "value": [
+   "-0.00000000184266102744754917636702567643",
+   "-0.00000000136374191596926190262702842692"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "dirac_ref/S(3) kappa=0 m=2 r2=3": {
+  "value": [
+   "-8.43475921087764688921271370155e-11",
+   "1.03995005583842427014147071778e-10"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "dirac_ref/S(1) kappa=0 m=2 r2=4": {
+  "value": [
+   "-0.0000000123466926621889570422362191639",
+   "0.00000000512207938932996017395404310137"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "dirac_ref/S(3) kappa=0 m=2 r2=4": {
+  "value": [
+   "5.17463589447082783481630795405e-10",
+   "3.66195347194751530865313590522e-10"
+  ],
+  "rtol": 1e-20,
+  "where": "dirac_pair.py, DiracPair(m, 0).S(n) at r2 (code of 117c023)"
+ },
+ "sm/top series m=2": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "closed tree coefficients against dirac_ref/...; computed 1e-29"
+ },
+ "sm/density F2 vs w(Box)": {
+  "max": 1e-25,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "computed 9e-31"
+ },
+ "sm/density psi vs w(Box)": {
+  "max": 1e-25,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "computed 1e-30"
+ },
+ "sm/two routes wz mu=1": {
+  "max": 1e-10,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "five shapes, r1 = 2, 3, 4; third difference in k^2"
+ },
+ "sm/two routes wz mu=2": {
+  "max": 1e-10,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "five shapes, r1 = 2, 3, 4; third difference in k^2"
+ },
+ "sm/two routes wz mu=4": {
+  "max": 1e-10,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "five shapes, r1 = 2, 3, 4; third difference in k^2"
+ },
+ "sm/two routes top mu=1": {
+  "max": 1e-10,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "five shapes, r1 = 2, 3, 4; third difference in k^2"
+ },
+ "sm/two routes top mu=2": {
+  "max": 1e-10,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "five shapes, r1 = 2, 3, 4; third difference in k^2"
+ },
+ "sm/wz late-time term vs CWX times factor": {
+  "max": 1e-25,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "our late-time leading term equals CWX's Eq. (4.34) times (8/9)(1/2 - mu_1)^2 (1/4 - mu_1^2)^2/(23 - 6 mu_1)^2"
+ },
+ "sm/wz |ours/CWX| late-time mu=1": {
+  "value": 0.003072763028515241,
+  "rtol": 1e-09,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "modulus of the factor between our late-time coefficient and C_A of CWX"
+ },
+ "sm/wz |ours/CWX| late-time mu=2": {
+  "value": 0.101390952616807,
+  "rtol": 1e-09,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "modulus of the factor between our late-time coefficient and C_A of CWX"
+ },
+ "sm/wz |ours/CWX| late-time mu=4": {
+  "value": 3.451797385620915,
+  "rtol": 1e-09,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "modulus of the factor between our late-time coefficient and C_A of CWX"
+ },
+ "sm/top equation of motion of S": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "basis check; computed 1e-41"
+ },
+ "sm/top vector current": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "tr[gamma^a S S]/tr[S S]; computed 4e-42"
+ },
+ "sm/top trace vs density": {
+  "max": 1e-20,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/top weights vs Aoki et al.": {
+  "max": 1e-25,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "-4 (3 + 2k)(k + 1 + i M), Eqs. (3.15), (3.35) of arXiv:2605.28054"
+ },
+ "sm/|signal/leading| wz mu=1 R=0.3": {
+  "value": 0.971868433581,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| wz mu=1 R=0.5": {
+  "value": 0.994536175969,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| wz mu=1 R=1": {
+  "value": 3.92982596483,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/R10 complex wz mu=1": {
+  "value": 0.2266586263,
+  "rtol": 1e-06,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "largest R on k1 = k2 with the leading term within 10% (complex amplitude)"
+ },
+ "sm/I wz mu=1 R=1": {
+  "value": -0.0593075208694,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "complete I at k1 = k2 = k3 = 1/2, reference scheme, mu_R = 2"
+ },
+ "sm/|signal/leading| wz mu=2 R=0.3": {
+  "value": 0.981250270913,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| wz mu=2 R=0.5": {
+  "value": 0.942528350019,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| wz mu=2 R=1": {
+  "value": 0.760108823107,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/R10 complex wz mu=2": {
+  "value": 0.4992226598,
+  "rtol": 1e-06,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "largest R on k1 = k2 with the leading term within 10% (complex amplitude)"
+ },
+ "sm/I wz mu=2 R=1": {
+  "value": -0.0210577668732,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "complete I at k1 = k2 = k3 = 1/2, reference scheme, mu_R = 2"
+ },
+ "sm/|signal/leading| wz mu=4 R=0.3": {
+  "value": 1.01027797769,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| wz mu=4 R=0.5": {
+  "value": 1.02831608105,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| wz mu=4 R=1": {
+  "value": 1.09683325852,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/R10 complex wz mu=4": {
+  "value": 0.5107982359,
+  "rtol": 1e-06,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "largest R on k1 = k2 with the leading term within 10% (complex amplitude)"
+ },
+ "sm/I wz mu=4 R=1": {
+  "value": 5.30411623042,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "complete I at k1 = k2 = k3 = 1/2, reference scheme, mu_R = 2"
+ },
+ "sm/|signal/leading| top mu=1 R=0.3": {
+  "value": 1.03925101793,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| top mu=1 R=0.5": {
+  "value": 1.11645796083,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| top mu=1 R=1": {
+  "value": 1.67494122829,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/R10 complex top mu=1": {
+  "value": 0.4664032867,
+  "rtol": 1e-06,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "largest R on k1 = k2 with the leading term within 10% (complex amplitude)"
+ },
+ "sm/I top mu=1 R=1": {
+  "value": -0.00907653882216,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "complete I at k1 = k2 = k3 = 1/2, reference scheme, mu_R = 2"
+ },
+ "sm/|signal/leading| top mu=2 R=0.3": {
+  "value": 1.03493727208,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| top mu=2 R=0.5": {
+  "value": 1.10268619289,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| top mu=2 R=1": {
+  "value": 1.56029298244,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/R10 complex top mu=2": {
+  "value": 0.4725046507,
+  "rtol": 1e-06,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "largest R on k1 = k2 with the leading term within 10% (complex amplitude)"
+ },
+ "sm/I top mu=2 R=1": {
+  "value": -0.0513965887214,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "complete I at k1 = k2 = k3 = 1/2, reference scheme, mu_R = 2"
+ },
+ "sm/|signal/leading| higgs mu=1 R=0.3": {
+  "value": 1.01997904299,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| higgs mu=1 R=0.5": {
+  "value": 1.0582424194,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/|signal/leading| higgs mu=1 R=1": {
+  "value": 1.30286062284,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3"
+ },
+ "sm/R10 complex higgs mu=1": {
+  "value": 0.5960919536,
+  "rtol": 1e-06,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "largest R on k1 = k2 with the leading term within 10% (complex amplitude)"
+ },
+ "sm/I higgs mu=1 R=1": {
+  "value": -0.000540861320398,
+  "rtol": 1e-08,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "complete I at k1 = k2 = k3 = 1/2, reference scheme, mu_R = 2"
+ },
+ "spin/closed forms": {
+  "max": 1e-25,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "simplified ratios U_V, U_T2, V/S against the K-Bessel moments"
+ },
+ "spin/|U_T2| D=3+2i mu, mu=1": {
+  "value": 5.16756459127,
+  "rtol": 1e-09,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "|nu U(3 + 2 nu, 2)/(1 + 2 nu)|, spin-2 operator of dimension 3 + 2 nu, r2 = 2"
+ },
+ "spin/|U_O86| mu=1": {
+  "value": 18.6319191031,
+  "rtol": 1e-09,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "|U 2 D0/(D0 + 1)|, O_8,6 at leading order (isotropic part)"
+ },
+ "spin/O85 late-time soft vertex mu=1": {
+  "max": 1e-25,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "vanishes at r2 = 2"
+ },
+ "spin/|U_T2| D=3+2i mu, mu=2": {
+  "value": 7.18197887489,
+  "rtol": 1e-09,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "|nu U(3 + 2 nu, 2)/(1 + 2 nu)|, spin-2 operator of dimension 3 + 2 nu, r2 = 2"
+ },
+ "spin/|U_O86| mu=2": {
+  "value": 26.1736083308,
+  "rtol": 1e-09,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "|U 2 D0/(D0 + 1)|, O_8,6 at leading order (isotropic part)"
+ },
+ "spin/O85 late-time soft vertex mu=2": {
+  "max": 1e-25,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "vanishes at r2 = 2"
+ },
+ "spin/|U_T2| D=3+2i mu, mu=3": {
+  "value": 8.73873477184,
+  "rtol": 1e-09,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "|nu U(3 + 2 nu, 2)/(1 + 2 nu)|, spin-2 operator of dimension 3 + 2 nu, r2 = 2"
+ },
+ "spin/|U_O86| mu=3": {
+  "value": 32.9657337261,
+  "rtol": 1e-09,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "|U 2 D0/(D0 + 1)|, O_8,6 at leading order (isotropic part)"
+ },
+ "spin/O85 late-time soft vertex mu=3": {
+  "max": 1e-25,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "vanishes at r2 = 2"
+ },
+ "spin/O85 leading moment mu=1": {
+  "max": 1e-20,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "momentum-space moment over the closed form, constant in r2 = 2, 3, 4; computed 1e-30"
+ },
+ "spin/T2 structure mu=1": {
+  "max": 1e-20,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "two structure functions fitted at r2 = 2, 3 predict r2 = 4, 5; computed 1e-29"
+ },
+ "spin/O85 leading moment mu=2": {
+  "max": 1e-20,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "momentum-space moment over the closed form, constant in r2 = 2, 3, 4; computed 1e-30"
+ },
+ "spin/T2 structure mu=2": {
+  "max": 1e-20,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "two structure functions fitted at r2 = 2, 3 predict r2 = 4, 5; computed 1e-29"
+ },
+ "spin/FF structure b/a = 4/3": {
+  "max": 1e-15,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "computed 1e-23"
+ },
+ "spin/density FFdual vs w(Box)": {
+  "max": 1e-25,
+  "where": "SM Templates insert for Sec. 6.2"
+ },
+ "spin/FFdual nine pairs vs U": {
+  "max": 1e-20,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "mu = 1, r2 = 2, 3; computed 2e-23"
+ },
+ "spin/FFdual nine pairs vs closed form": {
+  "max": 1e-20,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "modulus; the ratio is the phase i of the hard-end convention"
+ },
+ "sm/density dh vs w(Box)": {
+  "max": 1e-25,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "(d h)^2 of CWX, Eq. (4.18)"
+ },
+ "sm/dh late-time term vs C_DH": {
+  "max": 1e-25,
+  "where": "SM Templates inserts for Sec. 6.3",
+  "note": "control: CWX's Eq. (4.20)-(4.21) for |D_mu H|^2 is reproduced"
+ },
+ "spin/O86 Proca lines mu=1": {
+  "max": 1e-16,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "soft moment of F_mr F_n^r with Proca lines, all polarizations, r2 = 2, 3, 4: exact/late against the closed ratios, exact against the closed forms"
+ },
+ "spin/O86 Proca lines mu=2": {
+  "max": 1e-16,
+  "where": "SM Templates insert for Sec. 6.2",
+  "note": "soft moment of F_mr F_n^r with Proca lines, all polarizations, r2 = 2, 3, 4: exact/late against the closed ratios, exact against the closed forms"
  }
 }

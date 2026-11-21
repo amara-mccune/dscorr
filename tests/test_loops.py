@@ -182,6 +182,86 @@ def test_higgs_portal():
         assert ok("higgs/I mu=1 u=0.5", H.calI(half, half, half))
 
 
+def test_sm_templates_densities_and_closed_forms():
+    """W/Z and top-quark loops at every shape: pair densities, tree weights, and the closed squeezed coefficients."""
+    import sm_templates as SM
+    with mp.workdps(30):
+        w = SM.check_densities()
+        assert w['F2'] < mp.mpf(10) ** -25 and w['psi'] < mp.mpf(10) ** -25
+        # top quark: the series of dirac_pair.py from the closed tree coefficients
+        for N in range(4):
+            ref = TABLE[f"dirac_ref/S({2 * N + 1}) kappa=0 m=1"]['value']
+            assert abs(SM.top_series('1', N) / mp.mpc(mp.mpf(ref[0]), mp.mpf(ref[1])) - 1) < mp.mpf(10) ** -20
+        assert ok("dirac_orders/|S(3)/S(1)| kappa=0 m=1", abs(SM.top_series('1', 1) / SM.top_series('1', 0)))
+        # the Higgs portal through the same class reproduces higgs_portal.py
+        H = SM.SMLoop('higgs', '1')
+        half = mp.mpf(1) / 2
+        assert ok("higgs/I mu=1 u=0.5", H.calI(half, half, half))
+        assert ok("sm/|signal/leading| wz mu=1 R=0.5", abs(SM.SMLoop('wz', '1', mmax=4).ratio('0.5')))
+        assert ok("sm/|signal/leading| top mu=1 R=0.5", abs(SM.SMLoop('top', '1', mmax=4).ratio('0.5')))
+    with mp.workdps(45):
+        # W/Z: nine-pair soft moments of gauge_loop.py (stored at 45 digits), orders 0 and 1 of the hard vertex
+        for order, dq in ((0, 0), (0, 2), (1, 0), (1, 3)):
+            ref = TABLE[f"gauge_ref/order {order} mu=1 r2={2 + dq}"]['value']
+            assert abs(SM.wz_soft_moment('1', order, dq) / mp.mpc(mp.mpf(ref[0]), mp.mpf(ref[1])) - 1) < mp.mpf(10) ** -20
+        assert ok("gauge_orders/|E_1/L_1| mu=2", SM.wz_E1_over_L1('2'))
+
+
+def test_sm_templates_two_routes():
+    """Single sums against the invariant-distance integral (third difference in k^2), one shape and one power."""
+    import sm_templates as SM
+    with mp.workdps(25):
+        assert SM.two_routes('wz', '1', ('0.2',), mmax=300, r1s=(2,)) < 1e-12
+        assert SM.two_routes('top', '1', ('0.2',), mmax=300, r1s=(4,)) < 1e-12
+
+
+def test_spin_bilinears_closed_forms():
+    """Soft vertex of a tensor bilinear: the factors for the structures S, V, T2, and the structure of F_mr F_n^r."""
+    import spin_bilinears as SB
+    from universal import U
+    with mp.workdps(30):
+        for D in (3 + 2 * I, mp.mpf('2.4')):
+            for r2 in (2, 3):
+                assert abs(SB.V_S(D, r2) / SB.V_S(D, r2, False) / U(D, r2) - 1) < mp.mpf(10) ** -25
+                assert abs(SB.V_T2(D, r2) / SB.V_T2(D, r2, False) / SB.U_T2(D, r2) - 1) < mp.mpf(10) ** -25
+                assert abs(SB.V_V(D, r2) / SB.V_V(D, r2, False) / SB.U_V(D, r2) - 1) < mp.mpf(10) ** -25
+        D0 = 3 + 2 * I
+        assert abs(SB.V_V(D0, 2, False) + SB.V_S(D0, 2, False) / 4) < mp.mpf(10) ** -25 * abs(SB.V_S(D0, 2, False))
+        r, res = SB.structure_FF(I * 1)
+        assert abs(r - mp.mpf(4) / 3) < 1e-15 and res < 1e-15
+        assert ok("spin/|U_O86| mu=1", abs(SB.U_O86(D0, 2)))
+
+
+@pytest.mark.slow
+def test_wz_nine_pairs_against_closed_form():
+    """The nine-pair soft moment of gauge_loop.py itself (not the stored value) against the closed tree coefficient."""
+    import gauge_loop as GL
+    import sm_templates as SM
+    with mp.workdps(45):
+        G = GL.GaugeLoop('1')
+        assert abs(G.order(0, 0) / SM.wz_soft_moment('1', 0, 0) - 1) < mp.mpf(10) ** -20
+
+
+@pytest.mark.slow
+def test_proca_tensor_vertex():
+    """O_8,6 with Proca lines and all polarizations: isotropic and P_2 parts of the soft moment against the closed forms."""
+    import spin_bilinears as SB
+    with mp.workdps(30):
+        assert max(SB.proca_tensor('1', r2s=(2, 3))) < mp.mpf(10) ** -16
+
+
+@pytest.mark.slow
+def test_tensor_vertex_momentum_space():
+    """O_8,5 with scalar lines: the momentum-space soft moment follows the closed form V + S/4 in the soft power."""
+    import spin_bilinears as SB
+    with mp.workdps(30):
+        nu = I * 1
+        O = SB.TensorVertex(nu)
+        D0 = 3 + 2 * nu
+        rat = [O.moment(r2) / (SB.V_V(D0, r2) + SB.V_S(D0, r2) / 4) for r2 in (2, 3)]
+        assert abs(rat[1] / rat[0] - 1) < mp.mpf(10) ** -20
+
+
 def test_dirac_top_quark():
     """kappa = 0: the leading pair operator and the even orders are absent; the series starts at n = 1."""
     import dirac_pair as DP

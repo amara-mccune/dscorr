@@ -1,0 +1,67 @@
+{
+ "helical_closed/simplest moment, explicit formula": {
+  "max": 1e-20,
+  "where": "App. C, the paragraph on the Kampe de Feriet form",
+  "note": "J(-1,-1,q;K1,K2) from Gauss functions at 1/2 and the series Xi against ext/helclosed.py; mixed (q = 1, 2), equal, and opposite pairs at (mu, kappa) = (1, 0.75): 1.3e-28 at 28 digits"
+ },
+ "helical_closed/moments vs soft_J mu=1,kappa=0.75": {
+  "max": 1e-28,
+  "where": "Sec. 7.2, App. C",
+  "note": "24 moments (5 closable, 6 mixed, 13 with y^-2), series at 36 digits against soft_J at 60 digits with Grid(npts=40): 3.5e-33"
+ },
+ "helical_closed/enhanced pair at kappa=mu vs soft_J": {
+  "max": 1e-24,
+  "where": "Sec. 7.2",
+  "note": "c1 = c2 = 1/2 at mu = kappa = 1; three moments at 30 digits: 1.5e-30"
+ },
+ "helical_closed/M_A vs soft_J mu=1 kappa=1": {
+  "max": 1e-17,
+  "where": "Sec. 7.2",
+  "note": "30 digits: 1.05e-20, limited by soft_J, whose moments with y^-2 are good to 1e-20 at 30 digits"
+ },
+ "helical_closed/M_A mu=1 kappa=1": {
+  "value": [
+   "0.0026656164509524639019624",
+   "0.0004029182978211616666729"
+  ],
+  "rtol": 1e-16,
+  "where": "Sec. 7.2",
+  "note": "soft moments of ext/helclosed.py (165 moments, 60 at kappa = 0), Nov. 20 run at 30 digits; agrees with M_A from soft_J to 1.05e-20 (30 digits). Stored as strings."
+ },
+ "helical_closed/M_A mu=2 kappa=2.5": {
+  "value": [
+   "0.5331169843577988935995458",
+   "0.6012899009929671441875909"
+  ],
+  "rtol": 1e-16,
+  "where": "Sec. 7.2",
+  "note": "soft moments of ext/helclosed.py (165 moments, 60 at kappa = 0), Nov. 20 run at 30 digits; agrees with M_A from soft_J to 6.9e-22 (30 digits). Stored as strings."
+ },
+ "helical_closed/M_A mu=3 kappa=3.75": {
+  "value": [
+   "1.8862725684584604329482714",
+   "19.291241997450251899952009"
+  ],
+  "rtol": 1e-16,
+  "where": "Sec. 7.2",
+  "note": "soft moments of ext/helclosed.py (165 moments, 60 at kappa = 0), Nov. 20 run at 30 digits; agrees with M_A from soft_J to 9.9e-20 (30 digits). Stored as strings."
+ },
+ "helical_closed/M_A mu=1 kappa=0.75": {
+  "value": [
+   "0.0002608081831356082976737",
+   "0.0000540491509926418425892"
+  ],
+  "rtol": 1e-16,
+  "where": "Sec. 7.2",
+  "note": "soft moments of ext/helclosed.py (165 moments, 60 at kappa = 0), Nov. 20 run at 30 digits; agrees with M_A from soft_J to 3.9e-20 (30 digits). Stored as strings."
+ },
+ "helical_closed/M_A mu=1 kappa=0": {
+  "value": [
+   "-0.000046971539012345940689",
+   "0.0000432801062395871164758"
+  ],
+  "rtol": 1e-16,
+  "where": "Sec. 7.2",
+  "note": "soft moments of ext/helclosed.py (165 moments, 60 at kappa = 0), Nov. 20 run at 30 digits; agrees with M_A from soft_J to 5.5e-20 (30 digits). Stored as strings."
+ }
+}

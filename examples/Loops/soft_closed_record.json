@@ -1,0 +1,83 @@
+{
+ "soft_closed/scalar vs Eq. (3.17)": {
+  "max": 1e-24,
+  "where": "Sec. 3.3, Eq. (3.17)",
+  "note": "J(0,0,q;0,0), q = 1, 2, 3, mu = 1, 30 digits: 2.4e-29"
+ },
+ "soft_closed/one Barnes integral, Dirac": {
+  "max": 1e-24,
+  "where": "Sec. 8.2",
+  "note": "J(-1,-1,0;K,K), K = -1/2 + 1.3 i, m = 1: 2e-31"
+ },
+ "soft_closed/one Barnes integral, helical": {
+  "max": 1e-24,
+  "where": "Sec. 7.2",
+  "note": "J(-1,-1,0;K,K), K = 0.75 i, mu = 1: 2e-31"
+ },
+ "soft_closed/moments vs soft_J kappa=1.3,m=1": {
+  "max": 1e-22,
+  "where": "Sec. 8.2",
+  "note": "24 moments, four kinds of Dirac pair, 30 digits; 4e-29 at 32 digits for 28 moments"
+ },
+ "soft_closed/C kappa=1.3,m=1": {
+  "value": [
+   "-0.000610433622423580861574176741705",
+   "0.000151140525456825058719431641054"
+  ],
+  "rtol": 1e-20,
+  "where": "Sec. 8.2, Table 4",
+  "note": "closed-form soft moments (ext/softclosed.py), Nov. 20 run; hard part of ext/fermitri.py; equals twice Song et al. to 3.2e-29 and C with soft_J to 4.4e-29 (30 digits). Stored as strings (30 digits)."
+ },
+ "soft_closed/C kappa=5,m=1": {
+  "value": [
+   "-1.063758421328667001584609169494374598462",
+   "0.1083154380523512519825057802044807351881"
+  ],
+  "rtol": 1e-20,
+  "where": "Sec. 8.2, Table 4",
+  "note": "closed-form soft moments (ext/softclosed.py), Nov. 20 run; hard part of ext/fermitri.py; equals twice Song et al. to 1.7e-40 and C with soft_J to 3.7e-33 (45 digits). Stored as strings (40 digits)."
+ },
+ "soft_closed/C kappa=10,m=1": {
+  "value": [
+   "-17.5776541692037919473746191916291332934",
+   "0.492505008074984062583348404817811148246"
+  ],
+  "rtol": 1e-20,
+  "where": "Sec. 8.2, Table 4",
+  "note": "closed-form soft moments (ext/softclosed.py), Nov. 20 run; hard part of ext/fermitri.py; equals twice Song et al. to 1.7e-44 and C with soft_J to 5.7e-24 (60 digits). Stored as strings (40 digits)."
+ },
+ "soft_closed/C kappa=20,m=2": {
+  "value": [
+   "-230.8630784405389109805820899450192114903",
+   "-6.511448688285626548242394130296792117527"
+  ],
+  "rtol": 1e-20,
+  "where": "Sec. 8.2, Table 4",
+  "note": "closed-form soft moments (ext/softclosed.py), Nov. 20 run, 90 digits; hard part of ext/fermitri.py; equals twice Song et al. to 8.5e-50 (90 digits) and C with soft_J on Grid(npts=40) to 5.1e-32 (80 digits). The closed form reproduces it to 5.8e-25 at 30 digits. Stored as strings (40 digits)."
+ },
+ "soft_closed/C vs soft_J kappa=1.3,m=1": {
+  "max": 1e-22,
+  "where": "Sec. 8.2",
+  "note": "both at 30 digits: 4.4e-29"
+ },
+ "soft_closed/C vs 2 Song kappa=1.3,m=1": {
+  "max": 1e-20,
+  "where": "Sec. 8.2",
+  "note": "C from closed-form soft moments at 30 digits; Song et al. at 30, 45, 60, and 90 digits"
+ },
+ "soft_closed/C vs 2 Song kappa=5,m=1": {
+  "max": 1e-20,
+  "where": "Sec. 8.2",
+  "note": "C from closed-form soft moments at 30 digits; Song et al. at 30, 45, 60, and 90 digits"
+ },
+ "soft_closed/C vs 2 Song kappa=10,m=1": {
+  "max": 1e-20,
+  "where": "Sec. 8.2",
+  "note": "C from closed-form soft moments at 30 digits; Song et al. at 30, 45, 60, and 90 digits"
+ },
+ "soft_closed/C vs 2 Song kappa=20,m=2": {
+  "max": 1e-20,
+  "where": "Sec. 8.2",
+  "note": "C from closed-form soft moments at 30 digits; Song et al. at 30, 45, 60, and 90 digits"
+ }
+}

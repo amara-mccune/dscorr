@@ -1,0 +1,1337 @@
+{
+ "description": "Record for signal_sizes.py. 'inputs' are numbers that take minutes to compute (helical_triangle.leading, Nov 20-21, 2026, at the working precision 'dps') or are taken from the literature. 'values' are the numbers of the f_NL table (Signal Sizes handoff, Nov 20-21, 2026), in the format of values_of_record.json.",
+ "inputs": {
+  "helical": {
+   "1,1": {
+    "M_A": [
+     "0.002665616450952463902",
+     "0.00040291829782116166664"
+    ],
+    "M0_isosceles": [
+     "0.00016727140507080806914",
+     "-0.0016347753245084343438"
+    ],
+    "R_hard": [
+     "0.0804569794517766",
+     "0.787530824895297"
+    ],
+    "m2_hard": "1.25",
+    "dps": 30
+   },
+   "2,2": {
+    "M_A": [
+     "0.0028367942641704247564",
+     "0.00091182209279408418017"
+    ],
+    "M0_isosceles": [
+     "0.00050035241378314455929",
+     "-0.0013900389449047697525"
+    ],
+    "R_hard": [
+     "-0.0623120856887569",
+     "2.0967282958374"
+    ],
+    "m2_hard": "4.25",
+    "dps": 30
+   },
+   "2,2.25": {
+    "M_A": [
+     "0.041254561241820962768",
+     "0.026610025248799541476"
+    ],
+    "M0_isosceles": [
+     "0.038287791291086579511",
+     "-0.023027964308142255259"
+    ],
+    "R_hard": [
+     "-0.340789607639602",
+     "0.718181230293069"
+    ],
+    "m2_hard": "4.25",
+    "dps": 30
+   },
+   "2,2.5": {
+    "M_A": [
+     "0.5331169843577988936",
+     "0.60128990099296714419"
+    ],
+    "M0_isosceles": [
+     "1.6693837296000241833",
+     "-0.013236372793652674828"
+    ],
+    "R_hard": [
+     "-0.242395324537003",
+     "0.286142185409097"
+    ],
+    "m2_hard": "4.25",
+    "dps": 30
+   },
+   "2,3": {
+    "M_A": [
+     "39.165792616855686585",
+     "223.00332627861185737"
+    ],
+    "M0_isosceles": [
+     "2446.3643777993234601",
+     "1948.0023445927703241"
+    ],
+    "R_hard": [
+     "-0.0791055784726756",
+     "0.0722179192544075"
+    ],
+    "m2_hard": "4.25",
+    "dps": 30
+   },
+   "3,3": {
+    "M_A": [
+     "0.0029879386456599819738",
+     "0.0023821471671247225277"
+    ],
+    "M0_isosceles": [
+     "0.00091781949632689021242",
+     "-0.0012846431181426082309"
+    ],
+    "R_hard": [
+     "0.240237553343356",
+     "3.87368744592045"
+    ],
+    "m2_hard": "9.25",
+    "dps": 30
+   },
+   "3,3.5": {
+    "M_A": [
+     "0.40041038648782747949",
+     "1.0047693734206586713"
+    ],
+    "M0_isosceles": [
+     "2.0463608623415933965",
+     "-0.071879415210418432975"
+    ],
+    "R_hard": [
+     "-0.250926012920063",
+     "0.711530249747226"
+    ],
+    "m2_hard": "9.25",
+    "dps": 30
+   },
+   "3,3.75": {
+    "M_A": [
+     "1.8862725684584604343",
+     "19.291241997450251901"
+    ],
+    "M0_isosceles": [
+     "89.235887765126912865",
+     "24.164315358723522353"
+    ],
+    "R_hard": [
+     "-0.137900786400661",
+     "0.367102706314354"
+    ],
+    "m2_hard": "9.25",
+    "dps": 30
+   },
+   "3,4": {
+    "M_A": [
+     "-68.058514562764314579",
+     "349.82566794493573037"
+    ],
+    "M0_isosceles": [
+     "3992.1942240847919485",
+     "2147.4878719994570113"
+    ],
+    "R_hard": [
+     "-0.0639109784592671",
+     "0.206368981535494"
+    ],
+    "m2_hard": "9.25",
+    "dps": 30
+   },
+   "4,4": {
+    "M_A": [
+     "0.0035492942214681505364",
+     "0.0033823346517731069539"
+    ],
+    "M0_isosceles": [
+     "0.0010047458817899750173",
+     "-0.0014203316666818957958"
+    ],
+    "R_hard": [
+     "0.877418863910041",
+     "5.78545544235796"
+    ],
+    "m2_hard": "16.25",
+    "dps": 40
+   },
+   "4,4.25": {
+    "M_A": [
+     "0.03571527705458353007",
+     "0.07608222957893144748"
+    ],
+    "M0_isosceles": [
+     "0.056537715060015582187",
+     "-0.023670814580489462906"
+    ],
+    "R_hard": [
+     "-0.0816401119319948",
+     "2.48105162167985"
+    ],
+    "m2_hard": "16.25",
+    "dps": 40
+   },
+   "4,4.5": {
+    "M_A": [
+     "0.13000073669226851359",
+     "1.4532075662780147784"
+    ],
+    "M0_isosceles": [
+     "2.4847140883997685576",
+     "0.026478753201486822627"
+    ],
+    "R_hard": [
+     "-0.109352150838492",
+     "1.19389752951299"
+    ],
+    "m2_hard": "16.25",
+    "dps": 40
+   },
+   "4,4.75": {
+    "M_A": [
+     "-6.1708452722492540341",
+     "25.155609242457536466"
+    ],
+    "M0_isosceles": [
+     "106.63022273437982447",
+     "31.993478076756084009"
+    ],
+    "R_hard": [
+     "-0.0287607251726716",
+     "0.625844714722349"
+    ],
+    "m2_hard": "16.25",
+    "dps": 40
+   },
+   "4,5": {
+    "M_A": [
+     "-247.93696088700090191",
+     "401.23428740123928579"
+    ],
+    "M0_isosceles": [
+     "4800.9526810432530072",
+     "2508.9696862023674775"
+    ],
+    "R_hard": [
+     "0.0250749472597834",
+     "0.345832958185401"
+    ],
+    "m2_hard": "16.25",
+    "dps": 40
+   },
+   "5,5": {
+    "M_A": [
+     "0.0035524222150356207807",
+     "0.0042264464088922456585"
+    ],
+    "M0_isosceles": [
+     "0.0010361134975747053346",
+     "-0.0013384817347078461735"
+    ],
+    "R_hard": [
+     "1.7292861126686",
+     "7.77649562805211"
+    ],
+    "m2_hard": "25.25",
+    "dps": 40
+   },
+   "5,5.5": {
+    "M_A": [
+     "-0.063247435963370466633",
+     "1.814998669120624482"
+    ],
+    "M0_isosceles": [
+     "2.7987815772622426166",
+     "-0.15306688929131868725"
+    ],
+    "R_hard": [
+     "0.154353919133173",
+     "1.68953987129522"
+    ],
+    "m2_hard": "25.25",
+    "dps": 40
+   },
+   "5,5.75": {
+    "M_A": [
+     "-13.331696338766746274",
+     "31.10471487645398803"
+    ],
+    "M0_isosceles": [
+     "129.87128751354909531",
+     "28.48218746506368809"
+    ],
+    "R_hard": [
+     "0.166590779403499",
+     "0.875520722665856"
+    ],
+    "m2_hard": "25.25",
+    "dps": 40
+   },
+   "5,6": {
+    "M_A": [
+     "-441.91573032664793095",
+     "458.39008776788724338"
+    ],
+    "M0_isosceles": [
+     "6165.834269723839337",
+     "2671.8507844080671638"
+    ],
+    "R_hard": [
+     "0.171874623196629",
+     "0.464239787002256"
+    ],
+    "m2_hard": "25.25",
+    "dps": 40
+   },
+   "6,6": {
+    "M_A": [
+     "0.0038728046146261036576",
+     "0.0051926302936635314429"
+    ],
+    "M0_isosceles": [
+     "0.00109233806253002208",
+     "-0.0013912441625781523518"
+    ],
+    "R_hard": [
+     "2.73889299135756",
+     "9.84075952829195"
+    ],
+    "m2_hard": "36.25",
+    "dps": 40
+   },
+   "6,6.5": {
+    "M_A": [
+     "-0.35656105349357951976",
+     "2.0694975639793835645"
+    ],
+    "M0_isosceles": [
+     "2.9493338344131088289",
+     "-0.1815511965630647775"
+    ],
+    "R_hard": [
+     "0.518633604569143",
+     "2.18092909255413"
+    ],
+    "m2_hard": "36.25",
+    "dps": 40
+   },
+   "8,8.5": {
+    "M_A": [
+     "-0.85335965285668392807",
+     "2.5469145260131071398"
+    ],
+    "M0_isosceles": [
+     "3.2264787214384478771",
+     "-0.41231188538051600352"
+    ],
+    "R_hard": [
+     "1.49366203522824",
+     "3.12129334868503"
+    ],
+    "m2_hard": "64.25",
+    "dps": 60
+   },
+   "8,8.75": {
+    "M_A": [
+     "-34.635083341572248484",
+     "38.345956678973194073"
+    ],
+    "M0_isosceles": [
+     "160.88897621864591332",
+     "11.185726856056834952"
+    ],
+    "R_hard": [
+     "1.11599195842219",
+     "1.45969839197113"
+    ],
+    "m2_hard": "64.25",
+    "dps": 60
+   },
+   "10,10.5": {
+    "M_A": [
+     "-1.3483561866909012129",
+     "2.9217544739712378434"
+    ],
+    "M0_isosceles": [
+     "3.3990530402605941411",
+     "-0.61112555127104719343"
+    ],
+    "R_hard": [
+     "2.73862145777963",
+     "3.98228347102436"
+    ],
+    "m2_hard": "100.25",
+    "dps": 60
+   },
+   "15,15.4": {
+    "M_A": [
+     "-0.52685425807751984459",
+     "1.1926278551021456962"
+    ],
+    "M0_isosceles": [
+     "0.7245595062475263817",
+     "-0.25908755716074376005"
+    ],
+    "R_hard": [
+     "7.85165077754191",
+     "8.39821122430878"
+    ],
+    "m2_hard": "225.25",
+    "dps": 80
+   },
+   "20,20.3": {
+    "M_A": [
+     "-0.13865613079647049108",
+     "0.45617756507286194857"
+    ],
+    "M0_isosceles": [
+     "0.14624091569677700598",
+     "-0.076982816984828586692"
+    ],
+    "R_hard": [
+     "16.0769970914031",
+     "16.3830234694083"
+    ],
+    "m2_hard": "400.25",
+    "dps": 100
+   }
+  },
+  "helical_note": "M_A: contracted bubble at unit couplings (Sec. 7.2). M0_isosceles: triangle at unit couplings on k1 = k2 (monopole minus half the quadrupole). R_hard = -m^2 e^(-2 pi Omega) monopole/M_A (Sec. 7.3).",
+  "wx_map_check": {
+   "M_late_pp_times_R_WX mu=kappa=3": "0.00234397549705269",
+   "note": "|Eq. (C.12) for the (+,+) pair times Eq. (7.13)| at mu = kappa = 3"
+  },
+  "song_table_I": [
+   {
+    "Lambda_over_H": 60,
+    "M": 4,
+    "C_abs": 1.35e-07,
+    "f_CC": 0.00052,
+    "f_NLoc": 7.33e-06
+   },
+   {
+    "Lambda_over_H": 30,
+    "M": 4,
+    "C_abs": 3.58e-06,
+    "f_CC": 0.0138,
+    "f_NLoc": 5.44e-05
+   },
+   {
+    "Lambda_over_H": 60,
+    "M": 8,
+    "C_abs": 4.96e-10,
+    "f_CC": 1.91e-06,
+    "f_NLoc": 4.74e-07
+   },
+   {
+    "Lambda_over_H": 60,
+    "M": 10,
+    "C_abs": 4.9e-12,
+    "f_CC": 1.89e-08,
+    "f_NLoc": 3.4e-08
+   }
+  ],
+  "song_cplus": [
+   {
+    "M": "1",
+    "lam": "10",
+    "abs_Cplus": "0.00879227625923896",
+    "dps": 30
+   },
+   {
+    "M": "2",
+    "lam": "20",
+    "abs_Cplus": "0.0144346804539913",
+    "dps": 80
+   },
+   {
+    "M": "3",
+    "lam": "19.6435",
+    "abs_Cplus": "0.00347479227080698",
+    "dps": 80
+   },
+   {
+    "M": "2",
+    "lam": "19.6435",
+    "abs_Cplus": "0.0139873869607523",
+    "dps": 80
+   },
+   {
+    "M": "1",
+    "lam": "19.6435",
+    "abs_Cplus": "0.0129368524665895",
+    "dps": 80
+   },
+   {
+    "M": "5",
+    "lam": "19.6435",
+    "abs_Cplus": "1.2283290236438e-5",
+    "dps": 80
+   },
+   {
+    "M": "1",
+    "lam": "20",
+    "abs_Cplus": "0.0130178051380894",
+    "dps": 80
+   },
+   {
+    "M": "3",
+    "lam": "20",
+    "abs_Cplus": "0.00387174819735365",
+    "dps": 80
+   },
+   {
+    "M": "5",
+    "lam": "20",
+    "abs_Cplus": "1.19295092938163e-5",
+    "dps": 80
+   },
+   {
+    "M": "4",
+    "lam": "20",
+    "abs_Cplus": "0.000377093150634866",
+    "dps": 80
+   }
+  ],
+  "song_table_I_check": {
+   "M": "4",
+   "lam": "57.81",
+   "abs_Cplus": "0.0291210921706424",
+   "arg_Cplus": "-2.97057",
+   "dps": 220,
+   "note": "Lambda/H = 60 and lam = 57.81 are the inputs of Table I of Song et al. (their Eq. (H6)); the table has H^3 |C_+| = 1.35e-7, arg C_+ = -2.97, f_CC = 5.20e-4"
+  },
+  "song_cplus_note": "|C_+| of Song et al. (their Eqs. (12), (14), (17)) at Lambda = 1, evaluated with song_check.Cplus at the working precision 'dps' (Nov 21, 2026).",
+  "song_note": "Table I of Song, You, Cheng, He and Chen, arXiv:2611.23220v1 (App. H.2)."
+ },
+ "values": {
+  "A/f_NL exact kappa=10,m=1": {
+   "value": 4.37337568914e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL late kappa=10,m=1": {
+   "value": 3.86467046255e-08,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL Eq.(60) kappa=10,m=1": {
+   "value": 2.05421070736e-08,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL exact kappa=20,m=2": {
+   "value": 5.74383892568e-05,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL late kappa=20,m=2": {
+   "value": 8.58227606341e-07,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL Eq.(60) kappa=20,m=2": {
+   "value": 4.95946345023e-07,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL exact kappa=5,m=1": {
+   "value": 2.6593968353e-07,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL late kappa=5,m=1": {
+   "value": 7.23197536419e-09,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL Eq.(60) kappa=5,m=1": {
+   "value": 3.87458082049e-09,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL exact kappa=1.3,m=1": {
+   "value": 1.5640783683e-10,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL late kappa=1.3,m=1": {
+   "value": 6.56323529291e-11,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "A/f_NL Eq.(60) kappa=1.3,m=1": {
+   "value": 1.4367947865e-11,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3 and Table 4"
+  },
+  "B1/Higgs template mu=0.5": {
+   "value": 0.000178681155312,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs |U| mu=0.5": {
+   "value": 10.1234289194,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs template mu=1": {
+   "value": 8.96391176079e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs |U| mu=1": {
+   "value": 11.5550257042,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs template mu=2": {
+   "value": 2.47304447984e-08,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs |U| mu=2": {
+   "value": 14.8060287511,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs template mu=4": {
+   "value": 1.76344442588e-13,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs |U| mu=4": {
+   "value": 20.2844278883,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs template nu=1.4": {
+   "value": 0.597683198276,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs U nu=1.4": {
+   "value": 1.05647525389,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs template nu=1.45": {
+   "value": 2.45724545696,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs U nu=1.45": {
+   "value": 1.02959046736,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/|C_H| cosh(2 pi mu) mu=0.1": {
+   "value": 1.52579048648,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/Higgs exact mu=1 untuned": {
+   "value": 9.07014525285e-11,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/gauge template mu=1": {
+   "value": 0.0355535632168,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/gauge template mu=2": {
+   "value": 1.94367176657e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/|C_A| cosh(2 pi mu) mu=0.1": {
+   "value": 1825.38494134,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top N4 m=1": {
+   "value": [
+    0.000128164732415,
+    -0.000633603266665
+   ],
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top lower powers m=1": {
+   "max": 1e-12,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)",
+   "note": "computed 6.46e-16"
+  },
+  "B1/top template m=1": {
+   "value": 0.000646214408737,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top first term exact m=1": {
+   "value": 0.00209971057283,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top CWX map m=1": {
+   "max": 1e-20,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)",
+   "note": "computed 2.02e-30"
+  },
+  "B1/top N4 m=2": {
+   "value": [
+    2.25998871961e-06,
+    -2.36806471378e-06
+   ],
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top lower powers m=2": {
+   "max": 1e-12,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)",
+   "note": "computed 3.27e-18"
+  },
+  "B1/top template m=2": {
+   "value": 8.2719244239e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top first term exact m=2": {
+   "value": 4.59548475365e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)"
+  },
+  "B1/top CWX map m=2": {
+   "max": 1e-20,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)",
+   "note": "computed 1.44e-30"
+  },
+  "B1/top flat-space limit": {
+   "max": 1e-06,
+   "where": "Secs. 6.2-6.3; CWX 1612.08122 Eqs. (4.15)-(4.41)",
+   "note": "computed 7.5e-9"
+  },
+  "B2/their (b) mu=1 kappa=1": {
+   "value": 9.81494751847e-10,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=1 kappa=1": {
+   "value": 2.12872099134e-09,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=1 kappa=1": {
+   "value": 2.60161878544e-09,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=2 kappa=2": {
+   "value": 1.78572688942e-08,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=2 kappa=2": {
+   "value": 7.52175155707e-08,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=2 kappa=2": {
+   "value": 7.67044109029e-08,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=2 kappa=2.25": {
+   "value": 1.20053053696e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=2 kappa=2.25": {
+   "value": 2.27479578072e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=2 kappa=2.25": {
+   "value": 2.1613647538e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=2 kappa=2.5": {
+   "value": 0.000115421702714,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=2 kappa=2.5": {
+   "value": 8.49973989902e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=2 kappa=2.5": {
+   "value": 8.19130899121e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=2 kappa=3": {
+   "value": 1.37357832606,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=2 kappa=3": {
+   "value": 0.159218004209,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=2 kappa=3": {
+   "value": 0.158204962422,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=3 kappa=3": {
+   "value": 1.3301651248e-07,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=3 kappa=3": {
+   "value": 8.2876093758e-07,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=3 kappa=3": {
+   "value": 8.41467950683e-07,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=3 kappa=3.5": {
+   "value": 0.000859761503888,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=3 kappa=3.5": {
+   "value": 0.00107484091214,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=3 kappa=3.5": {
+   "value": 0.00106487939266,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=3 kappa=3.75": {
+   "value": 0.0925663475699,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=3 kappa=3.75": {
+   "value": 0.0485288496299,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=3 kappa=3.75": {
+   "value": 0.0483368546619,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=3 kappa=4": {
+   "value": 10.2316093035,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=3 kappa=4": {
+   "value": 2.37953957681,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=3 kappa=4": {
+   "value": 2.37655760127,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=4 kappa=4": {
+   "value": 5.94533564006e-07,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=4 kappa=4": {
+   "value": 4.95136586424e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=4 kappa=4": {
+   "value": 5.03163546277e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=4 kappa=4.25": {
+   "value": 3.99700370237e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=4 kappa=4.25": {
+   "value": 0.000174437296723,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=4 kappa=4.25": {
+   "value": 0.000174280566276,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=4 kappa=4.5": {
+   "value": 0.0038428091488,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=4 kappa=4.5": {
+   "value": 0.00707180367829,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=4 kappa=4.5": {
+   "value": 0.00706020898774,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=4 kappa=4.75": {
+   "value": 0.413736606843,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=4 kappa=4.75": {
+   "value": 0.31683096854,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=4 kappa=4.75": {
+   "value": 0.316723584611,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=4 kappa=5": {
+   "value": 45.7314286122,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=4 kappa=5": {
+   "value": 15.4166257716,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=4 kappa=5": {
+   "value": 15.4196495533,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=5 kappa=5": {
+   "value": 1.94723940981e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=5 kappa=5": {
+   "value": 1.80725889164e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=5 kappa=5": {
+   "value": 1.83549410614e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=5 kappa=5.5": {
+   "value": 0.0125861177096,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=5 kappa=5.5": {
+   "value": 0.0299275181204,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=5 kappa=5.5": {
+   "value": 0.0299642667604,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=5 kappa=5.75": {
+   "value": 1.35508619681,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=5 kappa=5.75": {
+   "value": 1.41960364533,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=5 kappa=5.75": {
+   "value": 1.42096548427,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=5 kappa=6": {
+   "value": 149.781350376,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=5 kappa=6": {
+   "value": 71.7484189075,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=5 kappa=6": {
+   "value": 71.7957252947,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=6 kappa=6": {
+   "value": 5.18879694448e-06,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=6 kappa=6": {
+   "value": 5.5882955697e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=6 kappa=6": {
+   "value": 5.66860312481e-05,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=6 kappa=6.5": {
+   "value": 0.0335381508744,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=6 kappa=6.5": {
+   "value": 0.0933551430775,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=6 kappa=6.5": {
+   "value": 0.0935698736885,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=8 kappa=8.5": {
+   "value": 0.159499640637,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=8 kappa=8.5": {
+   "value": 0.572182612004,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=8 kappa=8.5": {
+   "value": 0.573792894814,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=8 kappa=8.75": {
+   "value": 17.1725520458,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=8 kappa=8.75": {
+   "value": 28.3701602758,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=8 kappa=8.75": {
+   "value": 28.4138732626,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=10 kappa=10.5": {
+   "value": 0.538406827464,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=10 kappa=10.5": {
+   "value": 2.30774823537,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=10 kappa=10.5": {
+   "value": 2.31391091593,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=15 kappa=15.4": {
+   "value": 0.779488584395,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=15 kappa=15.4": {
+   "value": 5.83264651464,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=15 kappa=15.4": {
+   "value": 5.84777160785,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their (b) mu=20 kappa=20.3": {
+   "value": 0.61133917944,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b) mu=20 kappa=20.3": {
+   "value": 7.0282278213,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/exact (b)+(c) mu=20 kappa=20.3": {
+   "value": 7.04605780588,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/WX Eq.(45) over Eq.(47) m=20": {
+   "value": 1.00312428724,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/WX Eq.(45) over Eq.(47) mu=40 kappa=40.5, over (1 + e^(-pi))/2": {
+   "value": 1.00078108307,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/WX map against Eq.(7.13) mu=3": {
+   "max": 1e-06,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)",
+   "note": "computed 1.3e-8"
+  },
+  "B2/their estimate (a), Eq.(25), mu=3 kappa=4": {
+   "value": 0.557770662626,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their estimate (b), Eq.(27), mu=3 kappa=4": {
+   "value": 6.89764584326,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their estimate (c), Eq.(29), mu=3 kappa=4": {
+   "value": 0.00322023964897,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their estimate (a), Eq.(25), mu=5 kappa=5.75": {
+   "value": 0.00545249212884,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their estimate (b), Eq.(27), mu=5 kappa=5.75": {
+   "value": 0.461716782513,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B2/their estimate (c), Eq.(29), mu=5 kappa=5.75": {
+   "value": 0.00103693405666,
+   "rtol": 1e-08,
+   "where": "Secs. 7.2-7.3; Wang-Xianyu Eqs. (42)-(48)"
+  },
+  "B3/F_osc template lam=40 mu=4": {
+   "value": 0.0163096576655,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/ratio lam=40 mu=4": {
+   "value": 0.981212242777,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/F_osc template lam=30 mu=4": {
+   "value": 0.00314799525852,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/ratio lam=30 mu=4": {
+   "value": 0.984949788843,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/F_osc template lam=50 mu=10": {
+   "value": 0.0198342185763,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/ratio lam=50 mu=10": {
+   "value": 1.00021096258,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/F_osc template lam=40 mu=15": {
+   "value": 0.00395533386628,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/ratio lam=40 mu=15": {
+   "value": 1.03000240115,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B3/F_osc template lam=30 mu=4 phidot0=3600": {
+   "value": 0.00292988137211,
+   "rtol": 1e-08,
+   "where": "Sec. 7.5; Bodas et al. Eqs. (3.35), (5.48)"
+  },
+  "B4/bubble M=1 lam=10": {
+   "value": 1.53312684756e-07,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/triangle M=1 lam=10": {
+   "value": 7.28920823096e-07,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/bubble M=1 lam=20": {
+   "value": 0.000103004942235,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/triangle M=1 lam=20": {
+   "value": 8.63389543857e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/bubble M=3 lam=20": {
+   "value": 8.748992876e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/triangle M=3 lam=20": {
+   "value": 2.56788826886e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/bubble M=5 lam=20": {
+   "value": 9.05853700704e-08,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B4/triangle M=5 lam=20": {
+   "value": 7.91209691523e-09,
+   "rtol": 1e-08,
+   "where": "Sec. 8.2; Han et al. Eq. (2.48), Fig. 8; Song et al. Eqs. (12)-(17)"
+  },
+  "B5/f_CC from C kappa=10,m=1": {
+   "value": 8.09884386878e-07,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song closed form over C kappa=10,m=1": {
+   "value": 1.00003412683,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) over C kappa=10,m=1": {
+   "value": 0.953762280102,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/f_CC from C kappa=20,m=2": {
+   "value": 1.06367387513e-05,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song closed form over C kappa=20,m=2": {
+   "value": 1.00005800498,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) over C kappa=20,m=2": {
+   "value": 0.979492596429,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) Lambda=60 M=4": {
+   "value": 0.000522092738753,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) Lambda=30 M=4": {
+   "value": 0.0137846577902,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) Lambda=60 M=8": {
+   "value": 1.61606025983e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) Lambda=60 M=10": {
+   "value": 1.17156127103e-08,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Table I Lambda=60 M=4 from the closed form": {
+   "value": 0.000519595783452,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/You Eq.(4.6) Lambda=35 M=5": {
+   "value": 0.11569041134,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/Song Eq.(20) Lambda=35 M=5": {
+   "value": 0.00507744629127,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/You Eq.(4.6) over Song Eq.(21) times 4/lam^2": {
+   "value": 1.00112958643,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/CWX Eq.(79) Lambda=3 sqrt(phidot0) m=1": {
+   "value": 0.0744667070833,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/exact Lambda=3 sqrt(phidot0) m=1": {
+   "value": 8.12950814395e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/CWX Eq.(79) Lambda=3 sqrt(phidot0) m=2": {
+   "value": 0.327037743276,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/exact Lambda=3 sqrt(phidot0) m=2": {
+   "value": 8.78966321242e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/CWX Eq.(79) Lambda=3 sqrt(phidot0) m=3": {
+   "value": 0.406238632859,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/exact Lambda=3 sqrt(phidot0) m=3": {
+   "value": 2.1835567915e-06,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/CWX Eq.(79) Lambda=3 sqrt(phidot0) m=5": {
+   "value": 0.0767782284047,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  },
+  "B5/exact Lambda=3 sqrt(phidot0) m=5": {
+   "value": 7.71881014099e-09,
+   "rtol": 1e-08,
+   "where": "Sec. 8.3; Song et al. Eqs. (20)-(21), You et al. Eq. (4.6), CWX 1805.02656 Eq. (79)"
+  }
+ }
+}

@@ -50,3 +50,14 @@ Things that matter in practice:
 - **Cut.** The background of the cut integral is singular at r = +-Pc, and that of the bubble itself at r = -1 (zero total energy). The runs use Pc = 1.5. The difference between Pc = 1.5 and 1.0 is a polynomial in r, without logarithms, to 2e-13.
 - **Grids.** With the loop grid above and time panels of degree 16 the values are converged to 1e-14 at (1, 1) and to 3e-12 at (2, 2) (`data_dirac/convergence_m2_k2.jsonl`). The standard grid of `direct_fermi2.py` is good to 2e-9 only, which is 5e-7 of the signal at r = 0.1.
 - **What a fit can see.** At (1, 1) the fits fix the first correction to 7e-4 or better and the second to 2.5%, and with 16 terms also the third to 1%. At (2, 2) they fix four corrections. At (1, 0.5) (one period per 2.8 e-folds) the criteria need 14 terms or more.
+
+# Direct integration of the contact-pair diagram of the collapsed trispectrum
+
+The collapsed trispectrum of the helical loop (Sec. 7.4, `parity_box_series.py`) has three kinds of diagram. The bubble between two quartic vertices was checked directly on Nov 19, 2026. The diagram with one quartic vertex and one hard pair is the triangle of `direct_vec.py` with the vertex of the two soft lines made quartic and hard, so it needs no new evaluator:
+
+    X3=2 PW3=2 NPHI=6 GRID=std PC=0.5 NUMCHECK=direct/ninepairs python direct/direct_vec.py 1 1 iso run.jsonl 0.25 0.1 0.03 0.01
+    python direct/cp_direct_fit.py
+
+`X3` is the energy k12 of that vertex (the soft momentum stays r = s/k), `PW3=2` adds the two powers of the time of a quartic vertex, and `iso` gives the hard pair equal legs, so that all four external momenta are equal. `S/(r/8)` of the output is then the loop integral with unit vertices, in the normalization of `parity_box_series.py` (the fitted constant between the two is one to 3e-5). One point takes 90 s to 2 min with the standard grid, which agrees with the fine one to 3e-9.
+
+`data_cp/` holds the runs of Nov 20, 2026 at (mu, kappa) = (1, 1) (32 values of s/k from 0.01 to 0.35 at the cut 0.5, twelve of them also at 0.8) and the coefficients of class CP through N = 4. `cp_direct_fit.py` fits a background together with the pair signal, the single-frequency signal, and the non-oscillating terms. For s/k <= 0.25 a free factor on the pair orders N >= 1 returns one to 2e-4 with nine or more powers and logarithms in the background, and with a background of even powers the single-frequency and non-oscillating terms return one to 1e-4 and 1.4%. Beyond s/k = 0.25 the series through N = 4 is no longer enough (the factor is off by 1% on the full range). The difference of the two cuts is an even polynomial in s to 9e-12. The box has no direct check.

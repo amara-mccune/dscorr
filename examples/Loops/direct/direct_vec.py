@@ -24,6 +24,11 @@ Environment: NPHI (4), PC (0.5), SUBSET (all | T: transverse components only), C
 contact term), GRID (fine | std), QUICK (coarse loop grid, for timing), TLO (1e-7), PART (i/n: only every n-th
 loop point, starting at the i-th, so that a value can be computed in n pieces and summed), NUMCHECK (path of
 numcheck/ninepairs from loops_numcheck_code.zip; default ./numcheck/ninepairs next to this file).
+
+The contact-pair diagram of the collapsed trispectrum (Sec. 7.4) is the same triangle with the vertex of the two soft
+lines made quartic and hard: X3=k12 sets its energy apart from the soft momentum r = s, and PW3=2 adds the two powers
+of the time of a quartic vertex. With c = 'iso' the hard pair has equal legs, so X3=2 PW3=2 is the diagram at equal
+external momenta k = 1, and S/(r |k2|/8) is its loop integral with unit vertices (cp_direct_fit.py).
 """
 import json
 import math
@@ -47,6 +52,8 @@ if os.environ.get("GRID", "fine") == "std":
 if os.environ.get("QUICK"):
     LOOP.update(nrho=3, nth=3, nP=3, nq=4, rho_ratio=30.0, P_ratio=4.0)
 TLO = float(os.environ.get("TLO", 1e-7))
+X3 = float(os.environ.get("X3", 0))          # energy of the vertex of the two soft lines, if it is not the soft momentum
+PW3 = int(os.environ.get("PW3", 0))          # extra power of the time at that vertex (2 for a quartic vertex)
 
 
 def projT(h, n):
@@ -120,7 +127,7 @@ class Direct:
                  "B": {k: v[:, None, :] for k, v in self.tables(2 * r * a2[:, None] * tt[None, :]).items()},
                  "A": self.tables(2 * Y[..., None] * tt)}
             en = {"C": eC, "B": eB, "A": eA}
-            xv = {1: 1.0, 2: x2, 3: r}
+            xv = {1: 1.0, 2: x2, 3: X3 if X3 else r}
             at = {1: ("C", "A"), 2: ("A", "B"), 3: ("C", "B")}                                   # lines at each vertex
             ends = {"C": (3, 1), "B": (3, 2), "A": (1, 2)}
             ecache = {}
@@ -248,11 +255,11 @@ class Direct:
                                 for (lA, tA, oA, pA, sgA, cA) in hard_comps(s1, s2):
                                     Wt = vs * np.real(np.einsum("...jk,...jk->...", X, tA)) * cC * cB * cA
                                     if lA == "c":
-                                        tp = contact_part(lC, oC, lB, oB, {1: pC[1], 2: pB[1], 3: pC[0] + pB[0]})
+                                        tp = contact_part(lC, oC, lB, oB, {1: pC[1], 2: pB[1], 3: pC[0] + pB[0] + PW3})
                                         for (b1, b2), val in tp.items():
                                             acc += Wt * normc * sgC(b1) * sgB(b2) * val
                                         continue
-                                    pw = {1: pC[1] + pA[0], 2: pB[1] + pA[1], 3: pC[0] + pB[0]}
+                                    pw = {1: pC[1] + pA[0], 2: pB[1] + pA[1], 3: pC[0] + pB[0] + PW3}
                                     tp = time_part(lC, oC, lB, oB, lA, oA, pw)
                                     for (b1, b2), val in tp.items():
                                         acc += Wt * norm * sgC(b1) * sgB(b2) * sgA(b1, b2) * val
@@ -278,6 +285,6 @@ if __name__ == "__main__":
         t0 = time.process_time()
         val, npts = D.S(r, c)
         with open(out, "a") as fh:
-            fh.write(json.dumps(dict(mu=mu, kappa=ka, r=r, c=c, shape=cs, S=val, npts=npts, Pc=D.Pc, nphi=D.nphi, subset=D.subset,
+            fh.write(json.dumps(dict(mu=mu, kappa=ka, r=r, c=c, shape=cs, S=val, x3=X3, pw3=PW3, npts=npts, Pc=D.Pc, nphi=D.nphi, subset=D.subset,
                                      contact=D.contact, grid=os.environ.get("GRID", "fine"), quick=bool(os.environ.get("QUICK")), tlo=TLO, part=part,
                                      cpu=round(time.process_time() - t0, 1))) + "\n")

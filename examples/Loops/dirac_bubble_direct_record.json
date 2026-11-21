@@ -1,0 +1,338 @@
+{
+ "dirac_bubble_direct/Mcal_1/Mcal_0 (1,1)": {
+  "value": [
+   -0.509103388886,
+   -3.47884691398
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/Mcal_2/Mcal_0 (1,1)": {
+  "value": [
+   -1.09271189654,
+   -4.32417010791
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/Mcal_3/Mcal_0 (1,1)": {
+  "value": [
+   -0.604692435695,
+   -15.02456408
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/|(- branch)/(+ branch)| n=0 (1,1)": {
+  "value": 0.101091256,
+  "rtol": 1e-06,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "weight of the second pair branch in the sum over the four sectors, leading order"
+ },
+ "dirac_bubble_direct/(1,1) 12 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 8.0e-04"
+ },
+ "dirac_bubble_direct/(1,1) 12 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 6.9e-04"
+ },
+ "dirac_bubble_direct/(1,1) 12 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 6.8e-04"
+ },
+ "dirac_bubble_direct/(1,1) 12 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.5e-02"
+ },
+ "dirac_bubble_direct/(1,1) 14 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.5e-04"
+ },
+ "dirac_bubble_direct/(1,1) 14 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.7e-04"
+ },
+ "dirac_bubble_direct/(1,1) 14 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.6e-04"
+ },
+ "dirac_bubble_direct/(1,1) 14 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 9.4e-03"
+ },
+ "dirac_bubble_direct/(1,1) 16 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.5e-05"
+ },
+ "dirac_bubble_direct/(1,1) 16 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 6.0e-06"
+ },
+ "dirac_bubble_direct/(1,1) 16 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 6.0e-06"
+ },
+ "dirac_bubble_direct/(1,1) 16 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 5.9e-04"
+ },
+ "dirac_bubble_direct/(1,1) 16 par, + branch alone: |s_corr - 1|": {
+  "value": 0.338,
+  "rtol": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "the series of the + branch alone (Sec. 8.3 of v5.19) does not fit: criterion 1e-3"
+ },
+ "dirac_bubble_direct/(1,1) 16 par, doubly cut term: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 4.4e-06"
+ },
+ "dirac_bubble_direct/(1,1) 16 par, time-ordered term: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.6e-05"
+ },
+ "dirac_bubble_direct/Mcal_1/Mcal_0 (2,2)": {
+  "value": [
+   -1.60718725921,
+   -5.78018440173
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/Mcal_2/Mcal_0 (2,2)": {
+  "value": [
+   -11.6552282746,
+   10.0103109723
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/Mcal_3/Mcal_0 (2,2)": {
+  "value": [
+   26.0791447153,
+   0.384450636322
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/|(- branch)/(+ branch)| n=0 (2,2)": {
+  "value": 0.847284001,
+  "rtol": 1e-06,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "weight of the second pair branch in the sum over the four sectors, leading order"
+ },
+ "dirac_bubble_direct/(2,2) 12 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 6.2e-04"
+ },
+ "dirac_bubble_direct/(2,2) 12 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 3.3e-04"
+ },
+ "dirac_bubble_direct/(2,2) 12 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.7e-04"
+ },
+ "dirac_bubble_direct/(2,2) 12 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.3e-03"
+ },
+ "dirac_bubble_direct/(2,2) 14 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 9.2e-06"
+ },
+ "dirac_bubble_direct/(2,2) 14 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.4e-05"
+ },
+ "dirac_bubble_direct/(2,2) 14 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.2e-05"
+ },
+ "dirac_bubble_direct/(2,2) 14 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 7.4e-05"
+ },
+ "dirac_bubble_direct/(2,2) 16 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 9.9e-06"
+ },
+ "dirac_bubble_direct/(2,2) 16 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 8.4e-06"
+ },
+ "dirac_bubble_direct/(2,2) 16 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 7.7e-06"
+ },
+ "dirac_bubble_direct/(2,2) 16 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 5.9e-05"
+ },
+ "dirac_bubble_direct/(2,2) 16 par, + branch alone: |s_corr - 1|": {
+  "value": 0.477,
+  "rtol": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "the series of the + branch alone (Sec. 8.3 of v5.19) does not fit: criterion 1e-3"
+ },
+ "dirac_bubble_direct/(2,2) 16 par, doubly cut term: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 3.9e-07"
+ },
+ "dirac_bubble_direct/(2,2) 16 par, time-ordered term: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.5e-05"
+ },
+ "dirac_bubble_direct/Mcal_1/Mcal_0 (1,0.5)": {
+  "value": [
+   0.910238302615,
+   0.678793281761
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/Mcal_2/Mcal_0 (1,0.5)": {
+  "value": [
+   8.36022638891,
+   5.29897913565
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/Mcal_3/Mcal_0 (1,0.5)": {
+  "value": [
+   4.22801180755,
+   8.90687699913
+  ],
+  "rtol": 1e-09,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "from the stored series (both pair branches)"
+ },
+ "dirac_bubble_direct/|(- branch)/(+ branch)| n=0 (1,0.5)": {
+  "value": 6.52247613,
+  "rtol": 1e-06,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "weight of the second pair branch in the sum over the four sectors, leading order"
+ },
+ "dirac_bubble_direct/(1,0.5) 12 par: residual, full series over leading term only": {
+  "value": 0.0254,
+  "rtol": 0.1,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "criterion 0.01 not met with this background"
+ },
+ "dirac_bubble_direct/(1,0.5) 12 par: |s_corr - 1|": {
+  "value": 0.0282,
+  "rtol": 0.1,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "criterion 0.001 not met with this background"
+ },
+ "dirac_bubble_direct/(1,0.5) 12 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "value": 0.0252,
+  "rtol": 0.1,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "criterion 0.01 not met with this background"
+ },
+ "dirac_bubble_direct/(1,0.5) 12 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "value": 0.17,
+  "rtol": 0.1,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "criterion 0.05 not met with this background"
+ },
+ "dirac_bubble_direct/(1,0.5) 14 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.4e-03"
+ },
+ "dirac_bubble_direct/(1,0.5) 14 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.8e-04"
+ },
+ "dirac_bubble_direct/(1,0.5) 14 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 1.9e-04"
+ },
+ "dirac_bubble_direct/(1,0.5) 14 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 5.0e-03"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par: residual, full series over leading term only": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 3.7e-03"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 3.3e-04"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par: |Mcal_1(fit)/Mcal_1 - 1|": {
+  "max": 0.01,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 3.1e-04"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par: |Mcal_2(fit)/Mcal_2 - 1|": {
+  "max": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 7.4e-03"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par, + branch alone: |s_corr - 1|": {
+  "value": 1.24,
+  "rtol": 0.05,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "the series of the + branch alone (Sec. 8.3 of v5.19) does not fit: criterion 1e-3"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par, doubly cut term: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 4.5e-06"
+ },
+ "dirac_bubble_direct/(1,0.5) 16 par, time-ordered term: |s_corr - 1|": {
+  "max": 0.001,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.3e-04"
+ },
+ "dirac_bubble_direct/(1,1) cuts 1.5 and 1.0: residual of a polynomial fit to the difference": {
+  "max": 1e-11,
+  "where": "Uniform Checks, Nov 20, 2026 (direct check of the Dirac-bubble series)",
+  "note": "computed 2.0e-13; 36 values of r in [0.01, 0.3], polynomial of degree 12 without logarithms"
+ }
+}

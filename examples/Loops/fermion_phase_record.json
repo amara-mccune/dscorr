@@ -1,0 +1,134 @@
+{
+ "fermion_phase/closed form, series": {
+  "max": 1e-30,
+  "where": "notes, Eq. (3.4): 2F1 form against the moments of the model loop"
+ },
+ "fermion_phase/closed form, elementary": {
+  "max": 1e-30,
+  "where": "notes, Eq. (3.5)"
+ },
+ "fermion_phase/tree-level saddle phase": {
+  "max": 0.05,
+  "where": "notes, Eq. (3.7): remainder times kappa^3/m^4, Eq. (3.49) of 2506.01555"
+ },
+ "fermion_phase/segment average q=1 kappa=5,m=1": {
+  "value": [
+   0.8853557337133863,
+   0.1998444002536022
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Table 1"
+ },
+ "fermion_phase/segment, exact - end point q=1 kappa=5,m=1": {
+  "max": 0.002,
+  "where": "notes, Table 1"
+ },
+ "fermion_phase/segment average q=2 kappa=5,m=1": {
+  "value": [
+   0.9072113135676756,
+   0.21745037199893733
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Table 1"
+ },
+ "fermion_phase/segment, exact - end point q=2 kappa=5,m=1": {
+  "max": 0.003,
+  "where": "notes, Table 1"
+ },
+ "fermion_phase/bubble L1 kappa=5,m=1": {
+  "value": [
+   0.09566981961141863,
+   -0.2619941362097472
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Table 2"
+ },
+ "fermion_phase/bubble L1 - derived kappa=5,m=1": {
+  "max": 0.03,
+  "where": "notes, Table 2"
+ },
+ "fermion_phase/bubble L2 kappa=5,m=1": {
+  "value": [
+   0.5568486695393075,
+   -0.19257619781239874
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Table 2"
+ },
+ "fermion_phase/bubble L2 - derived kappa=5,m=1": {
+  "max": 0.011,
+  "where": "notes, Table 2"
+ },
+ "fermion_phase/C0 kappa=5,m=1": {
+  "value": [
+   -1.063758421328667,
+   0.10831543805235125
+  ],
+  "rtol": 1e-09,
+  "where": "equals fermion_shape/C0 of fermion_triangle_shape_record.json"
+ },
+ "fermion_phase/contact D0 kappa=5,m=1": {
+  "value": [
+   -1.6203899348011284,
+   0.22692999211236967
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Sec. 4.1"
+ },
+ "fermion_phase/T3'/B' at R -> 0 kappa=5,m=1": {
+  "value": [
+   -0.34696358723854737,
+   0.02461019356405078
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Sec. 4.3"
+ },
+ "fermion_phase/identity kappa=5,m=1": {
+  "max": 1e-14,
+  "where": "notes, Sec. 4.1: triangle = contact + T3' on k1 = k2"
+ },
+ "fermion_phase/identity, general shape kappa=5,m=1": {
+  "max": 1e-14,
+  "where": "notes, Sec. 4.1"
+ },
+ "fermion_phase/contact L1 kappa=5,m=1": {
+  "value": [
+   0.9734387509670166,
+   0.12536841696393908
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Table 3"
+ },
+ "fermion_phase/contact L1 - (1 + eps) kappa=5,m=1": {
+  "max": 0.04,
+  "where": "notes, Table 3"
+ },
+ "fermion_phase/triangle L1 kappa=5,m=1": {
+  "value": [
+   0.4998208055970118,
+   -0.015881824558621544
+  ],
+  "rtol": 1e-09,
+  "where": "Table 5 of the paper (G_1)"
+ },
+ "fermion_phase/contact L2 kappa=5,m=1": {
+  "value": [
+   0.2343282194646385,
+   0.0966581712002696
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Table 3"
+ },
+ "fermion_phase/contact L2 - derived kappa=5,m=1": {
+  "max": 0.025,
+  "where": "notes, Table 3"
+ },
+ "fermion_phase/triangle L2 kappa=5,m=1": {
+  "value": [
+   -0.018902053119927917,
+   -0.2525248904336235
+  ],
+  "rtol": 1e-09,
+  "where": "notes, Sec. 5"
+ }
+}

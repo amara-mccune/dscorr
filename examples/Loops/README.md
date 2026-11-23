@@ -24,6 +24,7 @@ Run the scripts from this folder:
 
 | Script | Paper | What it computes | Time (one core) |
 |---|---|---|---|
+| `tensor_weight_check.py` | Sec. 3.5, Eqs. (3.23)–(3.24) | The polarization weight T₂(c) of the tensor bubble acting on the loop block as the rational factor ϱ(α, β), against direct integration over the loop momentum at three pairs of powers (to 8e-12), and ϱ = 2 on the ultraviolet surface α + β = 3/2. | 1 min |
 | `universal.py` | Sec. 6.2, Eq. (6.2) | U(Δ, r₂). It checks U against the ratio of the exact and late-time moments of Eq. (3.17) (to 1e-31) and against direct quadrature of the position-space (EAdS) soft vertex (to 1e-16). It also gives the values quoted for heavy and light lines. | 10 s |
 | `scalar_triangle_shape.py` | Secs. 5.1, 6.4, Eqs. (5.1)–(5.5), App. A, Eq. (A.11) | The pair family of the scalar triangle with inflaton legs at every shape, as a series in R = 2k₃/(k₁+k₂) and δ = (k₁−k₂)/k₃ (`ext/scalartri.py`). It checks the series against the coefficients c_N of the Letter on k₁ = k₂, the recurrence for the hard moments, the exchange of the hard legs, and the triangle integral of the Letter at δ = 0.5 and 1. See [`README_scalar_triangle_shape.md`](README_scalar_triangle_shape.md). | 1 min |
 | `gauge_loop.py` | Sec. 6.3 | The W/Z loop (f_A(X)F², Proca with all three polarizations). It compares the exact soft moment, with E and B kept at the soft vertex, against its late-time version. Summed over the nine helicity pairs, the ratio equals U(3+2ν, 2) (to 1e-23); the individual pairs do not. | 10 min |

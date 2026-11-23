@@ -280,3 +280,19 @@ def test_gauge_loop_soft_factor():
         G = GL.GaugeLoop('1')
         c = [G.order(0, dq) / GL.soft_tree(G.nu, 0, dq) for dq in (0, 1)]
         assert abs(c[1] / c[0] - 1) < mp.mpf(10) ** -15
+
+
+def test_shape_ranges_record(tmp_path):
+    """The 10% ranges of Table 5 (Sec. 10.1) reproduce their record."""
+    import json
+    import subprocess
+    d = os.path.join(LOOPS, "shape_ranges")
+    out = tmp_path / "ranges.json"
+    subprocess.run([sys.executable, "shape_ranges.py", "--json", str(out)], cwd=d, check=True,
+                   capture_output=True)
+    new = json.load(open(out))
+    rec = json.load(open(os.path.join(d, "data", "shape_ranges_record.json")))
+    assert len(new) == len(rec)
+    for a, b in zip(new, rec):
+        assert (a["label"], a["lead"], a["factor"]) == (b["label"], b["lead"], b["factor"])
+        assert abs(a["Rmax"] - b["Rmax"]) < 1e-12

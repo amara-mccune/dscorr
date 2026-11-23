@@ -1,0 +1,198 @@
+[
+ {
+  "case": "principal h=+1, mu=1, kappa=0.5",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 8.970313956750321e-24,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "principal h=+1, mu=1, kappa=0.5",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 2.6566570675161784e-23,
+  "bpole_part": 3.0263893697437334
+ },
+ {
+  "case": "principal h=+1, mu=1, kappa=0.5",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 1.0079407455393585e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "principal h=+1, mu=1, kappa=0.5",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 1.1302312357335384e-23,
+  "bpole_part": 0.21465488270054164
+ },
+ {
+  "case": "principal h=-1, mu=2, kappa=0.7",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 6.580223047642719e-27,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "principal h=-1, mu=2, kappa=0.7",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 5.605460242735211e-26,
+  "bpole_part": 0.37045136645765264
+ },
+ {
+  "case": "principal h=-1, mu=2, kappa=0.7",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 4.017402442417402e-26,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "principal h=-1, mu=2, kappa=0.7",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 1.4861800462342797e-25,
+  "bpole_part": 0.07856241277632679
+ },
+ {
+  "case": "complementary nu=0.3, kappa=0.5",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 8.4839089828968e-21,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "complementary nu=0.3, kappa=0.5",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 4.2750572163824435e-20,
+  "bpole_part": 4.237000586487379
+ },
+ {
+  "case": "complementary nu=0.3, kappa=0.5",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 8.489253060595865e-21,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "complementary nu=0.3, kappa=0.5",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 1.0424548763339668e-20,
+  "bpole_part": 0.23625627804296803
+ },
+ {
+  "case": "Dirac K=1/2-i kappa, mu=1.2",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 2.6482157923234806e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=1/2-i kappa, mu=1.2",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 6.913234746925902e-23,
+  "bpole_part": 2.088479347973207
+ },
+ {
+  "case": "Dirac K=1/2-i kappa, mu=1.2",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 2.3020035566268467e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=1/2-i kappa, mu=1.2",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 2.596990041348938e-23,
+  "bpole_part": 0.17498796378280196
+ },
+ {
+  "case": "Dirac K=-1/2+i kappa, mu=1.2",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 1.595709258404417e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=-1/2+i kappa, mu=1.2",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 3.503918119155588e-23,
+  "bpole_part": 1.9425468912147648
+ },
+ {
+  "case": "Dirac K=-1/2+i kappa, mu=1.2",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 2.0484570455625186e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=-1/2+i kappa, mu=1.2",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 2.3649394790328893e-23,
+  "bpole_part": 0.22377151295653575
+ },
+ {
+  "case": "Dirac K=-1/2-i kappa, mu=1.2",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 4.95442177432832e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=-1/2-i kappa, mu=1.2",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 1.629102469192077e-22,
+  "bpole_part": 3.9628677990653816
+ },
+ {
+  "case": "Dirac K=-1/2-i kappa, mu=1.2",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 6.35919613011731e-23,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=-1/2-i kappa, mu=1.2",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 7.535629938085329e-23,
+  "bpole_part": 0.25027398444220234
+ },
+ {
+  "case": "Dirac K=1/2+i kappa, mu=1.2",
+  "t": 1.3,
+  "tp": 0.6,
+  "rel_diff": 3.445450376298524e-24,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=1/2+i kappa, mu=1.2",
+  "t": 0.6,
+  "tp": 1.3,
+  "rel_diff": 5.560836646890697e-24,
+  "bpole_part": 0.4208319171773095
+ },
+ {
+  "case": "Dirac K=1/2+i kappa, mu=1.2",
+  "t": 2.0,
+  "tp": 1.9,
+  "rel_diff": 3.0840430520927828e-24,
+  "bpole_part": 0.0
+ },
+ {
+  "case": "Dirac K=1/2+i kappa, mu=1.2",
+  "t": 1.9,
+  "tp": 2.0,
+  "rel_diff": 3.1139230232353846e-24,
+  "bpole_part": 0.08004523201436445
+ }
+]

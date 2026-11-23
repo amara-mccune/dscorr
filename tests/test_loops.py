@@ -296,3 +296,12 @@ def test_shape_ranges_record(tmp_path):
     for a, b in zip(new, rec):
         assert (a["label"], a["lead"], a["factor"]) == (b["label"], b["lead"], b["factor"])
         assert abs(a["Rmax"] - b["Rmax"]) < 1e-12
+
+
+def test_massless_bubble_closed_form():
+    """Eq. (4.20): the bubble of two massless lines in closed form against the integral over Z (Sec. 4.5)."""
+    import massless_bubble as mb
+    with mp.workdps(60):
+        for p in [(1.3, 0.7, 0.4), (1, 1, 0.99)]:
+            c, z = mb.psi_closed(*p), mb.psi_Z(*p, eps='1e-20')
+            assert abs(c / z - 1) < mp.mpf('1e-35')

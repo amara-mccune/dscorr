@@ -4,6 +4,12 @@
 
 > A. McCune, *Massive de Sitter correlators as finite Mellin–Barnes integrals*, arXiv:2610.10921 (2026).
 
+and, from version 1.1, the paper
+
+> A. McCune, *Massive de Sitter correlators at one loop* (2026).
+
+Release v1.0 is the code of the Letter, and v2 of the Letter cites it. Release v1.1 adds the scripts of the one-loop paper (`examples/Loops/`). The package and the Letter's scripts are unchanged apart from the version number.
+
 It computes the inflationary bispectrum ⟨πππ⟩′ mediated by heavy scalars on the principal series (m² = μ² + 9/4) at tree level:
 
 - single, double and triple exchange at arbitrary masses and physical kinematics;
@@ -38,7 +44,7 @@ Requirements: Python ≥ 3.10, numpy ≥ 1.24, scipy ≥ 1.12, mpmath ≥ 1.3. T
 | Mass parameter | μ > 0 on every line |
 | Output | `S = (k1 k2 k3)² ⟨πππ⟩′` by default (scale invariant) |
 | Other outputs | `out='F'` (`S = k1 k2 k3 F/8`), `'B'` (`⟨πππ⟩′`), `'blocks'` |
-| Layout | Fig. 1(a) of the Letter: the exchanged line is the **last** mass argument and ends on the mixing vertex of `k3` |
+| Layout | As in the figures of the Letter: the exchanged line is the **last** mass argument and ends on the mixing vertex of `k3` |
 
 | Call | Diagram |
 |---|---|
@@ -64,9 +70,9 @@ T = dscorr.TripleExchange(1.0, 1.5, 0.7)
 S = T.scan(np.geomspace(0.002, 1, 100))
 D = dscorr.DoubleExchange(1.0, 1.5, hL=0.002)                 # half time step (higher accuracy)
 
-# squeezed limit: S -> S_an + 2 Re[M_L (k3/k1)^(1/2 + i mu)]   (Letter Eq. (10))
-M3 = dscorr.M3(1.0, 1.5, 0.7)                                 # Letter Eq. (11), float64
-M2 = dscorr.M2(1.0, 1.5, dps=30)                              # SM Sec. S4, 30 digits
+# squeezed limit: S -> S_an + 2 Re[M_L (k3/k1)^(1/2 + i mu)]   (Letter v1 Eq. (10); v2 Eq. (S26))
+M3 = dscorr.M3(1.0, 1.5, 0.7)                                 # Letter v1 Eq. (11); v2 Eq. (S27); float64
+M2 = dscorr.M2(1.0, 1.5, dps=30)                              # SM Sec. S4 (v2 Eq. (S28)), 30 digits
 M1 = dscorr.M1(1.0)
 dscorr.signal(np.geomspace(1e-4, 1e-2, 5), M3, 0.7)           # 2 Re[M kappa^(i mu)]
 kap = np.logspace(-4, -2, 80)
@@ -138,6 +144,8 @@ Options:
 
 Computed values are cached in `examples/Letter/cache/`; delete that folder to recompute.
 
+The targets follow the numbering of v1 of the Letter. In v2, `fig2` and `figS1` to `figS3` give Figs. 2 and S1 to S3, and `fig3` gives Fig. S4. Fig. 1 of v2, which shows the triple exchange in panel (a), is not drawn by this script. Fig. S5 of v2 (strong mixing) and the closed forms of its Sec. S7 come from further scripts by the author, as the Letter states, and are not part of this repository.
+
 Comparison points from other groups' codes are not part of this repository: CosmoFlow (Fig. S2(a),(b)) and the integrator of Herderschee and Lu (Fig. S2(c)). The diamonds of Fig. S1 (series solution of Aoki et al.) and the circles of Fig. S3 (spectral decomposition of Xianyu and Zhang) were computed by the author from those papers' formulas and ship in `examples/Letter/data/` with that credit. The script draws them if you place them, in the documented CSV format, in `examples/Letter/data/external/` (see the docstring of `make_figures.py`).
 
 ## One-loop batch pipelines
@@ -147,22 +155,24 @@ Comparison points from other groups' codes are not part of this repository: Cosm
 | Pipeline | Content | Cost |
 |---|---|---|
 | `bubble/` | bubble, Fig. S3 | ~1e2 core-hours |
-| `triangle/` | conformal-leg triangle, Fig. 3 | ~570 + 160 core-hours |
-| `triangle_pidot/` | π̇-leg triangle, Fig. 3 | ~45 core-hours |
+| `triangle/` | conformal-leg triangle, Fig. 3 (Fig. S4 in v2) | ~570 + 160 core-hours |
+| `triangle_pidot/` | π̇-leg triangle, Fig. 3 (Fig. S4 in v2) | ~45 core-hours |
 | `triangle_pidot_correlator/` | triangle correlator, Fig. S2(c) | ~36 core-hours |
 
 They are scripts, not library calls, and depend only on numpy, scipy and mpmath. Their commands are listed in [`examples/Letter/batch/README.md`](examples/Letter/batch/README.md). Their results are the tables in [`examples/Letter/data/`](examples/Letter/data/README.md), which the figure script reads. `dscorr.data.load(name)` reads the same tables from a source checkout.
 
-## Scripts of the loops paper
+## Scripts of the one-loop paper
 
-`examples/Loops/` contains the scripts behind the squeezed and collapsed limits of the companion paper, *Massive de Sitter correlators at one loop*:
+`examples/Loops/` contains the scripts behind *Massive de Sitter correlators at one loop* (the one-loop paper), for the results that go beyond the Letter:
 
-- the universal exact/late-time factor (Sec. 6.2) and the W/Z loop of the Standard Model background (Sec. 6.3);
-- the parity-odd collapsed box (Sec. 7.4);
-- charged scalars with a vertex chemical potential (Sec. 7.5);
-- the Dirac pair and the fermion triangle with an axial chemical potential (Sec. 8.2).
+- the weight factor of the tensor bubble (Sec. 3.5), the bubble of two massless lines (Sec. 4.5), and the scalar triangle at every shape (Sec. 5.1);
+- the universal factor between the exact and the late-time soft vertex (Sec. 6.2);
+- the Standard Model loops at every shape: the Higgs portal, the W and Z bosons, and the top quark (Sec. 7);
+- the helical-vector bubble and triangle, the parity-odd collapsed trispectrum, and charged scalars with a chemical potential on the vertex (Sec. 8);
+- the fermion bubble and triangle with an axial chemical potential (Sec. 9);
+- where the leading squeezed term holds, the phase of the signals, and their sizes (Sec. 10).
 
-Each script checks itself against the numbers quoted in the paper (`examples/Loops/values_of_record.json`). See [`examples/Loops/README.md`](examples/Loops/README.md) for details. Their checkpoints are in `tests/test_loops.py`.
+The section numbers are those of arXiv v1 of the paper. Each script checks itself against the numbers quoted in the paper (`examples/Loops/values_of_record.json` and the `*_record.json` files next to the scripts), and `examples/Loops/direct/` holds the direct integrations that check the series. See [`examples/Loops/README.md`](examples/Loops/README.md) for the table of scripts. Their checkpoints are in `tests/test_loops.py` and the other test files added in v1.1.
 
 ## Tests
 
@@ -173,27 +183,37 @@ Set `OMP_NUM_THREADS=OPENBLAS_NUM_THREADS=MKL_NUM_THREADS=1` for reproducible ti
 
 ## How to cite
 
-If you use dscorr, please cite the Letter and the code:
+If you use dscorr, please cite the Letter, the one-loop paper if you use `examples/Loops/`, and the code:
 
 ```bibtex
 @article{McCune2026dscorr,
   author        = {McCune, Amara},
   title         = {Massive de Sitter correlators as finite Mellin-Barnes integrals},
   year          = {2026},
-  eprint        = {XXXX.XXXXX},
+  eprint        = {2610.10921},
   archivePrefix = {arXiv},
   primaryClass  = {hep-th}
+}
+@article{McCune2026loops,
+  author        = {McCune, Amara},
+  title         = {Massive de Sitter correlators at one loop},
+  year          = {2026}
 }
 @software{dscorr,
   author  = {McCune, Amara},
   title   = {dscorr: massive de Sitter correlators as finite Mellin-Barnes integrals},
-  version = {1.0},
+  version = {1.1},
   year    = {2026},
   url     = {https://github.com/amara-mccune/dscorr}
 }
 ```
 
 See also `CITATION.cff`.
+
+## Versions
+
+- **v1.1** (November 2026): the scripts of the one-loop paper in `examples/Loops/`, with their tests, and this README updated for v2 of the Letter. The package `src/dscorr` and the scripts of the Letter are unchanged apart from the version number.
+- **v1.0** (October 2026): the code of the Letter.
 
 ## License
 

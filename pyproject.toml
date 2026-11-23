@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dscorr"
-version = "1.0.0"
+version = "1.1.0"
 description = "Massive de Sitter correlators as finite Mellin-Barnes integrals (code of the Letter)"
 readme = "README.md"
 license = {text = "MIT"}

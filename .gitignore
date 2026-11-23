@@ -8,3 +8,4 @@ examples/Letter/cache/
 examples/Letter/figures/
 examples/Letter/data/external/
 examples/Loops/cache/
+examples/Loops/**/cache/

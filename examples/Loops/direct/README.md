@@ -27,7 +27,7 @@ Things that matter in practice:
 
 # Direct integration of the Dirac-pair bubble
 
-`direct_dirac_bubble.py` checks the squeezed series of `dirac_pair.py` (Secs. 8.2 and 8.3) against the bubble itself, at the vertices of Han, Lei, Qin and Yin (r1 = 4 at k12, r2 = 2 at k3). It integrates both vertex times and the loop momentum with the exact Schwinger-Keldysh functions of the scalar bilinear, for all four branch assignments. The loop momentum is cut at y1 + y2 < Pc (in units of k12). The bubble depends on the shape only through r = k3/k12, and it has no azimuth, so one point takes 10 to 40 s.
+`direct_dirac_bubble.py` checks the squeezed series of `dirac_pair.py` (Sec. 9.2) against the bubble itself, at the vertices of Han, Lei, Qin and Yin (r1 = 4 at k12, r2 = 2 at k3). It integrates both vertex times and the loop momentum with the exact Schwinger-Keldysh functions of the scalar bilinear, for all four branch assignments. The loop momentum is cut at y1 + y2 < Pc (in units of k12). The bubble depends on the shape only through r = k3/k12, and it has no azimuth, so one point takes 10 to 40 s.
 
 | File | Content |
 |---|---|
@@ -53,7 +53,7 @@ Things that matter in practice:
 
 # Direct integration of the contact-pair diagram of the collapsed trispectrum
 
-The collapsed trispectrum of the helical loop (Sec. 7.4, `parity_box_series.py`) has three kinds of diagram. The bubble between two quartic vertices was checked directly on Nov 19, 2026. The diagram with one quartic vertex and one hard pair is the triangle of `direct_vec.py` with the vertex of the two soft lines made quartic and hard, so it needs no new evaluator:
+The collapsed trispectrum of the helical loop (Sec. 8.4, `parity_box_series.py`) has three kinds of diagram. The bubble between two quartic vertices was checked directly on Nov 19, 2026. The diagram with one quartic vertex and one hard pair is the triangle of `direct_vec.py` with the vertex of the two soft lines made quartic and hard, so it needs no new evaluator:
 
     X3=2 PW3=2 NPHI=6 GRID=std PC=0.5 NUMCHECK=direct/ninepairs python direct/direct_vec.py 1 1 iso run.jsonl 0.25 0.1 0.03 0.01
     python direct/cp_direct_fit.py

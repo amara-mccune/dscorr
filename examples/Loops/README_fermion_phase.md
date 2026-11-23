@@ -1,6 +1,6 @@
 # The total-energy phase of the fermion loops at large chemical potential
 
-Follow-up to Secs. 6.4 and 8.4 of "Massive de Sitter correlators at one loop" (v5.19). For kappa >> m the pair signal of the Dirac loops oscillates in k3/k_T, with k_T = k1 + k2 + k3 [Eq. (8.6)]. These files hold the forms derived for that regime and their comparison with the exact series. New files only; nothing in the paper's scripts changes. The derivation is in `kT_phase_derivation.pdf` (session of Nov 20, 2026), and "notes" below refers to it.
+Behind Secs. 9.3 and 10.2 of "Massive de Sitter correlators at one loop" (arXiv v1). For kappa >> m the pair signal of the Dirac loops oscillates in k3/k_T, with k_T = k1 + k2 + k3 [Eq. (9.7)]. These files hold the forms derived for that regime and their comparison with the exact series. New files only; nothing in the paper's scripts changes. The derivation is summarized in Sec. 9.3 of the paper, around Eq. (9.8), and for the bubble in Sec. 10.2, Eq. (10.2).
 
 | File | Content |
 |---|---|

@@ -17,7 +17,7 @@ from .squeezed import M1, M2, M3, SqueezedFit, extract, signal, template
 from .tree import (DoubleExchange, SingleExchange, TripleExchange, double_exchange,
                    single_exchange, triple_exchange)
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 __all__ = [
     "single_exchange", "double_exchange", "triple_exchange",

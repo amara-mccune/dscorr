@@ -1,6 +1,6 @@
 # The fermion triangle beyond the leading squeezed term, at general shape
 
-Follow-up to Sec. 8.2 of "Massive de Sitter correlators at one loop". New files only; nothing in the paper's scripts changes.
+Behind Sec. 9.3 of "Massive de Sitter correlators at one loop" (arXiv v1). New files only; nothing in the paper's scripts changes.
 
 | File | Content |
 |---|---|
@@ -22,7 +22,7 @@ Needs Python >= 3.10 and mpmath >= 1.3. Soft moments are cached in `cache/`.
 
 Conventions worth knowing:
 
-- **Normalization.** Model and conventions of `ext/fermion.py` and `fermion_triangle.py` (Aoki and Strumia): Dirac fermion, axial chemical potential kappa, couplings kappa at the vertices with 1/taudot_0 stripped. `C[(0, 0)]` is the coefficient C of Sec. 8.2, both orientations of the loop included. For the Majorana fermion of Song et al., divide by 2 kappa^3 Lambda^3.
+- **Normalization.** Model and conventions of `ext/fermion.py` and `fermion_triangle.py` (Aoki and Strumia): Dirac fermion, axial chemical potential kappa, couplings kappa at the vertices with 1/taudot_0 stripped. `C[(0, 0)]` is the coefficient C of Sec. 9.3, both orientations of the loop included. For the Majorana fermion of Song et al., divide by 2 kappa^3 Lambda^3.
 - **Two forms of the series.** `C[(n, mc)]`: k1^6 <dtau^3>' = sum C r^(2 nu + n) c^mc + c.c., with r = k3/k1 and c = k1hat.k3hat (converges for k3 < k1 only). `D[(N, md)]`: K^6 <dtau^3>' = sum D R^(2 nu + N) delta^md + c.c. (even md only; at kappa = 1.3 the last two of ten orders change the equilateral value by 0.4%).
 - **Unit steps.** The first index K of a fermion never vanishes, so odd and even orders are both present.
 - **The hard line** is in closed form, so there is no contour angle. At large kappa the soft and hard moments lose digits (about six at kappa = 10); use 40 digits there. The exchange symmetry measures the digits that survive.

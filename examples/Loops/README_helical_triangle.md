@@ -1,10 +1,10 @@
 # The helical-vector triangle beyond the leading squeezed term
 
-Follow-up to Sec. 7.3 of "Massive de Sitter correlators at one loop" (section, equation, and figure numbers are those of v5.12). New files only; nothing in the paper's scripts changes. `helical_triangle.py` is also the script behind two sets of numbers of the paper that had none here: the ratio of M_A to its late-time estimate at κ = μ (6.07, 16.70, 29.99; Sec. 7.2) and R_hard (Sec. 7.3 and Fig. 10).
+Behind Sec. 8.3 of "Massive de Sitter correlators at one loop" (section, equation, and figure numbers are those of arXiv v1). New files only; nothing in the paper's scripts changes. `helical_triangle.py` is also the script behind two sets of numbers of the paper that had none here: the ratio of M_A to its late-time estimate at κ = μ (6.07, 16.70, 29.99; Sec. 8.2) and R_hard (Sec. 8.3 and Fig. 14).
 
 | File | Content |
 |---|---|
-| `helical_triangle.py` | Leading-order checks against Secs. 7.2 and 7.3, the series of the pair family in r = k3/k on k1 = k2, the series at general shape in R and δ with the check of the symmetry k1 ↔ k2, and a template symmetric in the three legs. Compares with `helical_triangle_record.json` and exits nonzero if a value is not reproduced. |
+| `helical_triangle.py` | Leading-order checks against Secs. 8.2 and 8.3, the series of the pair family in r = k3/k on k1 = k2, the series at general shape in R and δ with the check of the symmetry k1 ↔ k2, and a template symmetric in the three legs. Compares with `helical_triangle_record.json` and exits nonzero if a value is not reproduced. |
 | `ext/vectri.py` | The expansion: polynomial algebra for the polarization contractions, the hard line at energy Y from its folded moments, the energy of the second hard leg, the azimuthal reduction to monomials, and the assembly over branches and components. (The same file is in the fermion-triangle patch.) |
 | `ext/shapevars.py` | Exchange identity and symmetric shape variables. (Also in the fermion-triangle patch.) |
 | `helical_triangle_record.json` | Values of record (Nov 18–19, 2026). |
@@ -17,7 +17,7 @@ Follow-up to Sec. 7.3 of "Massive de Sitter correlators at one loop" (section, e
 
     cd examples/Loops
     python helical_triangle.py                          # mu = kappa = 1: leading order, the series through n = 2, general shape (about 10 min)
-    python helical_triangle.py --leading                # every leading-order number of Secs. 7.2 and 7.3 (about 3 min per point, 10 points)
+    python helical_triangle.py --leading                # every leading-order number of Secs. 8.2 and 8.3 (about 3 min per point, 10 points)
     python helical_triangle.py --point 2 2.5 --nmax 6 --general --json series.json
     python helical_triangle.py --all                    # benchmarks through n = 8, kappa = 0, heavy hard line (several hours)
     python helical_triangle.py --deep                   # (3, 3.75) through n = 12 and the equilateral point (about 2 hours)
@@ -26,7 +26,7 @@ Needs Python ≥ 3.10 and mpmath ≥ 1.3 (as the other scripts). Soft moments ar
 
 ## Conventions worth knowing
 
-- **Unit steps.** S contains 2 Re Σ_n M_n r^(2 + 2iμ + n). The odd orders come from e_1 = −K/(1 + 2ν) of Eq. (D.6) and vanish at κ = 0.
+- **Unit steps.** S contains 2 Re Σ_n M_n r^(2 + 2iμ + n). The odd orders come from e_1 = −K/(1 + 2ν) of Eq. (C.6) and vanish at κ = 0.
 - **Normalization.** `M_n` is at unit couplings (triangle: prefactor 1/8; bubble: 1/16, so that the bubble's M_0 is M_A). The triangle in the normalization of Wang and Xianyu is −m_h² e^(−2πΩ) M_n, with Ω = max(κ − μ, 0).
 - **Isosceles family.** k̂1·k̂3 = −r/2, so the n = 0 coefficient is the monopole minus half the quadrupole. `leading()` gives the multipoles separately; R_hard is the monopole over M_A.
 - **Contact term.** The time-ordered A_0 A_0 function of the hard line includes +(t²/m_h²) δ(t − t′) on the rotated contour (first relevant at n = 2).

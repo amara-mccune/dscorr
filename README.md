@@ -6,7 +6,7 @@
 
 and, from version 1.1, the paper
 
-> A. McCune, *Massive de Sitter correlators at one loop* (2026).
+> A. McCune, *Massive de Sitter correlators at one loop*, arXiv:2611.31214 (2026).
 
 Release v1.0 is the code of the Letter, and v2 of the Letter cites it. Release v1.1 adds the scripts of the one-loop paper (`examples/Loops/`). The package and the Letter's scripts are unchanged apart from the version number.
 
@@ -197,7 +197,10 @@ If you use dscorr, please cite the Letter, the one-loop paper if you use `exampl
 @article{McCune2026loops,
   author        = {McCune, Amara},
   title         = {Massive de Sitter correlators at one loop},
-  year          = {2026}
+  year          = {2026},
+  eprint        = {2611.31214},
+  archivePrefix = {arXiv},
+  primaryClass  = {hep-th}
 }
 @software{dscorr,
   author  = {McCune, Amara},

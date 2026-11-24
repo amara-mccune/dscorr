@@ -27,3 +27,7 @@ references:
       - family-names: McCune
         given-names: Amara
     year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2611.31214"
+        description: "arXiv identifier"

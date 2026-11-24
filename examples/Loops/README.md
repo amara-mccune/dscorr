@@ -1,4 +1,4 @@
-# Code for "Massive de Sitter correlators at one loop"
+# Code for "Massive de Sitter correlators at one loop" (arXiv:2611.31214)
 
 These scripts reproduce the results of the paper that go beyond the Letter, chiefly its squeezed and collapsed limits (Sections 3.5, 4.5, and 5.1 to 10.2). Section, equation, figure, and table numbers below are those of the submitted version (arXiv v1). The docstrings of some scripts still cite the numbering of the draft they were written against.
 
